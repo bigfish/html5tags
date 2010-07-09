@@ -1,0 +1,7 @@
+#!/bin/bash
+#force line breaks before / after IDL tags
+stripComments.pl ~/html5/Overview.html | sed 's/<pre class="idl"/\
+<pre class="idl"/g' | sed 's/<\/pre>/\
+<\/pre>/g' > /home/david/html5/html5.html
+parseIDL.pl /home/david/html5/html5.html > /home/david/html5/html5.idl
+
