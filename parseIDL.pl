@@ -1,6 +1,7 @@
-#/home/david/html5/html5.htmi!/usr/bin/perl
-#generate ctags from IDL extracted from W3C spec
+#!/usr/bin/perl
+
 use File::Basename;
+#extract IDL tags from HTML 5 spec
 my $file = shift;
 
 sub stripTags
@@ -66,8 +67,6 @@ foreach(@idl_lines){
 		print $line."\n";
 	}
 }
-#stage two
-#generate ctags from list of elements and which interfaces they implement
 
 
 

@@ -1,7 +1,15 @@
 #!/bin/bash
-#force line breaks before / after IDL tags
-stripComments.pl ~/html5/Overview.html | sed 's/<pre class="idl"/\
-<pre class="idl"/g' | sed 's/<\/pre>/\
-<\/pre>/g' > /home/david/html5/html5.html
-parseIDL.pl /home/david/html5/html5.html > /home/david/html5/html5.idl
+#this must be run from same dir as other files
+SPEC_FILE="./index.html"
+TMP_FILE="./tmp.html"
+IDL_FILE="./html5.idl"
 
+#pre-process file 
+stripComments.pl $SPEC_FILE | sed 's/<pre class="idl"/\
+<pre class="idl"/g' | sed 's/<\/pre>/\
+<\/pre>/g' > $TMP_FILE
+
+#extract IDL into output file
+parseIDL.pl $TMP_FILE > $IDL_FILE
+
+rm $TMP_FILE
