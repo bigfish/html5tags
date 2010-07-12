@@ -43,10 +43,16 @@ foreach(@lines){
 
 	my $line = $_;
 
-	if ($line =~ /^interface\s+([A-Za-z]+)\s*:?\s*([A-Za-z]+)\s*{\s*(?:})?/) {
+	if ($line =~ /^interface\s+([A-Za-z]+)\s*(?::\s*([A-Za-z]+))?\s*{\s*(?:})?/) {
 		$interface_name = $1;
 		$super_interface = $2;
-		print "found interface: $interface_name \n";
+		#print "found interface: $interface_name \n";
+		%interface = ();
+		if ($super_interface) {
+			print "found supertype: $super_interface \n";
+			$interface{ 'supertype' } = $super_interface;
+		}
+		$interfaces{$interface_name} = %interface;
 	}
 	
 
