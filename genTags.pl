@@ -117,10 +117,54 @@ foreach(@lines){
 				}
 			}
 		}
-		
+		#TODO: deal with the X implements Y statements
 	}
 
 }
 
-#STAGE 2 : create tags based on 
-  
+#STAGE 2 : re-parse HTML spec file and create tags based on interfaces implemented by elements
+$file = "index.html";
+
+(my $filename, my $filepath, my $ext) = fileparse($file, qr{\..*});
+#read file 
+open(HANDLE, $file) || die ("could not open file $file");
+my @lines = <HANDLE>;
+close(HANDLE);
+
+#example element definition
+#</div><h4 id="the-noscript-element"><span class="secno">4.3.2 </span>The <dfn><code>noscript</code></dfn> element</h4><p class="XXX annotation"><b>Status: </b><i>Last call for comments</i></p><dl class="element"><dt>Categories</dt>
+# this is followed soon after by a 'Uses' section
+#<dd>Uses <code><a href="http://www.w3.org/TR/html5/Overview.html#htmlelement">HTMLElement</a></code>.</dd>
+# for each value of 'uses' make tags for that interface and any ancestor interfaces
+my $element_name = "";
+my @element_interfaces = [];
+
+foreach(@lines){
+
+	chomp;
+
+	my $line = $_;
+	
+	if ($line =~ /The\s<dfn>\s*<code>(\S*)<\/code>\s*<\/dfn>\s*element/ ){
+		#finish off old element
+		print "$element_name implements @element_interfaces \n";
+		$element_name = $1;
+		@element_interfaces = ();
+	}
+
+	if ($line =~ /<dd>\s*Uses\s*<code>\s*<a[^>]*>([^<]*)<\/a>/ ) {
+		#print "$element_name implements interface: $1 \n";
+		push(@element_interfaces, $1);
+	}
+	if ($line =~ /<pre\s*class="idl"\s*>\s*interface\s+<dfn[^>]+>([^<]*)<\/dfn>\s*\:\s*<a[^>]*>([^<]*)<\/a>/ ) {
+		push(@element_interfaces, $1);
+		if ($2) {
+			push(@element_interfaces, $2);
+		}
+	}
+
+
+
+
+	
+} 
