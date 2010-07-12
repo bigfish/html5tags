@@ -44,28 +44,40 @@ foreach(@lines){
 	chomp;
 
 	my $line = $_;
-
-	$line =~ s/\[Supplemental[^\]]*\]//g;
+  
+  #remove IDL metadata
+	$line =~ s/\[[^\]*]*\]//g;
 	
 	if ($is_idl){
+
 	 	if($line =~ /(.*)<\/pre>/) {
+
 			$is_idl = 0;
+
 			push(@idl_lines, cleanUp($1));
+
 		} else {
+
 			push(@idl_lines, cleanUp($line));
 		}
+
 	}
-	if (!$is_idl && $line =~ /<pre\s+class\s*=\s*"?idl"?[^>]*>(.*)/) {
+
+  if (!$is_idl && $line =~ /<pre\s+class\s*=\s*"idl"[^>]*>(.*)/) {
 		$is_idl = 1;
+
 		push(@idl_lines, cleanUp($1));
 	}
 
 }
 foreach(@idl_lines){
-	my $line = $_;
-	if ($line){
-		print $line."\n";
-	}
+  my $line = $_;
+#working around a bug where an ARRAY reference is getting dumped into a line
+  if ($line !~ "^ARRAY"){
+    if ($line){
+      print $line."\n";
+    }
+  }
 }
 
 

@@ -16,7 +16,7 @@ sub text {
 
 sub comment {
     my ($self, $comment) = @_;
-    # print out original text with comment marker
+#suppress comments
     print "";
 }
 

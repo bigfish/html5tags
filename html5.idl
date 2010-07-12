@@ -1,14 +1,3 @@
-ARRAY(0x1f34df0)
-interface Example {
-  
-};
-           attribute DOMString protocol;
-           attribute DOMString host;
-           attribute DOMString hostname;
-           attribute DOMString port;
-           attribute DOMString pathname;
-           attribute DOMString search;
-           attribute DOMString hash;
 interface HTMLCollection {
   readonly attribute unsigned long length;
   caller getter object item(in unsigned long index); 
@@ -52,10 +41,9 @@ interface DOMStringMap {
   creator void (in DOMString name, in DOMString value);
   deleter void (in DOMString name);
 };
-[OverrideBuiltins]
 interface HTMLDocument {
   
-  [PutForwards=href] readonly attribute Location location;
+   readonly attribute Location location;
   readonly attribute DOMString URL;
            attribute DOMString domain;
   readonly attribute DOMString referrer;
@@ -275,7 +263,7 @@ interface HTMLLinkElement : HTMLElement {
            attribute DOMString media;
            attribute DOMString hreflang;
            attribute DOMString type;
-  [PutForwards=value] readonly attribute DOMSettableTokenList sizes;
+   readonly attribute DOMSettableTokenList sizes;
 };
 HTMLLinkElement implements LinkStyle;
 interface HTMLMetaElement : HTMLElement {
@@ -383,7 +371,7 @@ interface HTMLIFrameElement : HTMLElement {
            attribute DOMString src;
            attribute DOMString srcdoc;
            attribute DOMString name;
-  [PutForwards=value] readonly attribute DOMSettableTokenList sandbox;
+   readonly attribute DOMSettableTokenList sandbox;
            attribute boolean seamless;
            attribute DOMString width;
            attribute DOMString height;
@@ -556,10 +544,9 @@ interface HTMLTableHeaderCellElement : HTMLTableCellElement {
 interface HTMLTableCellElement : HTMLElement {
            attribute unsigned long colSpan;
            attribute unsigned long rowSpan;
-  [PutForwards=value] readonly attribute DOMSettableTokenList headers;
+   readonly attribute DOMSettableTokenList headers;
   readonly attribute long cellIndex;
 };
-[OverrideBuiltins]
 interface HTMLFormElement : HTMLElement {
            attribute DOMString acceptCharset;
            attribute DOMString action;
@@ -758,7 +745,7 @@ interface HTMLKeygenElement : HTMLElement {
   readonly attribute NodeList labels;
 };
 interface HTMLOutputElement : HTMLElement {
-  [PutForwards=value] readonly attribute DOMSettableTokenList htmlFor;
+   readonly attribute DOMSettableTokenList htmlFor;
   readonly attribute HTMLFormElement form;
            attribute DOMString name;
   readonly attribute DOMString type;
@@ -814,32 +801,32 @@ interface HTMLMenuElement : HTMLElement {
            attribute DOMString type;
            attribute DOMString label;
 };
-[OverrideBuiltins, ReplaceableNamedProperties] 
+ 
 interface Window {
   
   readonly attribute WindowProxy window;
   readonly attribute WindowProxy self;
   readonly attribute Document document;
            attribute DOMString name;
-  [PutForwards=href] readonly attribute Location location;
+   readonly attribute Location location;
   readonly attribute History history;
   readonly attribute UndoManager undoManager;
   Selection getSelection();
-  [Replaceable] readonly attribute BarProp locationbar;
-  [Replaceable] readonly attribute BarProp menubar;
-  [Replaceable] readonly attribute BarProp personalbar;
-  [Replaceable] readonly attribute BarProp scrollbars;
-  [Replaceable] readonly attribute BarProp statusbar;
-  [Replaceable] readonly attribute BarProp toolbar;
+   readonly attribute BarProp locationbar;
+   readonly attribute BarProp menubar;
+   readonly attribute BarProp personalbar;
+   readonly attribute BarProp scrollbars;
+   readonly attribute BarProp statusbar;
+   readonly attribute BarProp toolbar;
   void close();
   void stop();
   void focus();
   void blur();
   
-  [Replaceable] readonly attribute WindowProxy frames;
-  [Replaceable] readonly attribute unsigned long length;
+   readonly attribute WindowProxy frames;
+   readonly attribute unsigned long length;
   readonly attribute WindowProxy top;
-  [Replaceable] readonly attribute WindowProxy opener;
+   readonly attribute WindowProxy opener;
   readonly attribute WindowProxy parent;
   readonly attribute Element frameElement;
   WindowProxy open(in optional DOMString url, in optional DOMString target, in optional DOMString features, in optional DOMString replace);
@@ -992,7 +979,6 @@ interface ApplicationCache {
            attribute Function onobsolete;
 };
 ApplicationCache implements EventTarget;
-[Callback=FunctionOnly, NoInterfaceObject]
 interface Function {
   any call(in any... arguments);
 };
@@ -1046,10 +1032,6 @@ interface Selection {
   void removeAllRanges();
   stringifier DOMString ();
 };
-  void select();
-           attribute unsigned long selectionStart;
-           attribute unsigned long selectionEnd;
-  void setSelectionRange(in unsigned long start, in unsigned long end);
 interface DragEvent : MouseEvent {
   readonly attribute DataTransfer dataTransfer;
   void initDragEvent(in DOMString typeArg, in boolean canBubbleArg, in boolean cancelableArg, in any dummyArg, in long detailArg, in long screenXArg, in long screenYArg, in long clientXArg, in long clientYArg, in boolean ctrlKeyArg, in boolean altKeyArg, in boolean shiftKeyArg, in boolean metaKeyArg, in unsigned short buttonArg, in EventTarget relatedTargetArg, in DataTransfer dataTransferArg);
