@@ -2,9 +2,9 @@
 
 use File::Basename;
 
-$html_spec = "/home/david/html5/index.html";
+$html_spec = shift;
+$doc_url = shift;
 $file = "html5.idl";
-$doc_url = "http://html5/";
 
 (my $filename, my $filepath, my $ext) = fileparse($file, qr{\..*});
 #read file 

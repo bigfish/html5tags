@@ -7,4 +7,4 @@ echo '!_TAG_PROGRAM_NAME	Exuberant Ctags	'
 echo '!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	'
 echo '!_TAG_PROGRAM_VERSION	5.8	//'
 
-genTags.pl
+genTags.pl ${HTML5_HOME}/index.html ${HTML5_URL}
