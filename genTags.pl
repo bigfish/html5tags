@@ -2,8 +2,8 @@
 
 use File::Basename;
 
+$html_spec = "/home/david/html5/index.html";
 $file = "html5.idl";
-$html_spec = "index.html";
 $doc_url = "http://html5/";
 
 (my $filename, my $filepath, my $ext) = fileparse($file, qr{\..*});
@@ -50,7 +50,7 @@ foreach(@lines){
 		$interface_name = $1;
 		$inherit = $2;
 		#set cmd to the url of the definition
-		$tag_line = $interface_name.$TAB.$srcfile.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name;
+		$tag_line = $interface_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name;
 		if ($inherit) {
 			$tag_line = $tag_line.$TAB.'inherits:'.$inherit;
 		}
@@ -69,7 +69,7 @@ foreach(@lines){
 			$attr_type = $2;
 			$attr_name = $3;
 			$typeToken = "v";
-			$tag_line = $attr_name.$TAB.$srcfile.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name;
+			$tag_line = $attr_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name;
 
 			push(@tag_lines, $tag_line);
 		}
@@ -106,7 +106,7 @@ foreach(@lines){
 			}
 
 			$sig .= ")";
-			$tag_line = $method_name.$TAB.$srcfile.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name.$TAB.'signature:'.$sig;
+			$tag_line = $method_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name.$TAB.'signature:'.$sig;
 			push(@tag_lines, $tag_line);
 		}
 	}
@@ -174,7 +174,7 @@ foreach(@lines){
 			#print "$element_name implements interface: $1 \n";
 			$element_interface = $1;
 			$cmd = $doc_url."#".$element_name;
-			$tag_line = $element_name.$TAB.$srcfile.$TAB.'/^'.$cmd.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$element_name.$TAB.'inherits:'.$element_interface;
+			$tag_line = $element_name.$TAB.$html_spec.$TAB.'/^'.$cmd.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$element_name.$TAB.'inherits:'.$element_interface;
 			push(@tag_lines, $tag_line);
 			$got_interface = 1;
 		}
@@ -183,7 +183,7 @@ foreach(@lines){
 			#print "$element_name implements interface: $1 \n";
 			$element_interface = $1;
 			$cmd = $doc_url."#".$element_name;
-			$tag_line = $element_name.$TAB.$srcfile.$TAB.'/^'.$cmd.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$element_name.$TAB.'inherits:'.$element_interface;
+			$tag_line = $element_name.$TAB.$html_spec.$TAB.'/^'.$cmd.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$element_name.$TAB.'inherits:'.$element_interface;
 			push(@tag_lines, $tag_line);
 			$got_interface = 1;
 		}
