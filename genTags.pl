@@ -1,8 +1,10 @@
 #!/usr/bin/perl
-#accept the IDL file as parameter
+
 use File::Basename;
-$file = shift;
-$srcfile = $file;#use for jump location in tags
+
+$file = "html5.idl";
+$html_spec = "index.html";
+$doc_url = "http://html5/";
 
 (my $filename, my $filepath, my $ext) = fileparse($file, qr{\..*});
 #read file 
@@ -10,28 +12,13 @@ open(HANDLE, $file) || die ("could not open file $file");
 my @lines = <HANDLE>;
 close(HANDLE);
 
-# STAGE 1 : create data structure from interface declarations in IDL
-#we are going to construct a hash of interfaces hashes...
-#my %interfaces = ();
-#my %interface = ();
-
-#each interface will have the following attributes
-#my @attributes = ();
-#my @methods = ();
-
-#each attribute will be a hash with 3 attributes: name, type, is_readonly
-#my %attribute = ();
 my $attr_name = "";
 my $attr_type = "";
 my $is_readonly = "";
 
-#each method has name, return_type, and params array
 my $method_name = "";
 my $return_type = "";
-#my @params = [];
-#my %param = ();
 
-#each param has the following fields: param_name, param_type, is_optional
 my $param_name = "";
 my $param_type = "";
 my $is_optional = 0;
@@ -40,7 +27,6 @@ my $is_optional = 0;
 
 my $interface_name = "";
 my $inherit = "";
-#my $is_empty = "";
 my $signature = "";
 
 my @tag_lines = [];
@@ -50,6 +36,7 @@ my $TAB = '	';
 my $tag_line = "";
 my $type_token = "";
 my $sig;
+my $cmd;
 
 foreach(@lines){
 
@@ -62,17 +49,12 @@ foreach(@lines){
 		$typeToken = "c";
 		$interface_name = $1;
 		$inherit = $2;
+		#set cmd to the url of the definition
 		$tag_line = $interface_name.$TAB.$srcfile.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name;
 		if ($inherit) {
 			$tag_line = $tag_line.$TAB.'inherits:'.$inherit;
 		}
-		print $tag_line."\n";
-		#$is_empty = $3;
-		#print "found interface: $interface_name \n";
-		#%interface = ();
-		#if ($super_interface) {
-			#$interface{ 'supertype' } = $super_interface;
-		#}
+		push(@tag_lines, $tag_line);
 	}
 
 
@@ -80,23 +62,19 @@ foreach(@lines){
 		
 		#attributes
 		if ($line =~ /^\s*(readonly)?\s+attribute\s+([A-Za-z]*)\s+([A-Za-z_0-9]*);/) {
+
 			$is_readonly = $1;
 			$attr_type = $2;
 			$attr_name = $3;
 			$typeToken = "v";
 			$tag_line = $attr_name.$TAB.$srcfile.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name;
 
-			print $tag_line."\n";
-
-			#push(@attributes, {
-				#'attr_name'	=> $attr_name,
-				#'attr_type' => $attr_type,
-				#'is_readonly' => $is_readonly
-			#});
+			push(@tag_lines, $tag_line);
 		}
+
 		#methods
 		if ($line =~ /^\s*([A-Z-a-z]*)\s+([A-Za-z0-9_]+)\s*\(([^)]*)\);/ ) {
-			#print "found method $1 $2 $3 \n";
+
 			$typeToken = "m";
 			$return_type = $1;
 			$method_name = $2;
@@ -127,37 +105,91 @@ foreach(@lines){
 
 			$sig .= ")";
 			$tag_line = $attr_name.$TAB.$srcfile.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name.$TAB.'signature:'.$sig;
-			print $tag_line."\n";
+			push(@tag_lines, $tag_line);
 		}
 	}
 
 	#end of interface declaration -- cleanup
 	if ($line =~ /.*};\s*$/) {
 
-		#add interface with accumulated values
-		$interfaces{$interface_name} = %interface;
-		#debug
-		#print keys $interfaces{ $interface_name }{'attributes'} . "\n";
-
-		#reset vars
-		#@attributes = [];
-		#@methods = ();
-		#%attribute = ();
 		$attr_name = "";
 		$attr_type = "";
 		$is_readonly = "";
 		$method_name = "";
 		$return_type = "";
-		#@params = [];
-		#%param = ();
 		$param_name = "";
 		$param_type = "";
 		$is_optional = 0;
 		$interface_name = "";
-		$super_interface = "";
-		#$is_empty = "";
+		$inherit = "";
+		$signature = "";
+		$tag_line = "";
 		$tag_line = "";
 		$type_token = "";
+		$sig = "";
 	}
 
+}
+#part II -- HTML elements
+#: re-parse HTML spec file and create tags based on interfaces implemented by elements
+$file = $html_spec;
+
+(my $filename, my $filepath, my $ext) = fileparse($file, qr{\..*});
+#read file 
+open(HANDLE, $file) || die ("could not open file $file");
+my @lines = <HANDLE>;
+close(HANDLE);
+
+#example element definition
+#</div><h4 id="the-noscript-element"><span class="secno">4.3.2 </span>The <dfn><code>noscript</code></dfn> element</h4><p class="XXX annotation"><b>Status: </b><i>Last call for comments</i></p><dl class="element"><dt>Categories</dt>
+# this is followed soon after by a 'Uses' section
+#<dd>Uses <code><a href="http://www.w3.org/TR/html5/Overview.html#htmlelement">HTMLElement</a></code>.</dd>
+# for each value of 'uses' make tags for that interface and any ancestor interfaces
+# the vast majority implement a single interface (which may in turn implement others..)
+my $TAB = '	';
+my $element_name = "";
+my $element_interface = "";
+my $doc_url = "http://html5/";
+my $got_interface = 1;
+
+foreach(@lines){
+
+	chomp;
+
+	my $line = $_;
+	
+	#start of element declaration ... get name
+	if ($line =~ /The\s<dfn>\s*<code>(\S*)<\/code>\s*<\/dfn>\s*element/ ){
+		$element_name = $1;
+		$got_interface = 0;
+	}
+	
+	if (!$got_interface) {
+
+		if ($line =~ /<dd>\s*Uses\s*<code>\s*<a[^>]*>([^<]*)<\/a>/ ) {
+			#print "$element_name implements interface: $1 \n";
+			$element_interface = $1;
+			$cmd = $doc_url."#".$element_name;
+			$tag_line = $element_name.$TAB.$srcfile.$TAB.'/^'.$cmd.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$element_name.$TAB.'inherits:'.$element_interface;
+			push(@tag_lines, $tag_line);
+			$got_interface = 1;
+		}
+
+		if ($line =~ /<pre\s+class="idl">interface\s<dfn[^>]+>([A-Za-z]+)<\/dfn>/g ) {
+			#print "$element_name implements interface: $1 \n";
+			$element_interface = $1;
+			$cmd = $doc_url."#".$element_name;
+			$tag_line = $element_name.$TAB.$srcfile.$TAB.'/^'.$cmd.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$element_name.$TAB.'inherits:'.$element_interface;
+			push(@tag_lines, $tag_line);
+			$got_interface = 1;
+		}
+		
+	}
+	
+} 
+
+#finally sort and spit out tags
+my @html5tags = sort(@tag_lines);
+foreach(@html5tags) {
+	print $_."\n";
 }
