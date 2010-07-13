@@ -23,11 +23,22 @@ sub cleanUp
 	return stripComments(stripTags($str));
 }
 
+sub processLine
+{
+#get link
+  my $str = shift;
+  my $link = "";
+  if ($str =~ /<a href="(#[^"]*)"/) {
+    $link = $1;
+  }
+  $str = cleanUp($str);
+  return $str.$link;
+}
+
 #STAGE ONE
 #
 #generate interfaces data structure from spec file
 #by first extracting all IDL parts
-#script to extract exuberant ctags from Ext js source code
 
 (my $filename, my $filepath, my $ext) = fileparse($file, qr{\..*});
 #read file 
@@ -37,7 +48,7 @@ close(HANDLE);
 
 my @idl_lines = [];
 my $is_idl = 0;
-
+my $link = "";
 
 foreach(@lines){
 
@@ -53,12 +64,12 @@ foreach(@lines){
 	 	if($line =~ /(.*)<\/pre>/) {
 
 			$is_idl = 0;
-
-			push(@idl_lines, cleanUp($1));
+           
+			push(@idl_lines, processLine($1));
 
 		} else {
 
-			push(@idl_lines, cleanUp($line));
+			push(@idl_lines, processLine($line));
 		}
 
 	}
@@ -66,7 +77,7 @@ foreach(@lines){
   if (!$is_idl && $line =~ /<pre\s+class\s*=\s*"idl"[^>]*>(.*)/) {
 		$is_idl = 1;
 
-		push(@idl_lines, cleanUp($1));
+		push(@idl_lines, processLine($1));
 	}
 
 }

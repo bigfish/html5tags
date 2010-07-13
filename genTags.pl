@@ -44,15 +44,19 @@ foreach(@lines){
 
 	my $line = $_;
 
-	if ($line =~ /^interface\s+([A-Za-z]+)\s*(?::\s*([A-Za-z]+))?\s*{\s*(?:};)?/) {
+	if ($line =~ /^interface\s+([A-Za-z]+)\s*(?::\s*([A-Za-z]+))?\s*{\s*(?:};)?(#.*)?/) {
 
 		$typeToken = "c";
 		$interface_name = $1;
 		$inherit = $2;
+		$link = $3;
 		#set cmd to the url of the definition
 		$tag_line = $interface_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name;
 		if ($inherit) {
 			$tag_line = $tag_line.$TAB.'inherits:'.$inherit;
+		}
+		if ($link){
+			$tag_line = $tag_line.$TAB.'link:'.$link;
 		}
 		if ($interface_name){
 			push(@tag_lines, $tag_line);
@@ -63,23 +67,27 @@ foreach(@lines){
 	if ($interface_name) {
 		
 		#attributes
-		if ($line =~ /^\s*(readonly)?\s+attribute\s+([A-Za-z]*)\s+([A-Za-z_0-9]*);/) {
+		if ($line =~ /^\s*(readonly)?\s+attribute\s+([A-Za-z]*)\s+([A-Za-z_0-9]*);(#.*)?/) {
 
 			$is_readonly = $1;
 			$attr_type = $2;
 			$attr_name = $3;
+			$link = $4;
 			$typeToken = "v";
 			$tag_line = $attr_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name;
-
+			if ($link){
+				$tag_line = $tag_line.$TAB.'link:'.$link;
+			}
 			push(@tag_lines, $tag_line);
 		}
 
 		#methods
-		if ($line =~ /^\s*([A-Za-z]+)\s*(?:<[^>]*>\s*)?([A-Za-z0-9_]+)\s*(?:\s*<[^>]*>)?\s*\(([^)]*)\);/ ) {
+		if ($line =~ /^\s*([A-Za-z]+)\s*(?:<[^>]*>\s*)?([A-Za-z0-9_]+)\s*(?:\s*<[^>]*>)?\s*\(([^)]*)\);(#.*)?/ ) {
 			$typeToken = "m";
 			$return_type = $1;
 			$method_name = $2;
 			$signature = $3;
+			$link = $4;
 			$sig = "(";
 
 			my $isfirstparam = 1;
@@ -107,6 +115,9 @@ foreach(@lines){
 
 			$sig .= ")";
 			$tag_line = $method_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name.$TAB.'signature:'.$sig;
+			if ($link){
+				$tag_line = $tag_line.$TAB.'link:'.$link;
+			}
 			push(@tag_lines, $tag_line);
 		}
 	}
