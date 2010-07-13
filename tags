@@ -4,47 +4,14 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	
 !_TAG_PROGRAM_VERSION	5.8	//
-		/^  DOMString toDataURL(in optional DOMString type, in any... args);$/;"	m	class:HTMLCanvasElement	signature:(<+DOMString:optional+>, <+args:any+>)
-		/^  Document createHTMLDocument(in DOMString title);$/;"	m	class:DOMHTMLImplementation	signature:(<+title:DOMString+>)
-		/^  HTMLAllCollection tags(in DOMString tagName);$/;"	m	class:HTMLAllCollection	signature:(<+tagName:DOMString+>)
-		/^  NodeList getElementsByClassName(in DOMString classNames);$/;"	m	class:HTMLElement	signature:(<+classNames:DOMString+>)
-		/^  any call(in any... arguments);$/;"	m	class:Function	signature:(<+arguments:any+>)
-		/^  boolean contains(in DOMString token);$/;"	m	class:DOMTokenList	signature:(<+token:DOMString+>)
-		/^  boolean toggle(in DOMString token);$/;"	m	class:DOMTokenList	signature:(<+token:DOMString+>)
-		/^  creator void (in DOMString name, in DOMString value);$/;"	m	class:DOMStringMap	signature:(<+name:DOMString+>, <+value:DOMString+>)
-		/^  deleter void (in DOMString name);$/;"	m	class:DOMStringMap	signature:(<+name:DOMString+>)
-		/^  float end(in unsigned long index);$/;"	m	class:TimeRanges	signature:(<+long:unsigned+>)
-		/^  float start(in unsigned long index);$/;"	m	class:TimeRanges	signature:(<+long:unsigned+>)
-		/^  getter DOMString (in DOMString name);$/;"	m	class:DOMStringMap	signature:(<+name:DOMString+>)
-		/^  long setInterval(in any handler, in optional any timeout, in any... args);$/;"	m	class:WindowTimers	signature:(<+handler:any+>, <+any:optional+>, <+args:any+>)
-		/^  long setTimeout(in any handler, in optional any timeout, in any... args);$/;"	m	class:WindowTimers	signature:(<+handler:any+>, <+any:optional+>, <+args:any+>)
-		/^  object getContext(in DOMString contextId);$/;"	m	class:HTMLCanvasElement	signature:(<+contextId:DOMString+>)
-		/^  setter void (in DOMString name, in DOMString value);$/;"	m	class:DOMStringMap	signature:(<+name:DOMString+>, <+value:DOMString+>)
-		/^  stringifier DOMString ();$/;"	m	class:DOMTokenList	signature:()
-		/^  void add(in DOMString token);$/;"	m	class:DOMTokenList	signature:(<+token:DOMString+>)
-		/^  void add(in HTMLElement element, in long before);$/;"	m	class:HTMLOptionsCollection	signature:(<+element:HTMLElement+>, <+before:long+>)
-		/^  void add(in HTMLElement element, in optional HTMLElement before);$/;"	m	class:HTMLOptionsCollection	signature:(<+element:HTMLElement+>, <+HTMLElement:optional+>)
-		/^  void assign(in DOMString url);$/;"	m	class:Location	signature:(<+url:DOMString+>)
-		/^  void clearInterval(in long handle);$/;"	m	class:WindowTimers	signature:(<+handle:long+>)
-		/^  void clearRedo();$/;"	m	class:UndoManager	signature:()
-		/^  void clearTimeout(in long handle);$/;"	m	class:WindowTimers	signature:(<+handle:long+>)
-		/^  void clearUndo();$/;"	m	class:UndoManager	signature:()
-		/^  void registerContentHandler(in DOMString mimeType, in DOMString url, in DOMString title);$/;"	m	class:NavigatorAbilities	signature:(<+mimeType:DOMString+>, <+url:DOMString+>, <+title:DOMString+>)
-		/^  void registerProtocolHandler(in DOMString scheme, in DOMString url, in DOMString title);$/;"	m	class:NavigatorAbilities	signature:(<+scheme:DOMString+>, <+url:DOMString+>, <+title:DOMString+>)
-		/^  void reload();$/;"	m	class:Location	signature:()
-		/^  void remove(in DOMString token);$/;"	m	class:DOMTokenList	signature:(<+token:DOMString+>)
-		/^  void remove(in long index);$/;"	m	class:HTMLOptionsCollection	signature:(<+index:long+>)
-		/^  void remove(in unsigned long index);$/;"	m	class:UndoManager	signature:(<+long:unsigned+>)
-		/^  void replace(in DOMString url);$/;"	m	class:Location	signature:(<+url:DOMString+>)
-		/^  void swapCache();$/;"	m	class:ApplicationCache	signature:()
-		/^  void update();$/;"	m	class:ApplicationCache	signature:()
-		/^  void yieldForStorageUpdates();$/;"	m	class:NavigatorAbilities	signature:()
-ARRAY(0x800d80)
 ApplicationCache		/^interface ApplicationCache {$/;"	c	class:ApplicationCache
 BarProp		/^interface BarProp {$/;"	c	class:BarProp
 BeforeUnloadEvent		/^interface BeforeUnloadEvent : Event {$/;"	c	class:BeforeUnloadEvent	inherits:Event
 DOMHTMLImplementation		/^interface DOMHTMLImplementation {$/;"	c	class:DOMHTMLImplementation
 DOMSettableTokenList		/^interface DOMSettableTokenList : DOMTokenList {$/;"	c	class:DOMSettableTokenList	inherits:DOMTokenList
+DOMString		/^  getter DOMString (in DOMString name);$/;"	m	class:DOMStringMap	signature:(<+name:DOMString+>)
+DOMString		/^  stringifier DOMString ();$/;"	m	class:DOMTokenList	signature:()
+DOMString		/^  stringifier DOMString ();$/;"	m	class:Selection	signature:()
 DOMStringMap		/^interface DOMStringMap {$/;"	c	class:DOMStringMap
 DOMTokenList		/^interface DOMTokenList {$/;"	c	class:DOMTokenList
 DataTransfer		/^interface DataTransfer {$/;"	c	class:DataTransfer
@@ -176,6 +143,7 @@ UndoManager		/^interface UndoManager {$/;"	c	class:UndoManager
 UndoManagerEvent		/^interface UndoManagerEvent : Event {$/;"	c	class:UndoManagerEvent	inherits:Event
 ValidityState		/^interface ValidityState {$/;"	c	class:ValidityState
 Window		/^interface Window {$/;"	c	class:Window
+WindowProxy		/^  getter WindowProxy (in unsigned long index);$/;"	m	class:Window	signature:(<+long:unsigned+>)
 WindowTimers		/^interface WindowTimers {$/;"	c	class:WindowTimers
 _object		/^           attribute DOMString _object; $/;"	v	class:HTMLAppletElement
 a		/^http://html5/#a$/;"	v	class:a	inherits:HTMLAnchorElement
@@ -187,9 +155,16 @@ acceptCharset		/^           attribute DOMString acceptCharset;$/;"	v	class:HTMLF
 accessKey		/^           attribute DOMString accessKey;$/;"	v	class:HTMLElement
 accessKeyLabel		/^  readonly attribute DOMString accessKeyLabel;$/;"	v	class:HTMLElement
 action		/^           attribute DOMString action;$/;"	v	class:HTMLFormElement
-activeElement		/^  boolean hasFocus();$/;"	m	class:HTMLDocument	signature:()
 activeElement		/^  readonly attribute Element activeElement;$/;"	v	class:HTMLDocument
+add		/^  void add(in DOMString token);$/;"	m	class:DOMTokenList	signature:(<+token:DOMString+>)
+add		/^  void add(in HTMLElement element, in long before);$/;"	m	class:HTMLOptionsCollection	signature:(<+element:HTMLElement+>, <+before:long+>)
+add		/^  void add(in HTMLElement element, in long before);$/;"	m	class:HTMLSelectElement	signature:(<+element:HTMLElement+>, <+before:long+>)
+add		/^  void add(in HTMLElement element, in optional HTMLElement before);$/;"	m	class:HTMLOptionsCollection	signature:(<+element:HTMLElement+>, <+HTMLElement:optional+>)
+add		/^  void add(in HTMLElement element, in optional HTMLElement before);$/;"	m	class:HTMLSelectElement	signature:(<+element:HTMLElement+>, <+HTMLElement:optional+>)
+addElement		/^  void addElement(in Element element);$/;"	m	class:DataTransfer	signature:(<+element:Element+>)
+addRange		/^  void addRange(in Range range);$/;"	m	class:Selection	signature:(<+range:Range+>)
 address		/^http://html5/#address$/;"	v	class:address	inherits:HTMLElement
+alert		/^  void alert(in DOMString message);$/;"	m	class:Window	signature:(<+message:DOMString+>)
 align		/^           attribute DOMString align;$/;"	v	class:HTMLAppletElement
 align		/^           attribute DOMString align;$/;"	v	class:HTMLDivElement
 align		/^           attribute DOMString align;$/;"	v	class:HTMLEmbedElement
@@ -216,23 +191,20 @@ alt		/^           attribute DOMString alt;$/;"	v	class:HTMLInputElement
 anchorNode		/^  readonly attribute Node anchorNode;$/;"	v	class:Selection
 anchorOffset		/^  readonly attribute long anchorOffset;$/;"	v	class:Selection
 anchors		/^  readonly attribute HTMLCollection anchors;$/;"	v	class:HTMLDocument
+any		/^  getter any (in DOMString name);$/;"	m	class:HTMLDocument	signature:(<+name:DOMString+>)
+any		/^  getter any (in DOMString name);$/;"	m	class:Window	signature:(<+name:DOMString+>)
 appName		/^  readonly attribute DOMString appName;$/;"	v	class:NavigatorID
 appVersion		/^  readonly attribute DOMString appVersion;$/;"	v	class:NavigatorID
 applet		/^http://html5/#applet$/;"	v	class:applet	inherits:HTMLAppletElement
 applets		/^  readonly attribute HTMLCollection applets;$/;"	v	class:HTMLDocument
-applets		/^  void clear();$/;"	m	class:HTMLDocument	signature:()
-applicationCache		/^  DOMString prompt(in DOMString message, in optional DOMString default);$/;"	m	class:Window	signature:(<+message:DOMString+>, <+DOMString:optional+>)
-applicationCache		/^  any showModalDialog(in DOMString url, in optional any argument);$/;"	m	class:Window	signature:(<+url:DOMString+>, <+any:optional+>)
-applicationCache		/^  boolean confirm(in DOMString message);$/;"	m	class:Window	signature:(<+message:DOMString+>)
 applicationCache		/^  readonly attribute ApplicationCache applicationCache;$/;"	v	class:Window
-applicationCache		/^  void alert(in DOMString message);$/;"	m	class:Window	signature:(<+message:DOMString+>)
-applicationCache		/^  void print();$/;"	m	class:Window	signature:()
 archive		/^           attribute DOMString archive;$/;"	v	class:HTMLAppletElement
 archive		/^           attribute DOMString archive;$/;"	v	class:HTMLObjectElement
 area		/^http://html5/#area$/;"	v	class:area	inherits:HTMLAreaElement
 areas		/^  readonly attribute HTMLCollection areas;$/;"	v	class:HTMLMapElement
 article		/^http://html5/#article$/;"	v	class:article	inherits:HTMLElement
 aside		/^http://html5/#aside$/;"	v	class:aside	inherits:HTMLElement
+assign		/^  void assign(in DOMString url);$/;"	m	class:Location	signature:(<+url:DOMString+>)
 async		/^           attribute boolean async;$/;"	v	class:HTMLScriptElement
 autocomplete		/^           attribute DOMString autocomplete;$/;"	v	class:HTMLFormElement
 autocomplete		/^           attribute DOMString autocomplete;$/;"	v	class:HTMLInputElement
@@ -244,6 +216,7 @@ autofocus		/^           attribute boolean autofocus;$/;"	v	class:HTMLTextAreaEle
 autoplay		/^           attribute boolean autoplay;$/;"	v	class:HTMLMediaElement
 axis		/^           attribute DOMString axis;$/;"	v	class:HTMLTableCellElement
 b		/^http://html5/#b$/;"	v	class:b	inherits:HTMLElement
+back		/^  void back();$/;"	m	class:History	signature:()
 background		/^           attribute DOMString background;$/;"	v	class:HTMLBodyElement
 base		/^http://html5/#base$/;"	v	class:base	inherits:HTMLBaseElement
 bdo		/^http://html5/#bdo$/;"	v	class:bdo	inherits:HTMLElement
@@ -255,26 +228,24 @@ bgColor		/^           attribute DOMString bgColor;$/;"	v	class:HTMLTableCellElem
 bgColor		/^           attribute DOMString bgColor;$/;"	v	class:HTMLTableElement
 bgColor		/^           attribute DOMString bgColor;$/;"	v	class:HTMLTableRowElement
 blockquote		/^http://html5/#blockquote$/;"	v	class:blockquote	inherits:HTMLQuoteElement
+blur		/^  void blur();$/;"	m	class:HTMLElement	signature:()
+blur		/^  void blur();$/;"	m	class:Window	signature:()
 body		/^           attribute HTMLElement body;$/;"	v	class:HTMLDocument
 body		/^http://html5/#body$/;"	v	class:body	inherits:HTMLBodyElement
 border		/^           attribute DOMString border;$/;"	v	class:HTMLImageElement
 border		/^           attribute DOMString border;$/;"	v	class:HTMLObjectElement
 border		/^           attribute DOMString border;$/;"	v	class:HTMLTableElement
 br		/^http://html5/#br$/;"	v	class:br	inherits:HTMLBRElement
-buffered		/^  DOMString canPlayType(in DOMString type);$/;"	m	class:HTMLMediaElement	signature:(<+type:DOMString+>)
 buffered		/^  readonly attribute TimeRanges buffered;$/;"	v	class:HTMLMediaElement
-buffered		/^  void load();$/;"	m	class:HTMLMediaElement	signature:()
 button		/^http://html5/#button$/;"	v	class:button	inherits:HTMLButtonElement
+call		/^  any call(in any... arguments);$/;"	m	class:Function	signature:(<+arguments:any+>)
+canPlayType		/^  DOMString canPlayType(in DOMString type);$/;"	m	class:HTMLMediaElement	signature:(<+type:DOMString+>)
 caption		/^           attribute HTMLTableCaptionElement caption;$/;"	v	class:HTMLTableElement
-caption		/^  HTMLElement createCaption();$/;"	m	class:HTMLTableElement	signature:()
-caption		/^  void deleteCaption();$/;"	m	class:HTMLTableElement	signature:()
 caption		/^http://html5/#caption$/;"	v	class:caption	inherits:HTMLTableCaptionElement
 cellIndex		/^  readonly attribute long cellIndex;$/;"	v	class:HTMLTableCellElement
 cellPadding		/^           attribute DOMString cellPadding;$/;"	v	class:HTMLTableElement
 cellSpacing		/^           attribute DOMString cellSpacing;$/;"	v	class:HTMLTableElement
-cells		/^  HTMLElement insertCell(in optional long index);$/;"	m	class:HTMLTableRowElement	signature:(<+long:optional+>)
 cells		/^  readonly attribute HTMLCollection cells;$/;"	v	class:HTMLTableRowElement
-cells		/^  void deleteCell(in long index);$/;"	m	class:HTMLTableRowElement	signature:(<+index:long+>)
 ch		/^           attribute DOMString ch;$/;"	v	class:HTMLTableCellElement
 ch		/^           attribute DOMString ch;$/;"	v	class:HTMLTableColElement
 ch		/^           attribute DOMString ch;$/;"	v	class:HTMLTableRowElement
@@ -289,6 +260,15 @@ charset		/^           attribute DOMString charset;$/;"	v	class:HTMLAnchorElement
 charset		/^           attribute DOMString charset;$/;"	v	class:HTMLDocument
 charset		/^           attribute DOMString charset;$/;"	v	class:HTMLLinkElement
 charset		/^           attribute DOMString charset;$/;"	v	class:HTMLScriptElement
+checkValidity		/^  boolean checkValidity();$/;"	m	class:HTMLButtonElement	signature:()
+checkValidity		/^  boolean checkValidity();$/;"	m	class:HTMLFieldSetElement	signature:()
+checkValidity		/^  boolean checkValidity();$/;"	m	class:HTMLFormElement	signature:()
+checkValidity		/^  boolean checkValidity();$/;"	m	class:HTMLInputElement	signature:()
+checkValidity		/^  boolean checkValidity();$/;"	m	class:HTMLKeygenElement	signature:()
+checkValidity		/^  boolean checkValidity();$/;"	m	class:HTMLObjectElement	signature:()
+checkValidity		/^  boolean checkValidity();$/;"	m	class:HTMLOutputElement	signature:()
+checkValidity		/^  boolean checkValidity();$/;"	m	class:HTMLSelectElement	signature:()
+checkValidity		/^  boolean checkValidity();$/;"	m	class:HTMLTextAreaElement	signature:()
 checked		/^           attribute boolean checked;$/;"	v	class:HTMLCommandElement
 checked		/^           attribute boolean checked;$/;"	v	class:HTMLInputElement
 checked		/^  readonly attribute boolean checked;$/;"	v	class:HTMLElement
@@ -298,6 +278,15 @@ cite		/^http://html5/#cite$/;"	v	class:cite	inherits:HTMLElement
 classList		/^  readonly attribute DOMTokenList classList;$/;"	v	class:HTMLElement
 className		/^           attribute DOMString className;$/;"	v	class:HTMLElement
 clear		/^           attribute DOMString clear;$/;"	v	class:HTMLBRElement
+clear		/^  void clear();$/;"	m	class:HTMLDocument	signature:()
+clearData		/^  void clearData(in optional DOMString format);$/;"	m	class:DataTransfer	signature:(<+DOMString:optional+>)
+clearInterval		/^  void clearInterval(in long handle);$/;"	m	class:WindowTimers	signature:(<+handle:long+>)
+clearRedo		/^  void clearRedo();$/;"	m	class:UndoManager	signature:()
+clearTimeout		/^  void clearTimeout(in long handle);$/;"	m	class:WindowTimers	signature:(<+handle:long+>)
+clearUndo		/^  void clearUndo();$/;"	m	class:UndoManager	signature:()
+click		/^  void click();$/;"	m	class:HTMLElement	signature:()
+close		/^  void close();$/;"	m	class:HTMLDocument	signature:()
+close		/^  void close();$/;"	m	class:Window	signature:()
 code		/^           attribute DOMString code;$/;"	v	class:HTMLAppletElement
 code		/^           attribute DOMString code;$/;"	v	class:HTMLObjectElement
 code		/^http://html5/#code$/;"	v	class:code	inherits:HTMLElement
@@ -305,6 +294,9 @@ codeBase		/^           attribute DOMString codeBase;$/;"	v	class:HTMLAppletEleme
 codeBase		/^           attribute DOMString codeBase;$/;"	v	class:HTMLObjectElement
 codeType		/^           attribute DOMString codeType;$/;"	v	class:HTMLObjectElement
 colgroup		/^http://html5/#colgroup$/;"	v	class:colgroup	inherits:HTMLTableColElement
+collapse		/^  void collapse(in Node parentNode, in long offset);$/;"	m	class:Selection	signature:(<+parentNode:Node+>, <+offset:long+>)
+collapseToEnd		/^  void collapseToEnd();$/;"	m	class:Selection	signature:()
+collapseToStart		/^  void collapseToStart();$/;"	m	class:Selection	signature:()
 color		/^           attribute DOMString color;$/;"	v	class:HTMLBaseFontElement
 color		/^           attribute DOMString color;$/;"	v	class:HTMLFontElement
 color		/^           attribute DOMString color;$/;"	v	class:HTMLHRElement
@@ -319,6 +311,8 @@ compact		/^           attribute boolean compact;$/;"	v	class:HTMLOListElement
 compact		/^           attribute boolean compact;$/;"	v	class:HTMLUListElement
 compatMode		/^  readonly attribute DOMString compatMode;$/;"	v	class:HTMLDocument
 complete		/^  readonly attribute boolean complete;$/;"	v	class:HTMLImageElement
+confirm		/^  boolean confirm(in DOMString message);$/;"	m	class:Window	signature:(<+message:DOMString+>)
+contains		/^  boolean contains(in DOMString token);$/;"	m	class:DOMTokenList	signature:(<+token:DOMString+>)
 content		/^           attribute DOMString content;$/;"	v	class:HTMLMetaElement
 contentDocument		/^  readonly attribute Document contentDocument;$/;"	v	class:HTMLFrameElement
 contentDocument		/^  readonly attribute Document contentDocument;$/;"	v	class:HTMLIFrameElement
@@ -332,14 +326,17 @@ controls		/^           attribute boolean controls;$/;"	v	class:HTMLMediaElement
 cookie		/^           attribute DOMString cookie;$/;"	v	class:HTMLDocument
 coords		/^           attribute DOMString coords;$/;"	v	class:HTMLAnchorElement
 coords		/^           attribute DOMString coords;$/;"	v	class:HTMLAreaElement
+createCaption		/^  HTMLElement createCaption();$/;"	m	class:HTMLTableElement	signature:()
+createHTMLDocument		/^  Document createHTMLDocument(in DOMString title);$/;"	m	class:DOMHTMLImplementation	signature:(<+title:DOMString+>)
+createTBody		/^  HTMLElement createTBody();$/;"	m	class:HTMLTableElement	signature:()
+createTFoot		/^  HTMLElement createTFoot();$/;"	m	class:HTMLTableElement	signature:()
+createTHead		/^  HTMLElement createTHead();$/;"	m	class:HTMLTableElement	signature:()
 currentSrc		/^  readonly attribute DOMString currentSrc;$/;"	v	class:HTMLMediaElement
 currentTime		/^           attribute float currentTime;$/;"	v	class:HTMLMediaElement
 customError		/^  readonly attribute boolean customError;$/;"	v	class:ValidityState
 data		/^           attribute DOMString data;$/;"	v	class:HTMLObjectElement
 data		/^  readonly attribute any data;$/;"	v	class:UndoManagerEvent
-data		/^  void initUndoManagerEvent(in DOMString typeArg, in boolean canBubbleArg, in boolean cancelableArg, in any dataArg);$/;"	m	class:UndoManagerEvent	signature:(<+typeArg:DOMString+>, <+canBubbleArg:boolean+>, <+cancelableArg:boolean+>, <+dataArg:any+>)
 dataTransfer		/^  readonly attribute DataTransfer dataTransfer;$/;"	v	class:DragEvent
-dataTransfer		/^  void initDragEvent(in DOMString typeArg, in boolean canBubbleArg, in boolean cancelableArg, in any dummyArg, in long detailArg, in long screenXArg, in long screenYArg, in long clientXArg, in long clientYArg, in boolean ctrlKeyArg, in boolean altKeyArg, in boolean shiftKeyArg, in boolean metaKeyArg, in unsigned short buttonArg, in EventTarget relatedTargetArg, in DataTransfer dataTransferArg);$/;"	m	class:DragEvent	signature:(<+typeArg:DOMString+>, <+canBubbleArg:boolean+>, <+cancelableArg:boolean+>, <+dummyArg:any+>, <+detailArg:long+>, <+screenXArg:long+>, <+screenYArg:long+>, <+clientXArg:long+>, <+clientYArg:long+>, <+ctrlKeyArg:boolean+>, <+altKeyArg:boolean+>, <+shiftKeyArg:boolean+>, <+metaKeyArg:boolean+>, <+short:unsigned+>, <+relatedTargetArg:EventTarget+>, <+dataTransferArg:DataTransfer+>)
 datalist		/^http://html5/#datalist$/;"	v	class:datalist	inherits:HTMLDataListElement
 dataset		/^  readonly attribute DOMStringMap dataset;$/;"	v	class:HTMLElement
 dateTime		/^           attribute DOMString dateTime;$/;"	v	class:HTMLModElement
@@ -353,19 +350,17 @@ defaultSelected		/^           attribute boolean defaultSelected;$/;"	v	class:HTM
 defaultValue		/^           attribute DOMString defaultValue;$/;"	v	class:HTMLInputElement
 defaultValue		/^           attribute DOMString defaultValue;$/;"	v	class:HTMLOutputElement
 defaultValue		/^           attribute DOMString defaultValue;$/;"	v	class:HTMLTextAreaElement
-defaultView		/^  Selection getSelection();$/;"	m	class:HTMLDocument	signature:()
 defaultView		/^  readonly attribute WindowProxy defaultView;$/;"	v	class:HTMLDocument
 defer		/^           attribute boolean defer;$/;"	v	class:HTMLScriptElement
 del		/^http://html5/#del$/;"	v	class:del	inherits:HTMLModElement
+deleteCaption		/^  void deleteCaption();$/;"	m	class:HTMLTableElement	signature:()
+deleteCell		/^  void deleteCell(in long index);$/;"	m	class:HTMLTableRowElement	signature:(<+index:long+>)
+deleteFromDocument		/^  void deleteFromDocument();$/;"	m	class:Selection	signature:()
+deleteRow		/^  void deleteRow(in long index);$/;"	m	class:HTMLTableElement	signature:(<+index:long+>)
+deleteRow		/^  void deleteRow(in long index);$/;"	m	class:HTMLTableSectionElement	signature:(<+index:long+>)
+deleteTFoot		/^  void deleteTFoot();$/;"	m	class:HTMLTableElement	signature:()
+deleteTHead		/^  void deleteTHead();$/;"	m	class:HTMLTableElement	signature:()
 designMode		/^           attribute DOMString designMode;$/;"	v	class:HTMLDocument
-designMode		/^  DOMString queryCommandValue(in DOMString commandId);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)
-designMode		/^  boolean execCommand(in DOMString commandId);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)
-designMode		/^  boolean execCommand(in DOMString commandId, in boolean showUI);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>, <+showUI:boolean+>)
-designMode		/^  boolean execCommand(in DOMString commandId, in boolean showUI, in DOMString value);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>, <+showUI:boolean+>, <+value:DOMString+>)
-designMode		/^  boolean queryCommandEnabled(in DOMString commandId);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)
-designMode		/^  boolean queryCommandIndeterm(in DOMString commandId);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)
-designMode		/^  boolean queryCommandState(in DOMString commandId);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)
-designMode		/^  boolean queryCommandSupported(in DOMString commandId);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)
 details		/^http://html5/#details$/;"	v	class:details	inherits:HTMLDetailsElement
 dfn		/^http://html5/#dfn$/;"	v	class:dfn	inherits:HTMLElement
 dir		/^           attribute DOMString dir;$/;"	v	class:HTMLDocument
@@ -383,6 +378,8 @@ disabled		/^           attribute boolean disabled;$/;"	v	class:HTMLSelectElement
 disabled		/^           attribute boolean disabled;$/;"	v	class:HTMLStyleElement
 disabled		/^           attribute boolean disabled;$/;"	v	class:HTMLTextAreaElement
 disabled		/^  readonly attribute boolean disabled;$/;"	v	class:HTMLElement
+dispatchFormChange		/^  void dispatchFormChange();$/;"	m	class:HTMLFormElement	signature:()
+dispatchFormInput		/^  void dispatchFormInput();$/;"	m	class:HTMLFormElement	signature:()
 div		/^http://html5/#div$/;"	v	class:div	inherits:HTMLDivElement
 dl		/^http://html5/#dl$/;"	v	class:dl	inherits:HTMLDListElement
 document		/^  readonly attribute Document document;$/;"	v	class:Window
@@ -398,9 +395,13 @@ em		/^http://html5/#em$/;"	v	class:em	inherits:HTMLElement
 embed		/^http://html5/#embed$/;"	v	class:embed	inherits:HTMLEmbedElement
 embeds		/^  readonly attribute HTMLCollection embeds;$/;"	v	class:HTMLDocument
 enctype		/^           attribute DOMString enctype;$/;"	v	class:HTMLFormElement
+end		/^  float end(in unsigned long index);$/;"	m	class:TimeRanges	signature:(<+long:unsigned+>)
 ended		/^  readonly attribute boolean ended;$/;"	v	class:HTMLMediaElement
 error		/^  readonly attribute MediaError error;$/;"	v	class:HTMLMediaElement
 event		/^           attribute DOMString event;$/;"	v	class:HTMLScriptElement
+execCommand		/^  boolean execCommand(in DOMString commandId);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)
+execCommand		/^  boolean execCommand(in DOMString commandId, in boolean showUI);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>, <+showUI:boolean+>)
+execCommand		/^  boolean execCommand(in DOMString commandId, in boolean showUI, in DOMString value);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>, <+showUI:boolean+>, <+value:DOMString+>)
 face		/^           attribute DOMString face;$/;"	v	class:HTMLBaseFontElement
 face		/^           attribute DOMString face;$/;"	v	class:HTMLFontElement
 fgColor		/^           attribute DOMString fgColor;$/;"	v	class:HTMLDocument
@@ -409,8 +410,8 @@ figcaption		/^http://html5/#figcaption$/;"	v	class:figcaption	inherits:HTMLEleme
 figure		/^http://html5/#figure$/;"	v	class:figure	inherits:HTMLElement
 files		/^  readonly attribute FileList files;$/;"	v	class:DataTransfer
 files		/^  readonly attribute FileList files;$/;"	v	class:HTMLInputElement
-files		/^  void addElement(in Element element);$/;"	m	class:DataTransfer	signature:(<+element:Element+>)
-files		/^  void setDragImage(in Element image, in long x, in long y);$/;"	m	class:DataTransfer	signature:(<+image:Element+>, <+x:long+>, <+y:long+>)
+focus		/^  void focus();$/;"	m	class:HTMLElement	signature:()
+focus		/^  void focus();$/;"	m	class:Window	signature:()
 focusNode		/^  readonly attribute Node focusNode;$/;"	v	class:Selection
 focusOffset		/^  readonly attribute long focusOffset;$/;"	v	class:Selection
 footer		/^http://html5/#footer$/;"	v	class:footer	inherits:HTMLElement
@@ -438,18 +439,25 @@ formNoValidate		/^           attribute boolean formNoValidate;$/;"	v	class:HTMLI
 formTarget		/^           attribute DOMString formTarget;$/;"	v	class:HTMLButtonElement
 formTarget		/^           attribute DOMString formTarget;$/;"	v	class:HTMLInputElement
 forms		/^  readonly attribute HTMLCollection forms;$/;"	v	class:HTMLDocument
+forward		/^  void forward();$/;"	m	class:History	signature:()
 frame		/^           attribute DOMString frame;$/;"	v	class:HTMLTableElement
 frameBorder		/^           attribute DOMString frameBorder;$/;"	v	class:HTMLFrameElement
 frameBorder		/^           attribute DOMString frameBorder;$/;"	v	class:HTMLIFrameElement
-frameElement		/^  WindowProxy open(in optional DOMString url, in optional DOMString target, in optional DOMString features, in optional DOMString replace);$/;"	m	class:Window	signature:(<+DOMString:optional+>, <+DOMString:optional+>, <+DOMString:optional+>, <+DOMString:optional+>)
-frameElement		/^  getter WindowProxy (in unsigned long index);$/;"	m	class:Window	signature:(<+long:unsigned+>)
-frameElement		/^  getter any (in DOMString name);$/;"	m	class:Window	signature:(<+name:DOMString+>)
 frameElement		/^  readonly attribute Element frameElement;$/;"	v	class:Window
 frames		/^   readonly attribute WindowProxy frames;$/;"	v	class:Window
+getContext		/^  object getContext(in DOMString contextId);$/;"	m	class:HTMLCanvasElement	signature:(<+contextId:DOMString+>)
+getData		/^  DOMString getData(in DOMString format);$/;"	m	class:DataTransfer	signature:(<+format:DOMString+>)
+getElementsByClassName		/^  NodeList getElementsByClassName(in DOMString classNames);$/;"	m	class:HTMLDocument	signature:(<+classNames:DOMString+>)
+getElementsByClassName		/^  NodeList getElementsByClassName(in DOMString classNames);$/;"	m	class:HTMLElement	signature:(<+classNames:DOMString+>)
+getElementsByName		/^  NodeList getElementsByName(in DOMString elementName);$/;"	m	class:HTMLDocument	signature:(<+elementName:DOMString+>)
+getRangeAt		/^  Range getRangeAt(in long index);$/;"	m	class:Selection	signature:(<+index:long+>)
+getSelection		/^  Selection getSelection();$/;"	m	class:HTMLDocument	signature:()
+getSelection		/^  Selection getSelection();$/;"	m	class:Window	signature:()
+go		/^  void go(in optional long delta);$/;"	m	class:History	signature:(<+long:optional+>)
+hasFocus		/^  boolean hasFocus();$/;"	m	class:HTMLDocument	signature:()
 hash		/^           attribute DOMString hash;$/;"	v	class:HTMLAnchorElement
 hash		/^           attribute DOMString hash;$/;"	v	class:HTMLAreaElement
 hash		/^           attribute DOMString hash;$/;"	v	class:Location
-hash		/^  DOMString resolveURL(in DOMString url);$/;"	m	class:Location	signature:(<+url:DOMString+>)
 head		/^  readonly attribute HTMLHeadElement head;$/;"	v	class:HTMLDocument
 head		/^http://html5/#head$/;"	v	class:head	inherits:HTMLHeadElement
 header		/^http://html5/#header$/;"	v	class:header	inherits:HTMLElement
@@ -464,9 +472,6 @@ height		/^           attribute DOMString height;$/;"	v	class:HTMLTableCellElemen
 height		/^           attribute DOMString height;$/;"	v	class:HTMLVideoElement
 hgroup		/^http://html5/#hgroup$/;"	v	class:hgroup	inherits:HTMLElement
 hidden		/^           attribute boolean hidden;$/;"	v	class:HTMLElement
-hidden		/^  void click();$/;"	m	class:HTMLElement	signature:()
-hidden		/^  void scrollIntoView();$/;"	m	class:HTMLElement	signature:()
-hidden		/^  void scrollIntoView(in boolean top);$/;"	m	class:HTMLElement	signature:(<+top:boolean+>)
 high		/^           attribute float high;$/;"	v	class:HTMLMeterElement
 history		/^  readonly attribute History history;$/;"	v	class:Window
 host		/^           attribute DOMString host;$/;"	v	class:HTMLAnchorElement
@@ -495,20 +500,19 @@ images		/^  readonly attribute HTMLCollection images;$/;"	v	class:HTMLDocument
 images		/^  readonly attribute HTMLCollection images;$/;"	v	class:HTMLMapElement
 indeterminate		/^           attribute boolean indeterminate;$/;"	v	class:HTMLInputElement
 index		/^  readonly attribute long index;$/;"	v	class:HTMLOptionElement
+initDragEvent		/^  void initDragEvent(in DOMString typeArg, in boolean canBubbleArg, in boolean cancelableArg, in any dummyArg, in long detailArg, in long screenXArg, in long screenYArg, in long clientXArg, in long clientYArg, in boolean ctrlKeyArg, in boolean altKeyArg, in boolean shiftKeyArg, in boolean metaKeyArg, in unsigned short buttonArg, in EventTarget relatedTargetArg, in DataTransfer dataTransferArg);$/;"	m	class:DragEvent	signature:(<+typeArg:DOMString+>, <+canBubbleArg:boolean+>, <+cancelableArg:boolean+>, <+dummyArg:any+>, <+detailArg:long+>, <+screenXArg:long+>, <+screenYArg:long+>, <+clientXArg:long+>, <+clientYArg:long+>, <+ctrlKeyArg:boolean+>, <+altKeyArg:boolean+>, <+shiftKeyArg:boolean+>, <+metaKeyArg:boolean+>, <+short:unsigned+>, <+relatedTargetArg:EventTarget+>, <+dataTransferArg:DataTransfer+>)
+initHashChangeEvent		/^  void initHashChangeEvent(in DOMString typeArg, in boolean canBubbleArg, in boolean cancelableArg, in DOMString oldURLArg, in DOMString newURLArg);$/;"	m	class:HashChangeEvent	signature:(<+typeArg:DOMString+>, <+canBubbleArg:boolean+>, <+cancelableArg:boolean+>, <+oldURLArg:DOMString+>, <+newURLArg:DOMString+>)
+initPageTransitionEvent		/^  void initPageTransitionEvent(in DOMString typeArg, in boolean canBubbleArg, in boolean cancelableArg, in any persistedArg);$/;"	m	class:PageTransitionEvent	signature:(<+typeArg:DOMString+>, <+canBubbleArg:boolean+>, <+cancelableArg:boolean+>, <+persistedArg:any+>)
+initPopStateEvent		/^  void initPopStateEvent(in DOMString typeArg, in boolean canBubbleArg, in boolean cancelableArg, in any stateArg);$/;"	m	class:PopStateEvent	signature:(<+typeArg:DOMString+>, <+canBubbleArg:boolean+>, <+cancelableArg:boolean+>, <+stateArg:any+>)
+initUndoManagerEvent		/^  void initUndoManagerEvent(in DOMString typeArg, in boolean canBubbleArg, in boolean cancelableArg, in any dataArg);$/;"	m	class:UndoManagerEvent	signature:(<+typeArg:DOMString+>, <+canBubbleArg:boolean+>, <+cancelableArg:boolean+>, <+dataArg:any+>)
 innerHTML		/^           attribute DOMString innerHTML;$/;"	v	class:HTMLDocument
 innerHTML		/^           attribute DOMString innerHTML;$/;"	v	class:HTMLElement
-innerHTML		/^  HTMLDocument open(in optional DOMString type, in optional DOMString replace);$/;"	m	class:HTMLDocument	signature:(<+DOMString:optional+>, <+DOMString:optional+>)
-innerHTML		/^  WindowProxy open(in DOMString url, in DOMString name, in DOMString features, in optional boolean replace);$/;"	m	class:HTMLDocument	signature:(<+url:DOMString+>, <+name:DOMString+>, <+features:DOMString+>, <+boolean:optional+>)
-innerHTML		/^  void close();$/;"	m	class:HTMLDocument	signature:()
-innerHTML		/^  void write(in DOMString... text);$/;"	m	class:HTMLDocument	signature:(<+text:DOMString+>)
-innerHTML		/^  void writeln(in DOMString... text);$/;"	m	class:HTMLDocument	signature:(<+text:DOMString+>)
 input		/^http://html5/#input$/;"	v	class:input	inherits:HTMLInputElement
+insertAdjacentHTML		/^  void insertAdjacentHTML(in DOMString position, in DOMString text);$/;"	m	class:HTMLElement	signature:(<+position:DOMString+>, <+text:DOMString+>)
+insertCell		/^  HTMLElement insertCell(in optional long index);$/;"	m	class:HTMLTableRowElement	signature:(<+long:optional+>)
+insertRow		/^  HTMLElement insertRow(in optional long index);$/;"	m	class:HTMLTableElement	signature:(<+long:optional+>)
+insertRow		/^  HTMLElement insertRow(in optional long index);$/;"	m	class:HTMLTableSectionElement	signature:(<+long:optional+>)
 isCollapsed		/^  readonly attribute boolean isCollapsed;$/;"	v	class:Selection
-isCollapsed		/^  void collapse(in Node parentNode, in long offset);$/;"	m	class:Selection	signature:(<+parentNode:Node+>, <+offset:long+>)
-isCollapsed		/^  void collapseToEnd();$/;"	m	class:Selection	signature:()
-isCollapsed		/^  void collapseToStart();$/;"	m	class:Selection	signature:()
-isCollapsed		/^  void deleteFromDocument();$/;"	m	class:Selection	signature:()
-isCollapsed		/^  void selectAllChildren(in Node parentNode);$/;"	m	class:Selection	signature:(<+parentNode:Node+>)
 isContentEditable		/^  readonly attribute boolean isContentEditable;$/;"	v	class:HTMLElement
 isMap		/^           attribute boolean isMap;$/;"	v	class:HTMLImageElement
 kbd		/^http://html5/#kbd$/;"	v	class:kbd	inherits:HTMLElement
@@ -528,31 +532,18 @@ labels		/^  readonly attribute NodeList labels;$/;"	v	class:HTMLOutputElement
 labels		/^  readonly attribute NodeList labels;$/;"	v	class:HTMLProgressElement
 labels		/^  readonly attribute NodeList labels;$/;"	v	class:HTMLSelectElement
 labels		/^  readonly attribute NodeList labels;$/;"	v	class:HTMLTextAreaElement
-labels		/^  void select();$/;"	m	class:HTMLInputElement	signature:()
-labels		/^  void select();$/;"	m	class:HTMLTextAreaElement	signature:()
-labels		/^  void setSelectionRange(in unsigned long start, in unsigned long end);$/;"	m	class:HTMLInputElement	signature:(<+long:unsigned+>, <+long:unsigned+>)
-labels		/^  void setSelectionRange(in unsigned long start, in unsigned long end);$/;"	m	class:HTMLTextAreaElement	signature:(<+long:unsigned+>, <+long:unsigned+>)
 lang		/^           attribute DOMString lang;$/;"	v	class:HTMLElement
 lastModified		/^  readonly attribute DOMString lastModified;$/;"	v	class:HTMLDocument
 legend		/^http://html5/#legend$/;"	v	class:legend	inherits:HTMLLegendElement
-length		/^  boolean checkValidity();$/;"	m	class:HTMLFormElement	signature:()
 length		/^  readonly attribute long length;$/;"	v	class:HTMLFormElement
 length		/^  readonly attribute long length;$/;"	v	class:History
-length		/^  void back();$/;"	m	class:History	signature:()
-length		/^  void dispatchFormChange();$/;"	m	class:HTMLFormElement	signature:()
-length		/^  void dispatchFormInput();$/;"	m	class:HTMLFormElement	signature:()
-length		/^  void forward();$/;"	m	class:History	signature:()
-length		/^  void go(in optional long delta);$/;"	m	class:History	signature:(<+long:optional+>)
-length		/^  void pushState(in any data, in DOMString title, in optional DOMString url);$/;"	m	class:History	signature:(<+data:any+>, <+title:DOMString+>, <+DOMString:optional+>)
-length		/^  void replaceState(in any data, in DOMString title, in optional DOMString url);$/;"	m	class:History	signature:(<+data:any+>, <+title:DOMString+>, <+DOMString:optional+>)
-length		/^  void reset();$/;"	m	class:HTMLFormElement	signature:()
-length		/^  void submit();$/;"	m	class:HTMLFormElement	signature:()
 li		/^http://html5/#li$/;"	v	class:li	inherits:HTMLLIElement
 link		/^           attribute DOMString link;$/;"	v	class:HTMLBodyElement
 link		/^http://html5/#link$/;"	v	class:link	inherits:HTMLLinkElement
 linkColor		/^           attribute DOMString linkColor;$/;"	v	class:HTMLDocument
 links		/^  readonly attribute HTMLCollection links;$/;"	v	class:HTMLDocument
 list		/^  readonly attribute HTMLElement list;$/;"	v	class:HTMLInputElement
+load		/^  void load();$/;"	m	class:HTMLMediaElement	signature:()
 location		/^   readonly attribute Location location;$/;"	v	class:HTMLDocument
 location		/^   readonly attribute Location location;$/;"	v	class:Window
 locationbar		/^   readonly attribute BarProp locationbar;$/;"	v	class:Window
@@ -561,8 +552,6 @@ longDesc		/^           attribute DOMString longDesc;$/;"	v	class:HTMLIFrameEleme
 longDesc		/^           attribute DOMString longDesc;$/;"	v	class:HTMLImageElement
 loop		/^           attribute boolean loop;$/;"	v	class:HTMLMediaElement
 loop		/^           attribute long loop;$/;"	v	class:HTMLMarqueeElement
-loop		/^  void pause();$/;"	m	class:HTMLMediaElement	signature:()
-loop		/^  void play();$/;"	m	class:HTMLMediaElement	signature:()
 low		/^           attribute float low;$/;"	v	class:HTMLMeterElement
 map		/^http://html5/#map$/;"	v	class:map	inherits:HTMLMapElement
 marginHeight		/^           attribute DOMString marginHeight;$/;"	v	class:HTMLFrameElement
@@ -613,7 +602,6 @@ name		/^           attribute DOMString name;$/;"	v	class:Window
 nav		/^http://html5/#nav$/;"	v	class:nav	inherits:HTMLElement
 navigator		/^  readonly attribute Navigator navigator; $/;"	v	class:Window
 newURL		/^  readonly attribute any newURL;$/;"	v	class:HashChangeEvent
-newURL		/^  void initHashChangeEvent(in DOMString typeArg, in boolean canBubbleArg, in boolean cancelableArg, in DOMString oldURLArg, in DOMString newURLArg);$/;"	m	class:HashChangeEvent	signature:(<+typeArg:DOMString+>, <+canBubbleArg:boolean+>, <+cancelableArg:boolean+>, <+oldURLArg:DOMString+>, <+newURLArg:DOMString+>)
 noHref		/^           attribute boolean noHref;$/;"	v	class:HTMLAreaElement
 noResize		/^           attribute boolean noResize;$/;"	v	class:HTMLFrameElement
 noShade		/^           attribute boolean noShade;$/;"	v	class:HTMLHRElement
@@ -825,8 +813,6 @@ onstalled		/^           attribute Function onstalled;$/;"	v	class:HTMLDocument
 onstalled		/^           attribute Function onstalled;$/;"	v	class:HTMLElement
 onstalled		/^           attribute Function onstalled;$/;"	v	class:Window
 onstart		/^           attribute Function onstart;$/;"	v	class:HTMLMarqueeElement
-onstart		/^  void start();$/;"	m	class:HTMLMarqueeElement	signature:()
-onstart		/^  void stop();$/;"	m	class:HTMLMarqueeElement	signature:()
 onstorage		/^           attribute Function onstorage;$/;"	v	class:HTMLBodyElement
 onstorage		/^           attribute Function onstorage;$/;"	v	class:HTMLFrameSetElement
 onstorage		/^           attribute Function onstorage;$/;"	v	class:Window
@@ -853,16 +839,15 @@ onwaiting		/^           attribute Function onwaiting;$/;"	v	class:HTMLDocument
 onwaiting		/^           attribute Function onwaiting;$/;"	v	class:HTMLElement
 onwaiting		/^           attribute Function onwaiting;$/;"	v	class:Window
 open		/^           attribute boolean open;$/;"	v	class:HTMLDetailsElement
+open		/^  HTMLDocument open(in optional DOMString type, in optional DOMString replace);$/;"	m	class:HTMLDocument	signature:(<+DOMString:optional+>, <+DOMString:optional+>)
+open		/^  WindowProxy open(in DOMString url, in DOMString name, in DOMString features, in optional boolean replace);$/;"	m	class:HTMLDocument	signature:(<+url:DOMString+>, <+name:DOMString+>, <+features:DOMString+>, <+boolean:optional+>)
+open		/^  WindowProxy open(in optional DOMString url, in optional DOMString target, in optional DOMString features, in optional DOMString replace);$/;"	m	class:Window	signature:(<+DOMString:optional+>, <+DOMString:optional+>, <+DOMString:optional+>, <+DOMString:optional+>)
 opener		/^   readonly attribute WindowProxy opener;$/;"	v	class:Window
 optgroup		/^http://html5/#optgroup$/;"	v	class:optgroup	inherits:HTMLOptGroupElement
 optimum		/^           attribute float optimum;$/;"	v	class:HTMLMeterElement
 options		/^  readonly attribute HTMLCollection options;$/;"	v	class:HTMLDataListElement
 options		/^  readonly attribute HTMLOptionsCollection options;$/;"	v	class:HTMLSelectElement
-options		/^  void add(in HTMLElement element, in long before);$/;"	m	class:HTMLSelectElement	signature:(<+element:HTMLElement+>, <+before:long+>)
-options		/^  void add(in HTMLElement element, in optional HTMLElement before);$/;"	m	class:HTMLSelectElement	signature:(<+element:HTMLElement+>, <+HTMLElement:optional+>)
-options		/^  void remove(in long index);$/;"	m	class:HTMLSelectElement	signature:(<+index:long+>)
 outerHTML		/^           attribute DOMString outerHTML;$/;"	v	class:HTMLElement
-outerHTML		/^  void insertAdjacentHTML(in DOMString position, in DOMString text);$/;"	m	class:HTMLElement	signature:(<+position:DOMString+>, <+text:DOMString+>)
 output		/^http://html5/#output$/;"	v	class:output	inherits:HTMLOutputElement
 p		/^http://html5/#p$/;"	v	class:p	inherits:HTMLParagraphElement
 param		/^http://html5/#param$/;"	v	class:param	inherits:HTMLParamElement
@@ -872,13 +857,14 @@ pathname		/^           attribute DOMString pathname;$/;"	v	class:HTMLAreaElement
 pathname		/^           attribute DOMString pathname;$/;"	v	class:Location
 pattern		/^           attribute DOMString pattern;$/;"	v	class:HTMLInputElement
 patternMismatch		/^  readonly attribute boolean patternMismatch;$/;"	v	class:ValidityState
+pause		/^  void pause();$/;"	m	class:HTMLMediaElement	signature:()
 paused		/^  readonly attribute boolean paused;$/;"	v	class:HTMLMediaElement
 persisted		/^  readonly attribute any persisted;$/;"	v	class:PageTransitionEvent
-persisted		/^  void initPageTransitionEvent(in DOMString typeArg, in boolean canBubbleArg, in boolean cancelableArg, in any persistedArg);$/;"	m	class:PageTransitionEvent	signature:(<+typeArg:DOMString+>, <+canBubbleArg:boolean+>, <+cancelableArg:boolean+>, <+persistedArg:any+>)
 personalbar		/^   readonly attribute BarProp personalbar;$/;"	v	class:Window
 placeholder		/^           attribute DOMString placeholder;$/;"	v	class:HTMLInputElement
 placeholder		/^           attribute DOMString placeholder;$/;"	v	class:HTMLTextAreaElement
 platform		/^  readonly attribute DOMString platform;$/;"	v	class:NavigatorID
+play		/^  void play();$/;"	m	class:HTMLMediaElement	signature:()
 playbackRate		/^           attribute float playbackRate;$/;"	v	class:HTMLMediaElement
 played		/^  readonly attribute TimeRanges played;$/;"	v	class:HTMLMediaElement
 plugins		/^  readonly attribute HTMLCollection plugins;$/;"	v	class:HTMLDocument
@@ -889,46 +875,57 @@ position		/^  readonly attribute float position;$/;"	v	class:HTMLProgressElement
 poster		/^           attribute DOMString poster;$/;"	v	class:HTMLVideoElement
 pre		/^http://html5/#pre$/;"	v	class:pre	inherits:HTMLPreElement
 preload		/^           attribute DOMString preload;$/;"	v	class:HTMLMediaElement
+print		/^  void print();$/;"	m	class:Window	signature:()
 progress		/^http://html5/#progress$/;"	v	class:progress	inherits:HTMLProgressElement
+prompt		/^  DOMString prompt(in DOMString message, in optional DOMString default);$/;"	m	class:Window	signature:(<+message:DOMString+>, <+DOMString:optional+>)
 protocol		/^           attribute DOMString protocol;$/;"	v	class:HTMLAnchorElement
 protocol		/^           attribute DOMString protocol;$/;"	v	class:HTMLAreaElement
 protocol		/^           attribute DOMString protocol;$/;"	v	class:Location
 pubDate		/^           attribute boolean pubDate;$/;"	v	class:HTMLTimeElement
+pushState		/^  void pushState(in any data, in DOMString title, in optional DOMString url);$/;"	m	class:History	signature:(<+data:any+>, <+title:DOMString+>, <+DOMString:optional+>)
 q		/^http://html5/#q$/;"	v	class:q	inherits:HTMLQuoteElement
+queryCommandEnabled		/^  boolean queryCommandEnabled(in DOMString commandId);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)
+queryCommandIndeterm		/^  boolean queryCommandIndeterm(in DOMString commandId);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)
+queryCommandState		/^  boolean queryCommandState(in DOMString commandId);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)
+queryCommandSupported		/^  boolean queryCommandSupported(in DOMString commandId);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)
+queryCommandValue		/^  DOMString queryCommandValue(in DOMString commandId);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)
 radiogroup		/^           attribute DOMString radiogroup;$/;"	v	class:HTMLCommandElement
-rangeCount		/^  Range getRangeAt(in long index);$/;"	m	class:Selection	signature:(<+index:long+>)
 rangeCount		/^  readonly attribute long rangeCount;$/;"	v	class:Selection
-rangeCount		/^  stringifier DOMString ();$/;"	m	class:Selection	signature:()
-rangeCount		/^  void addRange(in Range range);$/;"	m	class:Selection	signature:(<+range:Range+>)
-rangeCount		/^  void removeAllRanges();$/;"	m	class:Selection	signature:()
-rangeCount		/^  void removeRange(in Range range);$/;"	m	class:Selection	signature:(<+range:Range+>)
 rangeOverflow		/^  readonly attribute boolean rangeOverflow;$/;"	v	class:ValidityState
 rangeUnderflow		/^  readonly attribute boolean rangeUnderflow;$/;"	v	class:ValidityState
 readOnly		/^           attribute boolean readOnly;$/;"	v	class:HTMLInputElement
 readOnly		/^           attribute boolean readOnly;$/;"	v	class:HTMLTextAreaElement
-readyState		/^  getter any (in DOMString name);$/;"	m	class:HTMLDocument	signature:(<+name:DOMString+>)
 readyState		/^  readonly attribute DOMString readyState;$/;"	v	class:HTMLDocument
 referrer		/^  readonly attribute DOMString referrer;$/;"	v	class:HTMLDocument
+registerContentHandler		/^  void registerContentHandler(in DOMString mimeType, in DOMString url, in DOMString title);$/;"	m	class:NavigatorAbilities	signature:(<+mimeType:DOMString+>, <+url:DOMString+>, <+title:DOMString+>)
+registerProtocolHandler		/^  void registerProtocolHandler(in DOMString scheme, in DOMString url, in DOMString title);$/;"	m	class:NavigatorAbilities	signature:(<+scheme:DOMString+>, <+url:DOMString+>, <+title:DOMString+>)
 rel		/^           attribute DOMString rel;$/;"	v	class:HTMLAnchorElement
 rel		/^           attribute DOMString rel;$/;"	v	class:HTMLAreaElement
 rel		/^           attribute DOMString rel;$/;"	v	class:HTMLLinkElement
 relList		/^  readonly attribute DOMTokenList relList;$/;"	v	class:HTMLAnchorElement
 relList		/^  readonly attribute DOMTokenList relList;$/;"	v	class:HTMLAreaElement
 relList		/^  readonly attribute DOMTokenList relList;$/;"	v	class:HTMLLinkElement
+reload		/^  void reload();$/;"	m	class:Location	signature:()
+remove		/^  void remove(in DOMString token);$/;"	m	class:DOMTokenList	signature:(<+token:DOMString+>)
+remove		/^  void remove(in long index);$/;"	m	class:HTMLOptionsCollection	signature:(<+index:long+>)
+remove		/^  void remove(in long index);$/;"	m	class:HTMLSelectElement	signature:(<+index:long+>)
+remove		/^  void remove(in unsigned long index);$/;"	m	class:UndoManager	signature:(<+long:unsigned+>)
+removeAllRanges		/^  void removeAllRanges();$/;"	m	class:Selection	signature:()
+removeRange		/^  void removeRange(in Range range);$/;"	m	class:Selection	signature:(<+range:Range+>)
+replace		/^  void replace(in DOMString url);$/;"	m	class:Location	signature:(<+url:DOMString+>)
+replaceState		/^  void replaceState(in any data, in DOMString title, in optional DOMString url);$/;"	m	class:History	signature:(<+data:any+>, <+title:DOMString+>, <+DOMString:optional+>)
 required		/^           attribute boolean required;$/;"	v	class:HTMLInputElement
 required		/^           attribute boolean required;$/;"	v	class:HTMLTextAreaElement
+reset		/^  void reset();$/;"	m	class:HTMLFormElement	signature:()
+resolveURL		/^  DOMString resolveURL(in DOMString url);$/;"	m	class:Location	signature:(<+url:DOMString+>)
 returnValue		/^           attribute DOMString returnValue;$/;"	v	class:BeforeUnloadEvent
 rev		/^           attribute DOMString rev;$/;"	v	class:HTMLAnchorElement
 rev		/^           attribute DOMString rev;$/;"	v	class:HTMLLinkElement
 reversed		/^           attribute boolean reversed;$/;"	v	class:HTMLOListElement
 rowIndex		/^  readonly attribute long rowIndex;$/;"	v	class:HTMLTableRowElement
 rows		/^           attribute DOMString rows;$/;"	v	class:HTMLFrameSetElement
-rows		/^  HTMLElement insertRow(in optional long index);$/;"	m	class:HTMLTableElement	signature:(<+long:optional+>)
-rows		/^  HTMLElement insertRow(in optional long index);$/;"	m	class:HTMLTableSectionElement	signature:(<+long:optional+>)
 rows		/^  readonly attribute HTMLCollection rows;$/;"	v	class:HTMLTableElement
 rows		/^  readonly attribute HTMLCollection rows;$/;"	v	class:HTMLTableSectionElement
-rows		/^  void deleteRow(in long index);$/;"	m	class:HTMLTableElement	signature:(<+index:long+>)
-rows		/^  void deleteRow(in long index);$/;"	m	class:HTMLTableSectionElement	signature:(<+index:long+>)
 rp		/^http://html5/#rp$/;"	v	class:rp	inherits:HTMLElement
 rt		/^http://html5/#rt$/;"	v	class:rt	inherits:HTMLElement
 ruby		/^http://html5/#ruby$/;"	v	class:ruby	inherits:HTMLElement
@@ -939,9 +936,9 @@ scheme		/^           attribute DOMString scheme;$/;"	v	class:HTMLMetaElement
 scope		/^           attribute DOMString scope;$/;"	v	class:HTMLTableHeaderCellElement
 scoped		/^           attribute boolean scoped;$/;"	v	class:HTMLStyleElement
 script		/^http://html5/#script$/;"	v	class:script	inherits:HTMLScriptElement
-scripts		/^  NodeList getElementsByClassName(in DOMString classNames);$/;"	m	class:HTMLDocument	signature:(<+classNames:DOMString+>)
-scripts		/^  NodeList getElementsByName(in DOMString elementName);$/;"	m	class:HTMLDocument	signature:(<+elementName:DOMString+>)
 scripts		/^  readonly attribute HTMLCollection scripts;$/;"	v	class:HTMLDocument
+scrollIntoView		/^  void scrollIntoView();$/;"	m	class:HTMLElement	signature:()
+scrollIntoView		/^  void scrollIntoView(in boolean top);$/;"	m	class:HTMLElement	signature:(<+top:boolean+>)
 scrollbars		/^   readonly attribute BarProp scrollbars;$/;"	v	class:Window
 scrolling		/^           attribute DOMString scrolling;$/;"	v	class:HTMLFrameElement
 scrolling		/^           attribute DOMString scrolling;$/;"	v	class:HTMLIFrameElement
@@ -953,14 +950,32 @@ section		/^http://html5/#section$/;"	v	class:section	inherits:HTMLElement
 sectionRowIndex		/^  readonly attribute long sectionRowIndex;$/;"	v	class:HTMLTableRowElement
 seekable		/^  readonly attribute TimeRanges seekable;$/;"	v	class:HTMLMediaElement
 seeking		/^  readonly attribute boolean seeking;$/;"	v	class:HTMLMediaElement
+select		/^  void select();$/;"	m	class:HTMLInputElement	signature:()
+select		/^  void select();$/;"	m	class:HTMLTextAreaElement	signature:()
 select		/^http://html5/#select$/;"	v	class:select	inherits:HTMLSelectElement
+selectAllChildren		/^  void selectAllChildren(in Node parentNode);$/;"	m	class:Selection	signature:(<+parentNode:Node+>)
 selected		/^           attribute boolean selected;$/;"	v	class:HTMLOptionElement
 selectedIndex		/^           attribute long selectedIndex;$/;"	v	class:HTMLSelectElement
 selectedOption		/^  readonly attribute HTMLOptionElement selectedOption;$/;"	v	class:HTMLInputElement
 selectedOptions		/^  readonly attribute HTMLCollection selectedOptions;$/;"	v	class:HTMLSelectElement
 self		/^  readonly attribute WindowProxy self;$/;"	v	class:Window
+setCustomValidity		/^  void setCustomValidity(in DOMString error);$/;"	m	class:HTMLButtonElement	signature:(<+error:DOMString+>)
+setCustomValidity		/^  void setCustomValidity(in DOMString error);$/;"	m	class:HTMLFieldSetElement	signature:(<+error:DOMString+>)
+setCustomValidity		/^  void setCustomValidity(in DOMString error);$/;"	m	class:HTMLInputElement	signature:(<+error:DOMString+>)
+setCustomValidity		/^  void setCustomValidity(in DOMString error);$/;"	m	class:HTMLKeygenElement	signature:(<+error:DOMString+>)
+setCustomValidity		/^  void setCustomValidity(in DOMString error);$/;"	m	class:HTMLObjectElement	signature:(<+error:DOMString+>)
+setCustomValidity		/^  void setCustomValidity(in DOMString error);$/;"	m	class:HTMLOutputElement	signature:(<+error:DOMString+>)
+setCustomValidity		/^  void setCustomValidity(in DOMString error);$/;"	m	class:HTMLSelectElement	signature:(<+error:DOMString+>)
+setCustomValidity		/^  void setCustomValidity(in DOMString error);$/;"	m	class:HTMLTextAreaElement	signature:(<+error:DOMString+>)
+setData		/^  void setData(in DOMString format, in DOMString data);$/;"	m	class:DataTransfer	signature:(<+format:DOMString+>, <+data:DOMString+>)
+setDragImage		/^  void setDragImage(in Element image, in long x, in long y);$/;"	m	class:DataTransfer	signature:(<+image:Element+>, <+x:long+>, <+y:long+>)
+setInterval		/^  long setInterval(in any handler, in optional any timeout, in any... args);$/;"	m	class:WindowTimers	signature:(<+handler:any+>, <+any:optional+>, <+args:any+>)
+setSelectionRange		/^  void setSelectionRange(in unsigned long start, in unsigned long end);$/;"	m	class:HTMLInputElement	signature:(<+long:unsigned+>, <+long:unsigned+>)
+setSelectionRange		/^  void setSelectionRange(in unsigned long start, in unsigned long end);$/;"	m	class:HTMLTextAreaElement	signature:(<+long:unsigned+>, <+long:unsigned+>)
+setTimeout		/^  long setTimeout(in any handler, in optional any timeout, in any... args);$/;"	m	class:WindowTimers	signature:(<+handler:any+>, <+any:optional+>, <+args:any+>)
 shape		/^           attribute DOMString shape;$/;"	v	class:HTMLAnchorElement
 shape		/^           attribute DOMString shape;$/;"	v	class:HTMLAreaElement
+showModalDialog		/^  any showModalDialog(in DOMString url, in optional any argument);$/;"	m	class:Window	signature:(<+url:DOMString+>, <+any:optional+>)
 size		/^           attribute DOMString size; $/;"	v	class:HTMLFontElement
 size		/^           attribute DOMString size;$/;"	v	class:HTMLHRElement
 size		/^           attribute long size; $/;"	v	class:HTMLBaseFontElement
@@ -980,29 +995,30 @@ src		/^           attribute DOMString src;$/;"	v	class:HTMLSourceElement
 srcdoc		/^           attribute DOMString srcdoc;$/;"	v	class:HTMLIFrameElement
 standby		/^           attribute DOMString standby;$/;"	v	class:HTMLObjectElement
 start		/^           attribute long start;$/;"	v	class:HTMLOListElement
+start		/^  float start(in unsigned long index);$/;"	m	class:TimeRanges	signature:(<+long:unsigned+>)
+start		/^  void start();$/;"	m	class:HTMLMarqueeElement	signature:()
 startTime		/^  readonly attribute float startTime;$/;"	v	class:HTMLMediaElement
 state		/^  readonly attribute any state;$/;"	v	class:PopStateEvent
-state		/^  void initPopStateEvent(in DOMString typeArg, in boolean canBubbleArg, in boolean cancelableArg, in any stateArg);$/;"	m	class:PopStateEvent	signature:(<+typeArg:DOMString+>, <+canBubbleArg:boolean+>, <+cancelableArg:boolean+>, <+stateArg:any+>)
 statusbar		/^   readonly attribute BarProp statusbar;$/;"	v	class:Window
 step		/^           attribute DOMString step;$/;"	v	class:HTMLInputElement
+stepDown		/^  void stepDown(in optional long n);$/;"	m	class:HTMLInputElement	signature:(<+long:optional+>)
 stepMismatch		/^  readonly attribute boolean stepMismatch;$/;"	v	class:ValidityState
+stepUp		/^  void stepUp(in optional long n);$/;"	m	class:HTMLInputElement	signature:(<+long:optional+>)
+stop		/^  void stop();$/;"	m	class:HTMLMarqueeElement	signature:()
+stop		/^  void stop();$/;"	m	class:Window	signature:()
 strong		/^http://html5/#strong$/;"	v	class:strong	inherits:HTMLElement
 style		/^  readonly attribute CSSStyleDeclaration style;$/;"	v	class:HTMLElement
 style		/^http://html5/#style$/;"	v	class:style	inherits:HTMLStyleElement
+submit		/^  void submit();$/;"	m	class:HTMLFormElement	signature:()
 summary		/^           attribute DOMString summary;$/;"	v	class:HTMLTableElement
 summary		/^http://html5/#summary$/;"	v	class:summary	inherits:HTMLElement
-tBodies		/^  HTMLElement createTBody();$/;"	m	class:HTMLTableElement	signature:()
+swapCache		/^  void swapCache();$/;"	m	class:ApplicationCache	signature:()
 tBodies		/^  readonly attribute HTMLCollection tBodies;$/;"	v	class:HTMLTableElement
 tFoot		/^           attribute HTMLTableSectionElement tFoot;$/;"	v	class:HTMLTableElement
-tFoot		/^  HTMLElement createTFoot();$/;"	m	class:HTMLTableElement	signature:()
-tFoot		/^  void deleteTFoot();$/;"	m	class:HTMLTableElement	signature:()
 tHead		/^           attribute HTMLTableSectionElement tHead;$/;"	v	class:HTMLTableElement
-tHead		/^  HTMLElement createTHead();$/;"	m	class:HTMLTableElement	signature:()
-tHead		/^  void deleteTHead();$/;"	m	class:HTMLTableElement	signature:()
 tabIndex		/^           attribute long tabIndex;$/;"	v	class:HTMLElement
-tabIndex		/^  void blur();$/;"	m	class:HTMLElement	signature:()
-tabIndex		/^  void focus();$/;"	m	class:HTMLElement	signature:()
 table		/^http://html5/#table$/;"	v	class:table	inherits:HTMLTableElement
+tags		/^  HTMLAllCollection tags(in DOMString tagName);$/;"	m	class:HTMLAllCollection	signature:(<+tagName:DOMString+>)
 target		/^           attribute DOMString target;$/;"	v	class:HTMLAnchorElement
 target		/^           attribute DOMString target;$/;"	v	class:HTMLAreaElement
 target		/^           attribute DOMString target;$/;"	v	class:HTMLBaseElement
@@ -1021,12 +1037,10 @@ time		/^http://html5/#time$/;"	v	class:time	inherits:HTMLTimeElement
 title		/^           attribute DOMString title;$/;"	v	class:HTMLDocument
 title		/^           attribute DOMString title;$/;"	v	class:HTMLElement
 title		/^http://html5/#title$/;"	v	class:title	inherits:HTMLTitleElement
+toDataURL		/^  DOMString toDataURL(in optional DOMString type, in any... args);$/;"	m	class:HTMLCanvasElement	signature:(<+DOMString:optional+>, <+args:any+>)
+toggle		/^  boolean toggle(in DOMString token);$/;"	m	class:DOMTokenList	signature:(<+token:DOMString+>)
 tooLong		/^  readonly attribute boolean tooLong;$/;"	v	class:ValidityState
 toolbar		/^   readonly attribute BarProp toolbar;$/;"	v	class:Window
-toolbar		/^  void blur();$/;"	m	class:Window	signature:()
-toolbar		/^  void close();$/;"	m	class:Window	signature:()
-toolbar		/^  void focus();$/;"	m	class:Window	signature:()
-toolbar		/^  void stop();$/;"	m	class:Window	signature:()
 top		/^  readonly attribute WindowProxy top;$/;"	v	class:Window
 tr		/^http://html5/#tr$/;"	v	class:tr	inherits:HTMLTableRowElement
 trueSpeed		/^           attribute DOMString trueSpeed;$/;"	v	class:HTMLMarqueeElement
@@ -1052,13 +1066,10 @@ type		/^  readonly attribute DOMString type;$/;"	v	class:HTMLOutputElement
 type		/^  readonly attribute DOMString type;$/;"	v	class:HTMLSelectElement
 type		/^  readonly attribute DOMString type;$/;"	v	class:HTMLTextAreaElement
 typeMismatch		/^  readonly attribute boolean typeMismatch;$/;"	v	class:ValidityState
-types		/^  DOMString getData(in DOMString format);$/;"	m	class:DataTransfer	signature:(<+format:DOMString+>)
 types		/^  readonly attribute DOMStringList types;$/;"	v	class:DataTransfer
-types		/^  void clearData(in optional DOMString format);$/;"	m	class:DataTransfer	signature:(<+DOMString:optional+>)
-types		/^  void setData(in DOMString format, in DOMString data);$/;"	m	class:DataTransfer	signature:(<+format:DOMString+>, <+data:DOMString+>)
 ul		/^http://html5/#ul$/;"	v	class:ul	inherits:HTMLUListElement
-undoManager		/^  Selection getSelection();$/;"	m	class:Window	signature:()
 undoManager		/^  readonly attribute UndoManager undoManager;$/;"	v	class:Window
+update		/^  void update();$/;"	m	class:ApplicationCache	signature:()
 useMap		/^           attribute DOMString useMap;$/;"	v	class:HTMLImageElement
 useMap		/^           attribute DOMString useMap;$/;"	v	class:HTMLInputElement
 useMap		/^           attribute DOMString useMap;$/;"	v	class:HTMLObjectElement
@@ -1069,14 +1080,6 @@ vAlign		/^           attribute DOMString vAlign;$/;"	v	class:HTMLTableRowElement
 vAlign		/^           attribute DOMString vAlign;$/;"	v	class:HTMLTableSectionElement
 vLink		/^           attribute DOMString vLink;$/;"	v	class:HTMLBodyElement
 valid		/^  readonly attribute boolean valid;$/;"	v	class:ValidityState
-validationMessage		/^  boolean checkValidity();$/;"	m	class:HTMLButtonElement	signature:()
-validationMessage		/^  boolean checkValidity();$/;"	m	class:HTMLFieldSetElement	signature:()
-validationMessage		/^  boolean checkValidity();$/;"	m	class:HTMLInputElement	signature:()
-validationMessage		/^  boolean checkValidity();$/;"	m	class:HTMLKeygenElement	signature:()
-validationMessage		/^  boolean checkValidity();$/;"	m	class:HTMLObjectElement	signature:()
-validationMessage		/^  boolean checkValidity();$/;"	m	class:HTMLOutputElement	signature:()
-validationMessage		/^  boolean checkValidity();$/;"	m	class:HTMLSelectElement	signature:()
-validationMessage		/^  boolean checkValidity();$/;"	m	class:HTMLTextAreaElement	signature:()
 validationMessage		/^  readonly attribute DOMString validationMessage;$/;"	v	class:HTMLButtonElement
 validationMessage		/^  readonly attribute DOMString validationMessage;$/;"	v	class:HTMLFieldSetElement
 validationMessage		/^  readonly attribute DOMString validationMessage;$/;"	v	class:HTMLInputElement
@@ -1085,14 +1088,6 @@ validationMessage		/^  readonly attribute DOMString validationMessage;$/;"	v	cla
 validationMessage		/^  readonly attribute DOMString validationMessage;$/;"	v	class:HTMLOutputElement
 validationMessage		/^  readonly attribute DOMString validationMessage;$/;"	v	class:HTMLSelectElement
 validationMessage		/^  readonly attribute DOMString validationMessage;$/;"	v	class:HTMLTextAreaElement
-validationMessage		/^  void setCustomValidity(in DOMString error);$/;"	m	class:HTMLButtonElement	signature:(<+error:DOMString+>)
-validationMessage		/^  void setCustomValidity(in DOMString error);$/;"	m	class:HTMLFieldSetElement	signature:(<+error:DOMString+>)
-validationMessage		/^  void setCustomValidity(in DOMString error);$/;"	m	class:HTMLInputElement	signature:(<+error:DOMString+>)
-validationMessage		/^  void setCustomValidity(in DOMString error);$/;"	m	class:HTMLKeygenElement	signature:(<+error:DOMString+>)
-validationMessage		/^  void setCustomValidity(in DOMString error);$/;"	m	class:HTMLObjectElement	signature:(<+error:DOMString+>)
-validationMessage		/^  void setCustomValidity(in DOMString error);$/;"	m	class:HTMLOutputElement	signature:(<+error:DOMString+>)
-validationMessage		/^  void setCustomValidity(in DOMString error);$/;"	m	class:HTMLSelectElement	signature:(<+error:DOMString+>)
-validationMessage		/^  void setCustomValidity(in DOMString error);$/;"	m	class:HTMLTextAreaElement	signature:(<+error:DOMString+>)
 validity		/^  readonly attribute ValidityState validity;$/;"	v	class:HTMLButtonElement
 validity		/^  readonly attribute ValidityState validity;$/;"	v	class:HTMLFieldSetElement
 validity		/^  readonly attribute ValidityState validity;$/;"	v	class:HTMLInputElement
@@ -1123,6 +1118,9 @@ version		/^           attribute DOMString version;$/;"	v	class:HTMLHtmlElement
 video		/^http://html5/#video$/;"	v	class:video	inherits:HTMLVideoElement
 visible		/^           attribute boolean visible;$/;"	v	class:BarProp
 vlinkColor		/^           attribute DOMString vlinkColor;$/;"	v	class:HTMLDocument
+void		/^  creator void (in DOMString name, in DOMString value);$/;"	m	class:DOMStringMap	signature:(<+name:DOMString+>, <+value:DOMString+>)
+void		/^  deleter void (in DOMString name);$/;"	m	class:DOMStringMap	signature:(<+name:DOMString+>)
+void		/^  setter void (in DOMString name, in DOMString value);$/;"	m	class:DOMStringMap	signature:(<+name:DOMString+>, <+value:DOMString+>)
 volume		/^           attribute float volume;$/;"	v	class:HTMLMediaElement
 wbr		/^http://html5/#wbr$/;"	v	class:wbr	inherits:HTMLElement
 width		/^           attribute DOMString width;$/;"	v	class:HTMLAppletElement
@@ -1136,8 +1134,6 @@ width		/^           attribute DOMString width;$/;"	v	class:HTMLTableCellElement
 width		/^           attribute DOMString width;$/;"	v	class:HTMLTableColElement
 width		/^           attribute DOMString width;$/;"	v	class:HTMLTableElement
 width		/^           attribute DOMString width;$/;"	v	class:HTMLVideoElement
-width		/^  void stepDown(in optional long n);$/;"	m	class:HTMLInputElement	signature:(<+long:optional+>)
-width		/^  void stepUp(in optional long n);$/;"	m	class:HTMLInputElement	signature:(<+long:optional+>)
 willValidate		/^  readonly attribute boolean willValidate;$/;"	v	class:HTMLButtonElement
 willValidate		/^  readonly attribute boolean willValidate;$/;"	v	class:HTMLFieldSetElement
 willValidate		/^  readonly attribute boolean willValidate;$/;"	v	class:HTMLInputElement
@@ -1148,3 +1144,6 @@ willValidate		/^  readonly attribute boolean willValidate;$/;"	v	class:HTMLSelec
 willValidate		/^  readonly attribute boolean willValidate;$/;"	v	class:HTMLTextAreaElement
 window		/^  readonly attribute WindowProxy window;$/;"	v	class:Window
 wrap		/^           attribute DOMString wrap;$/;"	v	class:HTMLTextAreaElement
+write		/^  void write(in DOMString... text);$/;"	m	class:HTMLDocument	signature:(<+text:DOMString+>)
+writeln		/^  void writeln(in DOMString... text);$/;"	m	class:HTMLDocument	signature:(<+text:DOMString+>)
+yieldForStorageUpdates		/^  void yieldForStorageUpdates();$/;"	m	class:NavigatorAbilities	signature:()

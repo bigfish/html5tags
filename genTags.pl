@@ -54,7 +54,9 @@ foreach(@lines){
 		if ($inherit) {
 			$tag_line = $tag_line.$TAB.'inherits:'.$inherit;
 		}
-		push(@tag_lines, $tag_line);
+		if ($interface_name){
+			push(@tag_lines, $tag_line);
+		}
 	}
 
 
@@ -73,13 +75,13 @@ foreach(@lines){
 		}
 
 		#methods
-		if ($line =~ /^\s*([A-Z-a-z]*)\s+([A-Za-z0-9_]+)\s*\(([^)]*)\);/ ) {
-
+		if ($line =~ /^\s*([A-Za-z]+)\s*(?:<[^>]*>\s*)?([A-Za-z0-9_]+)\s*(?:\s*<[^>]*>)?\s*\(([^)]*)\);/ ) {
 			$typeToken = "m";
 			$return_type = $1;
 			$method_name = $2;
 			$signature = $3;
 			$sig = "(";
+
 			my $isfirstparam = 1;
 
 			if ($signature) {
@@ -104,7 +106,7 @@ foreach(@lines){
 			}
 
 			$sig .= ")";
-			$tag_line = $attr_name.$TAB.$srcfile.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name.$TAB.'signature:'.$sig;
+			$tag_line = $method_name.$TAB.$srcfile.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name.$TAB.'signature:'.$sig;
 			push(@tag_lines, $tag_line);
 		}
 	}
@@ -159,9 +161,11 @@ foreach(@lines){
 	my $line = $_;
 	
 	#start of element declaration ... get name
-	if ($line =~ /The\s<dfn>\s*<code>(\S*)<\/code>\s*<\/dfn>\s*element/ ){
+	if ($line =~ /The\s<dfn>\s*<code>([^<]*)<\/code>\s*<\/dfn>\s*element/ ){
 		$element_name = $1;
-		$got_interface = 0;
+		if ($element_name !~ /^\s*$/ ){
+			$got_interface = 0;
+		}
 	}
 	
 	if (!$got_interface) {
@@ -191,5 +195,8 @@ foreach(@lines){
 #finally sort and spit out tags
 my @html5tags = sort(@tag_lines);
 foreach(@html5tags) {
-	print $_."\n";
+	my $line = $_;
+	if($line !~ /^ARRAY/ ){
+		print $line."\n";
+	}
 }
