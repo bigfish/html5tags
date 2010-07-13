@@ -146,10 +146,10 @@ Window	/home/david/html5/index.html	/^interface Window {$/;"	c	class:Window
 WindowProxy	/home/david/html5/index.html	/^  getter WindowProxy (in unsigned long index);$/;"	m	class:Window	signature:(<+long:unsigned+>)
 WindowTimers	/home/david/html5/index.html	/^interface WindowTimers {$/;"	c	class:WindowTimers
 _object	/home/david/html5/index.html	/^           attribute DOMString _object; $/;"	v	class:HTMLAppletElement
-a	/home/david/html5/index.html	/^http://html5/#a$/;"	v	class:a	inherits:HTMLAnchorElement
 aLink	/home/david/html5/index.html	/^           attribute DOMString aLink;$/;"	v	class:HTMLBodyElement
 abbr	/home/david/html5/index.html	/^           attribute DOMString abbr;$/;"	v	class:HTMLTableCellElement
-abbr	/home/david/html5/index.html	/^http://html5/#abbr$/;"	v	class:abbr	inherits:HTMLElement
+abbr	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:abbr	inherits:HTMLElement	link:#the-abbr-element
+abbr	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:abbr	inherits:HTMLElement	link:#the-abbr-element	link:#the-time-element
 accept	/home/david/html5/index.html	/^           attribute DOMString accept;$/;"	v	class:HTMLInputElement
 acceptCharset	/home/david/html5/index.html	/^           attribute DOMString acceptCharset;$/;"	v	class:HTMLFormElement
 accessKey	/home/david/html5/index.html	/^           attribute DOMString accessKey;$/;"	v	class:HTMLElement
@@ -163,7 +163,6 @@ add	/home/david/html5/index.html	/^  void add(in HTMLElement element, in optiona
 add	/home/david/html5/index.html	/^  void add(in HTMLElement element, in optional HTMLElement before);$/;"	m	class:HTMLSelectElement	signature:(<+element:HTMLElement+>, <+HTMLElement:optional+>)
 addElement	/home/david/html5/index.html	/^  void addElement(in Element element);$/;"	m	class:DataTransfer	signature:(<+element:Element+>)
 addRange	/home/david/html5/index.html	/^  void addRange(in Range range);$/;"	m	class:Selection	signature:(<+range:Range+>)
-address	/home/david/html5/index.html	/^http://html5/#address$/;"	v	class:address	inherits:HTMLElement
 alert	/home/david/html5/index.html	/^  void alert(in DOMString message);$/;"	m	class:Window	signature:(<+message:DOMString+>)
 align	/home/david/html5/index.html	/^           attribute DOMString align;$/;"	v	class:HTMLAppletElement
 align	/home/david/html5/index.html	/^           attribute DOMString align;$/;"	v	class:HTMLDivElement
@@ -195,15 +194,14 @@ any	/home/david/html5/index.html	/^  getter any (in DOMString name);$/;"	m	class
 any	/home/david/html5/index.html	/^  getter any (in DOMString name);$/;"	m	class:Window	signature:(<+name:DOMString+>)
 appName	/home/david/html5/index.html	/^  readonly attribute DOMString appName;$/;"	v	class:NavigatorID
 appVersion	/home/david/html5/index.html	/^  readonly attribute DOMString appVersion;$/;"	v	class:NavigatorID
-applet	/home/david/html5/index.html	/^http://html5/#applet$/;"	v	class:applet	inherits:HTMLAppletElement
 applets	/home/david/html5/index.html	/^  readonly attribute HTMLCollection applets;$/;"	v	class:HTMLDocument
 applicationCache	/home/david/html5/index.html	/^  readonly attribute ApplicationCache applicationCache;$/;"	v	class:Window
 archive	/home/david/html5/index.html	/^           attribute DOMString archive;$/;"	v	class:HTMLAppletElement
 archive	/home/david/html5/index.html	/^           attribute DOMString archive;$/;"	v	class:HTMLObjectElement
-area	/home/david/html5/index.html	/^http://html5/#area$/;"	v	class:area	inherits:HTMLAreaElement
+area	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlareaelement">HTMLAreaElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:area	inherits:HTMLAreaElement	link:#the-area-element
 areas	/home/david/html5/index.html	/^  readonly attribute HTMLCollection areas;$/;"	v	class:HTMLMapElement
-article	/home/david/html5/index.html	/^http://html5/#article$/;"	v	class:article	inherits:HTMLElement
-aside	/home/david/html5/index.html	/^http://html5/#aside$/;"	v	class:aside	inherits:HTMLElement
+article	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:article	inherits:HTMLElement	link:#the-article-element
+aside	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:aside	inherits:HTMLElement	link:#the-aside-element
 assign	/home/david/html5/index.html	/^  void assign(in DOMString url);$/;"	m	class:Location	signature:(<+url:DOMString+>)
 async	/home/david/html5/index.html	/^           attribute boolean async;$/;"	v	class:HTMLScriptElement
 autocomplete	/home/david/html5/index.html	/^           attribute DOMString autocomplete;$/;"	v	class:HTMLFormElement
@@ -215,11 +213,11 @@ autofocus	/home/david/html5/index.html	/^           attribute boolean autofocus;
 autofocus	/home/david/html5/index.html	/^           attribute boolean autofocus;$/;"	v	class:HTMLTextAreaElement
 autoplay	/home/david/html5/index.html	/^           attribute boolean autoplay;$/;"	v	class:HTMLMediaElement
 axis	/home/david/html5/index.html	/^           attribute DOMString axis;$/;"	v	class:HTMLTableCellElement
-b	/home/david/html5/index.html	/^http://html5/#b$/;"	v	class:b	inherits:HTMLElement
+b	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:b	inherits:HTMLElement	link:#the-b-element
 back	/home/david/html5/index.html	/^  void back();$/;"	m	class:History	signature:()
 background	/home/david/html5/index.html	/^           attribute DOMString background;$/;"	v	class:HTMLBodyElement
-base	/home/david/html5/index.html	/^http://html5/#base$/;"	v	class:base	inherits:HTMLBaseElement
-bdo	/home/david/html5/index.html	/^http://html5/#bdo$/;"	v	class:bdo	inherits:HTMLElement
+base	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlbaseelement">HTMLBaseElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:base	inherits:HTMLBaseElement	link:#the-base-element
+bdo	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:bdo	inherits:HTMLElement	link:#the-bdo-element
 behavior	/home/david/html5/index.html	/^           attribute DOMString behavior;$/;"	v	class:HTMLMarqueeElement
 bgColor	/home/david/html5/index.html	/^           attribute DOMString bgColor;$/;"	v	class:HTMLBodyElement
 bgColor	/home/david/html5/index.html	/^           attribute DOMString bgColor;$/;"	v	class:HTMLDocument
@@ -227,21 +225,21 @@ bgColor	/home/david/html5/index.html	/^           attribute DOMString bgColor;$/
 bgColor	/home/david/html5/index.html	/^           attribute DOMString bgColor;$/;"	v	class:HTMLTableCellElement
 bgColor	/home/david/html5/index.html	/^           attribute DOMString bgColor;$/;"	v	class:HTMLTableElement
 bgColor	/home/david/html5/index.html	/^           attribute DOMString bgColor;$/;"	v	class:HTMLTableRowElement
-blockquote	/home/david/html5/index.html	/^http://html5/#blockquote$/;"	v	class:blockquote	inherits:HTMLQuoteElement
+blockquote	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlquoteelement">HTMLQuoteElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:blockquote	inherits:HTMLQuoteElement	link:#the-blockquote-element
 blur	/home/david/html5/index.html	/^  void blur();$/;"	m	class:HTMLElement	signature:()
 blur	/home/david/html5/index.html	/^  void blur();$/;"	m	class:Window	signature:()
 body	/home/david/html5/index.html	/^           attribute HTMLElement body;$/;"	v	class:HTMLDocument
-body	/home/david/html5/index.html	/^http://html5/#body$/;"	v	class:body	inherits:HTMLBodyElement
+body	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlbodyelement">HTMLBodyElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:body	inherits:HTMLBodyElement	link:#the-body-element-0
 border	/home/david/html5/index.html	/^           attribute DOMString border;$/;"	v	class:HTMLImageElement
 border	/home/david/html5/index.html	/^           attribute DOMString border;$/;"	v	class:HTMLObjectElement
 border	/home/david/html5/index.html	/^           attribute DOMString border;$/;"	v	class:HTMLTableElement
-br	/home/david/html5/index.html	/^http://html5/#br$/;"	v	class:br	inherits:HTMLBRElement
+br	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmlbrelement">HTMLBRElement</dfn> : <a href="#htmlelement">HTMLElement</a> {};</pre>$/;"	v	class:br	inherits:HTMLBRElement	link:#the-br-element
 buffered	/home/david/html5/index.html	/^  readonly attribute TimeRanges buffered;$/;"	v	class:HTMLMediaElement
-button	/home/david/html5/index.html	/^http://html5/#button$/;"	v	class:button	inherits:HTMLButtonElement
+button	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlbuttonelement">HTMLButtonElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:button	inherits:HTMLButtonElement	link:#the-button-element
 call	/home/david/html5/index.html	/^  any call(in any... arguments);$/;"	m	class:Function	signature:(<+arguments:any+>)
 canPlayType	/home/david/html5/index.html	/^  DOMString canPlayType(in DOMString type);$/;"	m	class:HTMLMediaElement	signature:(<+type:DOMString+>)
 caption	/home/david/html5/index.html	/^           attribute HTMLTableCaptionElement caption;$/;"	v	class:HTMLTableElement
-caption	/home/david/html5/index.html	/^http://html5/#caption$/;"	v	class:caption	inherits:HTMLTableCaptionElement
+caption	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmltablecaptionelement">HTMLTableCaptionElement</dfn> : <a href="#htmlelement">HTMLElement</a> {};</pre>$/;"	v	class:caption	inherits:HTMLTableCaptionElement	link:#the-caption-element
 cellIndex	/home/david/html5/index.html	/^  readonly attribute long cellIndex;$/;"	v	class:HTMLTableCellElement
 cellPadding	/home/david/html5/index.html	/^           attribute DOMString cellPadding;$/;"	v	class:HTMLTableElement
 cellSpacing	/home/david/html5/index.html	/^           attribute DOMString cellSpacing;$/;"	v	class:HTMLTableElement
@@ -274,7 +272,7 @@ checked	/home/david/html5/index.html	/^           attribute boolean checked;$/;"
 checked	/home/david/html5/index.html	/^  readonly attribute boolean checked;$/;"	v	class:HTMLElement
 cite	/home/david/html5/index.html	/^           attribute DOMString cite;$/;"	v	class:HTMLModElement
 cite	/home/david/html5/index.html	/^           attribute DOMString cite;$/;"	v	class:HTMLQuoteElement
-cite	/home/david/html5/index.html	/^http://html5/#cite$/;"	v	class:cite	inherits:HTMLElement
+cite	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:cite	inherits:HTMLElement	link:#the-cite-element
 classList	/home/david/html5/index.html	/^  readonly attribute DOMTokenList classList;$/;"	v	class:HTMLElement
 className	/home/david/html5/index.html	/^           attribute DOMString className;$/;"	v	class:HTMLElement
 clear	/home/david/html5/index.html	/^           attribute DOMString clear;$/;"	v	class:HTMLBRElement
@@ -289,11 +287,12 @@ close	/home/david/html5/index.html	/^  void close();$/;"	m	class:HTMLDocument	si
 close	/home/david/html5/index.html	/^  void close();$/;"	m	class:Window	signature:()
 code	/home/david/html5/index.html	/^           attribute DOMString code;$/;"	v	class:HTMLAppletElement
 code	/home/david/html5/index.html	/^           attribute DOMString code;$/;"	v	class:HTMLObjectElement
-code	/home/david/html5/index.html	/^http://html5/#code$/;"	v	class:code	inherits:HTMLElement
+code	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:code	inherits:HTMLElement	link:#the-code-element
 codeBase	/home/david/html5/index.html	/^           attribute DOMString codeBase;$/;"	v	class:HTMLAppletElement
 codeBase	/home/david/html5/index.html	/^           attribute DOMString codeBase;$/;"	v	class:HTMLObjectElement
 codeType	/home/david/html5/index.html	/^           attribute DOMString codeType;$/;"	v	class:HTMLObjectElement
-colgroup	/home/david/html5/index.html	/^http://html5/#colgroup$/;"	v	class:colgroup	inherits:HTMLTableColElement
+colgroup	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmltablecolelement">HTMLTableColElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:colgroup	inherits:HTMLTableColElement	link:#the-colgroup-element
+colgroup	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmltablecolelement">HTMLTableColElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:colgroup	inherits:HTMLTableColElement	link:#the-colgroup-element	link:#the-colgroup-element
 collapse	/home/david/html5/index.html	/^  void collapse(in Node parentNode, in long offset);$/;"	m	class:Selection	signature:(<+parentNode:Node+>, <+offset:long+>)
 collapseToEnd	/home/david/html5/index.html	/^  void collapseToEnd();$/;"	m	class:Selection	signature:()
 collapseToStart	/home/david/html5/index.html	/^  void collapseToStart();$/;"	m	class:Selection	signature:()
@@ -301,7 +300,7 @@ color	/home/david/html5/index.html	/^           attribute DOMString color;$/;"	v
 color	/home/david/html5/index.html	/^           attribute DOMString color;$/;"	v	class:HTMLFontElement
 color	/home/david/html5/index.html	/^           attribute DOMString color;$/;"	v	class:HTMLHRElement
 cols	/home/david/html5/index.html	/^           attribute DOMString cols;$/;"	v	class:HTMLFrameSetElement
-command	/home/david/html5/index.html	/^http://html5/#command$/;"	v	class:command	inherits:HTMLCommandElement
+command	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlcommandelement">HTMLCommandElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:command	inherits:HTMLCommandElement	link:#the-command
 commandType	/home/david/html5/index.html	/^  readonly attribute DOMString commandType;$/;"	v	class:HTMLElement
 commands	/home/david/html5/index.html	/^  readonly attribute HTMLCollection commands;$/;"	v	class:HTMLDocument
 compact	/home/david/html5/index.html	/^           attribute boolean compact;$/;"	v	class:HTMLDListElement
@@ -337,11 +336,11 @@ customError	/home/david/html5/index.html	/^  readonly attribute boolean customEr
 data	/home/david/html5/index.html	/^           attribute DOMString data;$/;"	v	class:HTMLObjectElement
 data	/home/david/html5/index.html	/^  readonly attribute any data;$/;"	v	class:UndoManagerEvent
 dataTransfer	/home/david/html5/index.html	/^  readonly attribute DataTransfer dataTransfer;$/;"	v	class:DragEvent
-datalist	/home/david/html5/index.html	/^http://html5/#datalist$/;"	v	class:datalist	inherits:HTMLDataListElement
+datalist	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmldatalistelement">HTMLDataListElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:datalist	inherits:HTMLDataListElement	link:#the-datalist-element
 dataset	/home/david/html5/index.html	/^  readonly attribute DOMStringMap dataset;$/;"	v	class:HTMLElement
 dateTime	/home/david/html5/index.html	/^           attribute DOMString dateTime;$/;"	v	class:HTMLModElement
 dateTime	/home/david/html5/index.html	/^           attribute DOMString dateTime;$/;"	v	class:HTMLTimeElement
-dd	/home/david/html5/index.html	/^http://html5/#dd$/;"	v	class:dd	inherits:HTMLElement
+dd	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:dd	inherits:HTMLElement	link:#the-dd-element
 declare	/home/david/html5/index.html	/^           attribute boolean declare;$/;"	v	class:HTMLObjectElement
 defaultCharset	/home/david/html5/index.html	/^  readonly attribute DOMString defaultCharset;$/;"	v	class:HTMLDocument
 defaultChecked	/home/david/html5/index.html	/^           attribute boolean defaultChecked;$/;"	v	class:HTMLInputElement
@@ -352,7 +351,6 @@ defaultValue	/home/david/html5/index.html	/^           attribute DOMString defau
 defaultValue	/home/david/html5/index.html	/^           attribute DOMString defaultValue;$/;"	v	class:HTMLTextAreaElement
 defaultView	/home/david/html5/index.html	/^  readonly attribute WindowProxy defaultView;$/;"	v	class:HTMLDocument
 defer	/home/david/html5/index.html	/^           attribute boolean defer;$/;"	v	class:HTMLScriptElement
-del	/home/david/html5/index.html	/^http://html5/#del$/;"	v	class:del	inherits:HTMLModElement
 deleteCaption	/home/david/html5/index.html	/^  void deleteCaption();$/;"	m	class:HTMLTableElement	signature:()
 deleteCell	/home/david/html5/index.html	/^  void deleteCell(in long index);$/;"	m	class:HTMLTableRowElement	signature:(<+index:long+>)
 deleteFromDocument	/home/david/html5/index.html	/^  void deleteFromDocument();$/;"	m	class:Selection	signature:()
@@ -361,8 +359,7 @@ deleteRow	/home/david/html5/index.html	/^  void deleteRow(in long index);$/;"	m	
 deleteTFoot	/home/david/html5/index.html	/^  void deleteTFoot();$/;"	m	class:HTMLTableElement	signature:()
 deleteTHead	/home/david/html5/index.html	/^  void deleteTHead();$/;"	m	class:HTMLTableElement	signature:()
 designMode	/home/david/html5/index.html	/^           attribute DOMString designMode;$/;"	v	class:HTMLDocument
-details	/home/david/html5/index.html	/^http://html5/#details$/;"	v	class:details	inherits:HTMLDetailsElement
-dfn	/home/david/html5/index.html	/^http://html5/#dfn$/;"	v	class:dfn	inherits:HTMLElement
+details	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmldetailselement">HTMLDetailsElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:details	inherits:HTMLDetailsElement	link:#the-details-element
 dir	/home/david/html5/index.html	/^           attribute DOMString dir;$/;"	v	class:HTMLDocument
 dir	/home/david/html5/index.html	/^           attribute DOMString dir;$/;"	v	class:HTMLElement
 direction	/home/david/html5/index.html	/^           attribute DOMString direction;$/;"	v	class:HTMLMarqueeElement
@@ -380,19 +377,20 @@ disabled	/home/david/html5/index.html	/^           attribute boolean disabled;$/
 disabled	/home/david/html5/index.html	/^  readonly attribute boolean disabled;$/;"	v	class:HTMLElement
 dispatchFormChange	/home/david/html5/index.html	/^  void dispatchFormChange();$/;"	m	class:HTMLFormElement	signature:()
 dispatchFormInput	/home/david/html5/index.html	/^  void dispatchFormInput();$/;"	m	class:HTMLFormElement	signature:()
-div	/home/david/html5/index.html	/^http://html5/#div$/;"	v	class:div	inherits:HTMLDivElement
-dl	/home/david/html5/index.html	/^http://html5/#dl$/;"	v	class:dl	inherits:HTMLDListElement
+div	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmldivelement">HTMLDivElement</dfn> : <a href="#htmlelement">HTMLElement</a> {};</pre>$/;"	v	class:div	inherits:HTMLDivElement	link:#the-div-element
+div	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmldivelement">HTMLDivElement</dfn> : <a href="#htmlelement">HTMLElement</a> {};</pre>$/;"	v	class:div	inherits:HTMLDivElement	link:#the-div-element	link:#transparent
+dl	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmldlistelement">HTMLDListElement</dfn> : <a href="#htmlelement">HTMLElement</a> {};</pre>$/;"	v	class:dl	inherits:HTMLDListElement	link:#the-dl-element
 document	/home/david/html5/index.html	/^  readonly attribute Document document;$/;"	v	class:Window
 domain	/home/david/html5/index.html	/^           attribute DOMString domain;$/;"	v	class:HTMLDocument
 draggable	/home/david/html5/index.html	/^           attribute boolean draggable;$/;"	v	class:HTMLElement
 dropEffect	/home/david/html5/index.html	/^           attribute DOMString dropEffect;$/;"	v	class:DataTransfer
-dt	/home/david/html5/index.html	/^http://html5/#dt$/;"	v	class:dt	inherits:HTMLElement
+dt	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:dt	inherits:HTMLElement	link:#the-dt-element
 duration	/home/david/html5/index.html	/^  readonly attribute float duration;$/;"	v	class:HTMLMediaElement
 effectAllowed	/home/david/html5/index.html	/^           attribute DOMString effectAllowed;$/;"	v	class:DataTransfer
 elements	/home/david/html5/index.html	/^  readonly attribute HTMLFormControlsCollection elements;$/;"	v	class:HTMLFieldSetElement
 elements	/home/david/html5/index.html	/^  readonly attribute HTMLFormControlsCollection elements;$/;"	v	class:HTMLFormElement
-em	/home/david/html5/index.html	/^http://html5/#em$/;"	v	class:em	inherits:HTMLElement
-embed	/home/david/html5/index.html	/^http://html5/#embed$/;"	v	class:embed	inherits:HTMLEmbedElement
+em	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:em	inherits:HTMLElement	link:#htmlelement
+embed	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlembedelement">HTMLEmbedElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:embed	inherits:HTMLEmbedElement	link:#the-embed-element
 embeds	/home/david/html5/index.html	/^  readonly attribute HTMLCollection embeds;$/;"	v	class:HTMLDocument
 enctype	/home/david/html5/index.html	/^           attribute DOMString enctype;$/;"	v	class:HTMLFormElement
 end	/home/david/html5/index.html	/^  float end(in unsigned long index);$/;"	m	class:TimeRanges	signature:(<+long:unsigned+>)
@@ -405,16 +403,15 @@ execCommand	/home/david/html5/index.html	/^  boolean execCommand(in DOMString co
 face	/home/david/html5/index.html	/^           attribute DOMString face;$/;"	v	class:HTMLBaseFontElement
 face	/home/david/html5/index.html	/^           attribute DOMString face;$/;"	v	class:HTMLFontElement
 fgColor	/home/david/html5/index.html	/^           attribute DOMString fgColor;$/;"	v	class:HTMLDocument
-fieldset	/home/david/html5/index.html	/^http://html5/#fieldset$/;"	v	class:fieldset	inherits:HTMLFieldSetElement
-figcaption	/home/david/html5/index.html	/^http://html5/#figcaption$/;"	v	class:figcaption	inherits:HTMLElement
-figure	/home/david/html5/index.html	/^http://html5/#figure$/;"	v	class:figure	inherits:HTMLElement
+fieldset	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlfieldsetelement">HTMLFieldSetElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:fieldset	inherits:HTMLFieldSetElement	link:#the-fieldset-element
+figcaption	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:figcaption	inherits:HTMLElement	link:#the-figcaption-element
+figure	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:figure	inherits:HTMLElement	link:#the-figure-element
 files	/home/david/html5/index.html	/^  readonly attribute FileList files;$/;"	v	class:DataTransfer
 files	/home/david/html5/index.html	/^  readonly attribute FileList files;$/;"	v	class:HTMLInputElement
 focus	/home/david/html5/index.html	/^  void focus();$/;"	m	class:HTMLElement	signature:()
 focus	/home/david/html5/index.html	/^  void focus();$/;"	m	class:Window	signature:()
 focusNode	/home/david/html5/index.html	/^  readonly attribute Node focusNode;$/;"	v	class:Selection
 focusOffset	/home/david/html5/index.html	/^  readonly attribute long focusOffset;$/;"	v	class:Selection
-footer	/home/david/html5/index.html	/^http://html5/#footer$/;"	v	class:footer	inherits:HTMLElement
 form	/home/david/html5/index.html	/^  readonly attribute HTMLFormElement form;$/;"	v	class:HTMLButtonElement
 form	/home/david/html5/index.html	/^  readonly attribute HTMLFormElement form;$/;"	v	class:HTMLFieldSetElement
 form	/home/david/html5/index.html	/^  readonly attribute HTMLFormElement form;$/;"	v	class:HTMLInputElement
@@ -458,9 +455,8 @@ hasFocus	/home/david/html5/index.html	/^  boolean hasFocus();$/;"	m	class:HTMLDo
 hash	/home/david/html5/index.html	/^           attribute DOMString hash;$/;"	v	class:HTMLAnchorElement
 hash	/home/david/html5/index.html	/^           attribute DOMString hash;$/;"	v	class:HTMLAreaElement
 hash	/home/david/html5/index.html	/^           attribute DOMString hash;$/;"	v	class:Location
+head	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmlheadelement">HTMLHeadElement</dfn> : <a href="#htmlelement">HTMLElement</a> {};</pre>$/;"	v	class:head	inherits:HTMLHeadElement	link:#the-head-element-0
 head	/home/david/html5/index.html	/^  readonly attribute HTMLHeadElement head;$/;"	v	class:HTMLDocument
-head	/home/david/html5/index.html	/^http://html5/#head$/;"	v	class:head	inherits:HTMLHeadElement
-header	/home/david/html5/index.html	/^http://html5/#header$/;"	v	class:header	inherits:HTMLElement
 headers	/home/david/html5/index.html	/^   readonly attribute DOMSettableTokenList headers;$/;"	v	class:HTMLTableCellElement
 height	/home/david/html5/index.html	/^           attribute DOMString height;$/;"	v	class:HTMLAppletElement
 height	/home/david/html5/index.html	/^           attribute DOMString height;$/;"	v	class:HTMLEmbedElement
@@ -470,7 +466,10 @@ height	/home/david/html5/index.html	/^           attribute DOMString height;$/;"
 height	/home/david/html5/index.html	/^           attribute DOMString height;$/;"	v	class:HTMLObjectElement
 height	/home/david/html5/index.html	/^           attribute DOMString height;$/;"	v	class:HTMLTableCellElement
 height	/home/david/html5/index.html	/^           attribute DOMString height;$/;"	v	class:HTMLVideoElement
-hgroup	/home/david/html5/index.html	/^http://html5/#hgroup$/;"	v	class:hgroup	inherits:HTMLElement
+hgroup	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:hgroup	inherits:HTMLElement	link:#the-hgroup-element
+hgroup	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:hgroup	inherits:HTMLElement	link:#the-hgroup-element	link:#the-header-element
+hgroup	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:hgroup	inherits:HTMLElement	link:#the-hgroup-element	link:#the-header-element	link:#the-footer-element
+hgroup	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:hgroup	inherits:HTMLElement	link:#the-hgroup-element	link:#the-header-element	link:#the-footer-element	link:#the-address-element
 hidden	/home/david/html5/index.html	/^           attribute boolean hidden;$/;"	v	class:HTMLElement
 high	/home/david/html5/index.html	/^           attribute float high;$/;"	v	class:HTMLMeterElement
 history	/home/david/html5/index.html	/^  readonly attribute History history;$/;"	v	class:Window
@@ -480,22 +479,22 @@ host	/home/david/html5/index.html	/^           attribute DOMString host;$/;"	v	c
 hostname	/home/david/html5/index.html	/^           attribute DOMString hostname;$/;"	v	class:HTMLAnchorElement
 hostname	/home/david/html5/index.html	/^           attribute DOMString hostname;$/;"	v	class:HTMLAreaElement
 hostname	/home/david/html5/index.html	/^           attribute DOMString hostname;$/;"	v	class:Location
-hr	/home/david/html5/index.html	/^http://html5/#hr$/;"	v	class:hr	inherits:HTMLHRElement
+hr	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmlhrelement">HTMLHRElement</dfn> : <a href="#htmlelement">HTMLElement</a> {};</pre>$/;"	v	class:hr	inherits:HTMLHRElement	link:#the-hr-element
 href	/home/david/html5/index.html	/^           attribute DOMString href;$/;"	v	class:HTMLBaseElement
 href	/home/david/html5/index.html	/^           attribute DOMString href;$/;"	v	class:HTMLLinkElement
 hreflang	/home/david/html5/index.html	/^           attribute DOMString hreflang;$/;"	v	class:HTMLAnchorElement
 hreflang	/home/david/html5/index.html	/^           attribute DOMString hreflang;$/;"	v	class:HTMLAreaElement
 hreflang	/home/david/html5/index.html	/^           attribute DOMString hreflang;$/;"	v	class:HTMLLinkElement
-html	/home/david/html5/index.html	/^http://html5/#html$/;"	v	class:html	inherits:HTMLHtmlElement
+html	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmlhtmlelement">HTMLHtmlElement</dfn> : <a href="#htmlelement">HTMLElement</a> {};</pre>$/;"	v	class:html	inherits:HTMLHtmlElement	link:#the-html-element-0
 htmlFor	/home/david/html5/index.html	/^           attribute DOMString htmlFor;$/;"	v	class:HTMLLabelElement
 htmlFor	/home/david/html5/index.html	/^           attribute DOMString htmlFor;$/;"	v	class:HTMLScriptElement
 htmlFor	/home/david/html5/index.html	/^   readonly attribute DOMSettableTokenList htmlFor;$/;"	v	class:HTMLOutputElement
 httpEquiv	/home/david/html5/index.html	/^           attribute DOMString httpEquiv;$/;"	v	class:HTMLMetaElement
-i	/home/david/html5/index.html	/^http://html5/#i$/;"	v	class:i	inherits:HTMLElement
+i	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:i	inherits:HTMLElement	link:#the-i-element
 icon	/home/david/html5/index.html	/^           attribute DOMString icon;$/;"	v	class:HTMLCommandElement
 icon	/home/david/html5/index.html	/^  readonly attribute DOMString icon;$/;"	v	class:HTMLElement
 id	/home/david/html5/index.html	/^           attribute DOMString id;$/;"	v	class:HTMLElement
-iframe	/home/david/html5/index.html	/^http://html5/#iframe$/;"	v	class:iframe	inherits:HTMLIFrameElement
+iframe	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmliframeelement">HTMLIFrameElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:iframe	inherits:HTMLIFrameElement	link:#the-iframe-element
 images	/home/david/html5/index.html	/^  readonly attribute HTMLCollection images;$/;"	v	class:HTMLDocument
 images	/home/david/html5/index.html	/^  readonly attribute HTMLCollection images;$/;"	v	class:HTMLMapElement
 indeterminate	/home/david/html5/index.html	/^           attribute boolean indeterminate;$/;"	v	class:HTMLInputElement
@@ -507,7 +506,7 @@ initPopStateEvent	/home/david/html5/index.html	/^  void initPopStateEvent(in DOM
 initUndoManagerEvent	/home/david/html5/index.html	/^  void initUndoManagerEvent(in DOMString typeArg, in boolean canBubbleArg, in boolean cancelableArg, in any dataArg);$/;"	m	class:UndoManagerEvent	signature:(<+typeArg:DOMString+>, <+canBubbleArg:boolean+>, <+cancelableArg:boolean+>, <+dataArg:any+>)
 innerHTML	/home/david/html5/index.html	/^           attribute DOMString innerHTML;$/;"	v	class:HTMLDocument
 innerHTML	/home/david/html5/index.html	/^           attribute DOMString innerHTML;$/;"	v	class:HTMLElement
-input	/home/david/html5/index.html	/^http://html5/#input$/;"	v	class:input	inherits:HTMLInputElement
+input	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlinputelement">HTMLInputElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:input	inherits:HTMLInputElement	link:#the-input-element
 insertAdjacentHTML	/home/david/html5/index.html	/^  void insertAdjacentHTML(in DOMString position, in DOMString text);$/;"	m	class:HTMLElement	signature:(<+position:DOMString+>, <+text:DOMString+>)
 insertCell	/home/david/html5/index.html	/^  HTMLElement insertCell(in optional long index);$/;"	m	class:HTMLTableRowElement	signature:(<+long:optional+>)
 insertRow	/home/david/html5/index.html	/^  HTMLElement insertRow(in optional long index);$/;"	m	class:HTMLTableElement	signature:(<+long:optional+>)
@@ -515,15 +514,14 @@ insertRow	/home/david/html5/index.html	/^  HTMLElement insertRow(in optional lon
 isCollapsed	/home/david/html5/index.html	/^  readonly attribute boolean isCollapsed;$/;"	v	class:Selection
 isContentEditable	/home/david/html5/index.html	/^  readonly attribute boolean isContentEditable;$/;"	v	class:HTMLElement
 isMap	/home/david/html5/index.html	/^           attribute boolean isMap;$/;"	v	class:HTMLImageElement
-kbd	/home/david/html5/index.html	/^http://html5/#kbd$/;"	v	class:kbd	inherits:HTMLElement
-keygen	/home/david/html5/index.html	/^http://html5/#keygen$/;"	v	class:keygen	inherits:HTMLKeygenElement
+kbd	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:kbd	inherits:HTMLElement	link:#the-kbd-element
+keygen	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlkeygenelement">HTMLKeygenElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:keygen	inherits:HTMLKeygenElement	link:#the-keygen-element
 keytype	/home/david/html5/index.html	/^           attribute DOMString keytype;$/;"	v	class:HTMLKeygenElement
 label	/home/david/html5/index.html	/^           attribute DOMString label;$/;"	v	class:HTMLCommandElement
 label	/home/david/html5/index.html	/^           attribute DOMString label;$/;"	v	class:HTMLMenuElement
 label	/home/david/html5/index.html	/^           attribute DOMString label;$/;"	v	class:HTMLOptGroupElement
 label	/home/david/html5/index.html	/^           attribute DOMString label;$/;"	v	class:HTMLOptionElement
 label	/home/david/html5/index.html	/^  readonly attribute DOMString label;$/;"	v	class:HTMLElement
-label	/home/david/html5/index.html	/^http://html5/#label$/;"	v	class:label	inherits:HTMLLabelElement
 labels	/home/david/html5/index.html	/^  readonly attribute NodeList labels;$/;"	v	class:HTMLButtonElement
 labels	/home/david/html5/index.html	/^  readonly attribute NodeList labels;$/;"	v	class:HTMLInputElement
 labels	/home/david/html5/index.html	/^  readonly attribute NodeList labels;$/;"	v	class:HTMLKeygenElement
@@ -534,12 +532,13 @@ labels	/home/david/html5/index.html	/^  readonly attribute NodeList labels;$/;"	
 labels	/home/david/html5/index.html	/^  readonly attribute NodeList labels;$/;"	v	class:HTMLTextAreaElement
 lang	/home/david/html5/index.html	/^           attribute DOMString lang;$/;"	v	class:HTMLElement
 lastModified	/home/david/html5/index.html	/^  readonly attribute DOMString lastModified;$/;"	v	class:HTMLDocument
-legend	/home/david/html5/index.html	/^http://html5/#legend$/;"	v	class:legend	inherits:HTMLLegendElement
+legend	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmllegendelement">HTMLLegendElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:legend	inherits:HTMLLegendElement	link:#the-legend-element
+legend	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmllegendelement">HTMLLegendElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:legend	inherits:HTMLLegendElement	link:#the-legend-element	link:#the-label-element
 length	/home/david/html5/index.html	/^  readonly attribute long length;$/;"	v	class:HTMLFormElement
 length	/home/david/html5/index.html	/^  readonly attribute long length;$/;"	v	class:History
-li	/home/david/html5/index.html	/^http://html5/#li$/;"	v	class:li	inherits:HTMLLIElement
+li	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmllielement">HTMLLIElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:li	inherits:HTMLLIElement	link:#the-li-element
 link	/home/david/html5/index.html	/^           attribute DOMString link;$/;"	v	class:HTMLBodyElement
-link	/home/david/html5/index.html	/^http://html5/#link$/;"	v	class:link	inherits:HTMLLinkElement
+link	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmllinkelement">HTMLLinkElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:link	inherits:HTMLLinkElement	link:#the-link-element
 linkColor	/home/david/html5/index.html	/^           attribute DOMString linkColor;$/;"	v	class:HTMLDocument
 links	/home/david/html5/index.html	/^  readonly attribute HTMLCollection links;$/;"	v	class:HTMLDocument
 list	/home/david/html5/index.html	/^  readonly attribute HTMLElement list;$/;"	v	class:HTMLInputElement
@@ -553,13 +552,12 @@ longDesc	/home/david/html5/index.html	/^           attribute DOMString longDesc;
 loop	/home/david/html5/index.html	/^           attribute boolean loop;$/;"	v	class:HTMLMediaElement
 loop	/home/david/html5/index.html	/^           attribute long loop;$/;"	v	class:HTMLMarqueeElement
 low	/home/david/html5/index.html	/^           attribute float low;$/;"	v	class:HTMLMeterElement
-map	/home/david/html5/index.html	/^http://html5/#map$/;"	v	class:map	inherits:HTMLMapElement
+map	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlmapelement">HTMLMapElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:map	inherits:HTMLMapElement	link:#the-map-element
 marginHeight	/home/david/html5/index.html	/^           attribute DOMString marginHeight;$/;"	v	class:HTMLFrameElement
 marginHeight	/home/david/html5/index.html	/^           attribute DOMString marginHeight;$/;"	v	class:HTMLIFrameElement
 marginWidth	/home/david/html5/index.html	/^           attribute DOMString marginWidth;$/;"	v	class:HTMLFrameElement
 marginWidth	/home/david/html5/index.html	/^           attribute DOMString marginWidth;$/;"	v	class:HTMLIFrameElement
-mark	/home/david/html5/index.html	/^http://html5/#mark$/;"	v	class:mark	inherits:HTMLElement
-marquee	/home/david/html5/index.html	/^http://html5/#marquee$/;"	v	class:marquee	inherits:HTMLMarqueeElement
+mark	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:mark	inherits:HTMLElement	link:#the-mark-element
 max	/home/david/html5/index.html	/^           attribute DOMString max;$/;"	v	class:HTMLInputElement
 max	/home/david/html5/index.html	/^           attribute float max;$/;"	v	class:HTMLMeterElement
 max	/home/david/html5/index.html	/^           attribute float max;$/;"	v	class:HTMLProgressElement
@@ -570,10 +568,11 @@ media	/home/david/html5/index.html	/^           attribute DOMString media;$/;"	v
 media	/home/david/html5/index.html	/^           attribute DOMString media;$/;"	v	class:HTMLLinkElement
 media	/home/david/html5/index.html	/^           attribute DOMString media;$/;"	v	class:HTMLSourceElement
 media	/home/david/html5/index.html	/^           attribute DOMString media;$/;"	v	class:HTMLStyleElement
-menu	/home/david/html5/index.html	/^http://html5/#menu$/;"	v	class:menu	inherits:HTMLMenuElement
+menu	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlmenuelement">HTMLMenuElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:menu	inherits:HTMLMenuElement	link:#menus
+menu	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlmenuelement">HTMLMenuElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:menu	inherits:HTMLMenuElement	link:#menus	link:#the-applet-element
+menu	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlmenuelement">HTMLMenuElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:menu	inherits:HTMLMenuElement	link:#menus	link:#the-applet-element	link:#the-marquee-element
 menubar	/home/david/html5/index.html	/^   readonly attribute BarProp menubar;$/;"	v	class:Window
-meta	/home/david/html5/index.html	/^http://html5/#meta$/;"	v	class:meta	inherits:HTMLMetaElement
-meter	/home/david/html5/index.html	/^http://html5/#meter$/;"	v	class:meter	inherits:HTMLMeterElement
+meta	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlmetaelement">HTMLMetaElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:meta	inherits:HTMLMetaElement	link:#meta
 method	/home/david/html5/index.html	/^           attribute DOMString method;$/;"	v	class:HTMLFormElement
 min	/home/david/html5/index.html	/^           attribute DOMString min;$/;"	v	class:HTMLInputElement
 min	/home/david/html5/index.html	/^           attribute float min;$/;"	v	class:HTMLMeterElement
@@ -599,7 +598,7 @@ name	/home/david/html5/index.html	/^           attribute DOMString name;$/;"	v	c
 name	/home/david/html5/index.html	/^           attribute DOMString name;$/;"	v	class:HTMLSelectElement
 name	/home/david/html5/index.html	/^           attribute DOMString name;$/;"	v	class:HTMLTextAreaElement
 name	/home/david/html5/index.html	/^           attribute DOMString name;$/;"	v	class:Window
-nav	/home/david/html5/index.html	/^http://html5/#nav$/;"	v	class:nav	inherits:HTMLElement
+nav	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:nav	inherits:HTMLElement	link:#the-nav-element
 navigator	/home/david/html5/index.html	/^  readonly attribute Navigator navigator; $/;"	v	class:Window
 newURL	/home/david/html5/index.html	/^  readonly attribute any newURL;$/;"	v	class:HashChangeEvent
 noHref	/home/david/html5/index.html	/^           attribute boolean noHref;$/;"	v	class:HTMLAreaElement
@@ -607,9 +606,8 @@ noResize	/home/david/html5/index.html	/^           attribute boolean noResize;$/
 noShade	/home/david/html5/index.html	/^           attribute boolean noShade;$/;"	v	class:HTMLHRElement
 noValidate	/home/david/html5/index.html	/^           attribute boolean noValidate;$/;"	v	class:HTMLFormElement
 noWrap	/home/david/html5/index.html	/^           attribute boolean noWrap;$/;"	v	class:HTMLTableCellElement
-noscript	/home/david/html5/index.html	/^http://html5/#noscript$/;"	v	class:noscript	inherits:HTMLElement
-object	/home/david/html5/index.html	/^http://html5/#object$/;"	v	class:object	inherits:HTMLObjectElement
-ol	/home/david/html5/index.html	/^http://html5/#ol$/;"	v	class:ol	inherits:HTMLOListElement
+object	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlobjectelement">HTMLObjectElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:object	inherits:HTMLObjectElement	link:#the-object-element
+ol	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlolistelement">HTMLOListElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:ol	inherits:HTMLOListElement	link:#the-ol-element
 oldURL	/home/david/html5/index.html	/^  readonly attribute any oldURL;$/;"	v	class:HashChangeEvent
 onLine	/home/david/html5/index.html	/^  readonly attribute boolean onLine;$/;"	v	class:NavigatorOnLine
 onabort	/home/david/html5/index.html	/^           attribute Function onabort;$/;"	v	class:HTMLDocument
@@ -843,14 +841,17 @@ open	/home/david/html5/index.html	/^  HTMLDocument open(in optional DOMString ty
 open	/home/david/html5/index.html	/^  WindowProxy open(in DOMString url, in DOMString name, in DOMString features, in optional boolean replace);$/;"	m	class:HTMLDocument	signature:(<+url:DOMString+>, <+name:DOMString+>, <+features:DOMString+>, <+boolean:optional+>)
 open	/home/david/html5/index.html	/^  WindowProxy open(in optional DOMString url, in optional DOMString target, in optional DOMString features, in optional DOMString replace);$/;"	m	class:Window	signature:(<+DOMString:optional+>, <+DOMString:optional+>, <+DOMString:optional+>, <+DOMString:optional+>)
 opener	/home/david/html5/index.html	/^   readonly attribute WindowProxy opener;$/;"	v	class:Window
-optgroup	/home/david/html5/index.html	/^http://html5/#optgroup$/;"	v	class:optgroup	inherits:HTMLOptGroupElement
+optgroup	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmloptgroupelement">HTMLOptGroupElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:optgroup	inherits:HTMLOptGroupElement	link:#the-optgroup-element
+optgroup	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmloptgroupelement">HTMLOptGroupElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:optgroup	inherits:HTMLOptGroupElement	link:#the-optgroup-element	link:#the-option-element
 optimum	/home/david/html5/index.html	/^           attribute float optimum;$/;"	v	class:HTMLMeterElement
 options	/home/david/html5/index.html	/^  readonly attribute HTMLCollection options;$/;"	v	class:HTMLDataListElement
 options	/home/david/html5/index.html	/^  readonly attribute HTMLOptionsCollection options;$/;"	v	class:HTMLSelectElement
 outerHTML	/home/david/html5/index.html	/^           attribute DOMString outerHTML;$/;"	v	class:HTMLElement
-output	/home/david/html5/index.html	/^http://html5/#output$/;"	v	class:output	inherits:HTMLOutputElement
-p	/home/david/html5/index.html	/^http://html5/#p$/;"	v	class:p	inherits:HTMLParagraphElement
-param	/home/david/html5/index.html	/^http://html5/#param$/;"	v	class:param	inherits:HTMLParamElement
+output	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmloutputelement">HTMLOutputElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:output	inherits:HTMLOutputElement	link:#the-output-element
+output	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmloutputelement">HTMLOutputElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:output	inherits:HTMLOutputElement	link:#the-output-element	link:#the-progress-element
+output	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmloutputelement">HTMLOutputElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:output	inherits:HTMLOutputElement	link:#the-output-element	link:#the-progress-element	link:#the-meter-element
+p	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmlparagraphelement">HTMLParagraphElement</dfn> : <a href="#htmlelement">HTMLElement</a> {};</pre>$/;"	v	class:p	inherits:HTMLParagraphElement	link:#the-p-element
+param	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlparamelement">HTMLParamElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:param	inherits:HTMLParamElement	link:#the-param-element
 parent	/home/david/html5/index.html	/^  readonly attribute WindowProxy parent;$/;"	v	class:Window
 pathname	/home/david/html5/index.html	/^           attribute DOMString pathname;$/;"	v	class:HTMLAnchorElement
 pathname	/home/david/html5/index.html	/^           attribute DOMString pathname;$/;"	v	class:HTMLAreaElement
@@ -873,17 +874,17 @@ port	/home/david/html5/index.html	/^           attribute DOMString port;$/;"	v	c
 port	/home/david/html5/index.html	/^           attribute DOMString port;$/;"	v	class:Location
 position	/home/david/html5/index.html	/^  readonly attribute float position;$/;"	v	class:HTMLProgressElement
 poster	/home/david/html5/index.html	/^           attribute DOMString poster;$/;"	v	class:HTMLVideoElement
-pre	/home/david/html5/index.html	/^http://html5/#pre$/;"	v	class:pre	inherits:HTMLPreElement
+pre	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmlpreelement">HTMLPreElement</dfn> : <a href="#htmlelement">HTMLElement</a> {};</pre>$/;"	v	class:pre	inherits:HTMLPreElement	link:#the-pre-element
 preload	/home/david/html5/index.html	/^           attribute DOMString preload;$/;"	v	class:HTMLMediaElement
 print	/home/david/html5/index.html	/^  void print();$/;"	m	class:Window	signature:()
-progress	/home/david/html5/index.html	/^http://html5/#progress$/;"	v	class:progress	inherits:HTMLProgressElement
 prompt	/home/david/html5/index.html	/^  DOMString prompt(in DOMString message, in optional DOMString default);$/;"	m	class:Window	signature:(<+message:DOMString+>, <+DOMString:optional+>)
 protocol	/home/david/html5/index.html	/^           attribute DOMString protocol;$/;"	v	class:HTMLAnchorElement
 protocol	/home/david/html5/index.html	/^           attribute DOMString protocol;$/;"	v	class:HTMLAreaElement
 protocol	/home/david/html5/index.html	/^           attribute DOMString protocol;$/;"	v	class:Location
 pubDate	/home/david/html5/index.html	/^           attribute boolean pubDate;$/;"	v	class:HTMLTimeElement
 pushState	/home/david/html5/index.html	/^  void pushState(in any data, in DOMString title, in optional DOMString url);$/;"	m	class:History	signature:(<+data:any+>, <+title:DOMString+>, <+DOMString:optional+>)
-q	/home/david/html5/index.html	/^http://html5/#q$/;"	v	class:q	inherits:HTMLQuoteElement
+q	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlquoteelement">HTMLQuoteElement</a></code>.</dd>$/;"	v	class:q	inherits:HTMLQuoteElement	link:#the-q-element
+q	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlquoteelement">HTMLQuoteElement</a></code>.</dd>$/;"	v	class:q	inherits:HTMLQuoteElement	link:#the-q-element	link:#the-dfn-element
 queryCommandEnabled	/home/david/html5/index.html	/^  boolean queryCommandEnabled(in DOMString commandId);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)
 queryCommandIndeterm	/home/david/html5/index.html	/^  boolean queryCommandIndeterm(in DOMString commandId);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)
 queryCommandState	/home/david/html5/index.html	/^  boolean queryCommandState(in DOMString commandId);$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)
@@ -926,16 +927,17 @@ rowIndex	/home/david/html5/index.html	/^  readonly attribute long rowIndex;$/;"	
 rows	/home/david/html5/index.html	/^           attribute DOMString rows;$/;"	v	class:HTMLFrameSetElement
 rows	/home/david/html5/index.html	/^  readonly attribute HTMLCollection rows;$/;"	v	class:HTMLTableElement
 rows	/home/david/html5/index.html	/^  readonly attribute HTMLCollection rows;$/;"	v	class:HTMLTableSectionElement
-rp	/home/david/html5/index.html	/^http://html5/#rp$/;"	v	class:rp	inherits:HTMLElement
-rt	/home/david/html5/index.html	/^http://html5/#rt$/;"	v	class:rt	inherits:HTMLElement
-ruby	/home/david/html5/index.html	/^http://html5/#ruby$/;"	v	class:ruby	inherits:HTMLElement
+rp	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:rp	inherits:HTMLElement	link:#the-rp-element
+rt	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:rt	inherits:HTMLElement	link:#the-rt-element
+ruby	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:ruby	inherits:HTMLElement	link:#the-ruby-element
 rules	/home/david/html5/index.html	/^           attribute DOMString rules;$/;"	v	class:HTMLTableElement
-samp	/home/david/html5/index.html	/^http://html5/#samp$/;"	v	class:samp	inherits:HTMLElement
+samp	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:samp	inherits:HTMLElement	link:#the-samp-element
 sandbox	/home/david/html5/index.html	/^   readonly attribute DOMSettableTokenList sandbox;$/;"	v	class:HTMLIFrameElement
 scheme	/home/david/html5/index.html	/^           attribute DOMString scheme;$/;"	v	class:HTMLMetaElement
 scope	/home/david/html5/index.html	/^           attribute DOMString scope;$/;"	v	class:HTMLTableHeaderCellElement
 scoped	/home/david/html5/index.html	/^           attribute boolean scoped;$/;"	v	class:HTMLStyleElement
-script	/home/david/html5/index.html	/^http://html5/#script$/;"	v	class:script	inherits:HTMLScriptElement
+script	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlscriptelement">HTMLScriptElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:script	inherits:HTMLScriptElement	link:#script
+script	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlscriptelement">HTMLScriptElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:script	inherits:HTMLScriptElement	link:#script	link:#the-noscript-element
 scripts	/home/david/html5/index.html	/^  readonly attribute HTMLCollection scripts;$/;"	v	class:HTMLDocument
 scrollIntoView	/home/david/html5/index.html	/^  void scrollIntoView();$/;"	m	class:HTMLElement	signature:()
 scrollIntoView	/home/david/html5/index.html	/^  void scrollIntoView(in boolean top);$/;"	m	class:HTMLElement	signature:(<+top:boolean+>)
@@ -946,13 +948,13 @@ seamless	/home/david/html5/index.html	/^           attribute boolean seamless;$/
 search	/home/david/html5/index.html	/^           attribute DOMString search;$/;"	v	class:HTMLAnchorElement
 search	/home/david/html5/index.html	/^           attribute DOMString search;$/;"	v	class:HTMLAreaElement
 search	/home/david/html5/index.html	/^           attribute DOMString search;$/;"	v	class:Location
-section	/home/david/html5/index.html	/^http://html5/#section$/;"	v	class:section	inherits:HTMLElement
+section	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:section	inherits:HTMLElement	link:#the-section-element
 sectionRowIndex	/home/david/html5/index.html	/^  readonly attribute long sectionRowIndex;$/;"	v	class:HTMLTableRowElement
 seekable	/home/david/html5/index.html	/^  readonly attribute TimeRanges seekable;$/;"	v	class:HTMLMediaElement
 seeking	/home/david/html5/index.html	/^  readonly attribute boolean seeking;$/;"	v	class:HTMLMediaElement
 select	/home/david/html5/index.html	/^  void select();$/;"	m	class:HTMLInputElement	signature:()
 select	/home/david/html5/index.html	/^  void select();$/;"	m	class:HTMLTextAreaElement	signature:()
-select	/home/david/html5/index.html	/^http://html5/#select$/;"	v	class:select	inherits:HTMLSelectElement
+select	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlselectelement">HTMLSelectElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:select	inherits:HTMLSelectElement	link:#the-select-element
 selectAllChildren	/home/david/html5/index.html	/^  void selectAllChildren(in Node parentNode);$/;"	m	class:Selection	signature:(<+parentNode:Node+>)
 selected	/home/david/html5/index.html	/^           attribute boolean selected;$/;"	v	class:HTMLOptionElement
 selectedIndex	/home/david/html5/index.html	/^           attribute long selectedIndex;$/;"	v	class:HTMLSelectElement
@@ -980,9 +982,9 @@ size	/home/david/html5/index.html	/^           attribute DOMString size; $/;"	v	
 size	/home/david/html5/index.html	/^           attribute DOMString size;$/;"	v	class:HTMLHRElement
 size	/home/david/html5/index.html	/^           attribute long size; $/;"	v	class:HTMLBaseFontElement
 sizes	/home/david/html5/index.html	/^   readonly attribute DOMSettableTokenList sizes;$/;"	v	class:HTMLLinkElement
-small	/home/david/html5/index.html	/^http://html5/#small$/;"	v	class:small	inherits:HTMLElement
-source	/home/david/html5/index.html	/^http://html5/#source$/;"	v	class:source	inherits:HTMLSourceElement
-span	/home/david/html5/index.html	/^http://html5/#span$/;"	v	class:span	inherits:HTMLSpanElement
+small	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:small	inherits:HTMLElement	link:#the-small-element
+source	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlsourceelement">HTMLSourceElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:source	inherits:HTMLSourceElement	link:#the-source-element
+span	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmlspanelement">HTMLSpanElement</dfn> : <a href="#htmlelement">HTMLElement</a> {};</pre>$/;"	v	class:span	inherits:HTMLSpanElement	link:#the-span-element
 spellcheck	/home/david/html5/index.html	/^           attribute DOMString spellcheck;$/;"	v	class:HTMLElement
 src	/home/david/html5/index.html	/^           attribute DOMString src;$/;"	v	class:HTMLEmbedElement
 src	/home/david/html5/index.html	/^           attribute DOMString src;$/;"	v	class:HTMLFrameElement
@@ -1006,43 +1008,45 @@ stepMismatch	/home/david/html5/index.html	/^  readonly attribute boolean stepMis
 stepUp	/home/david/html5/index.html	/^  void stepUp(in optional long n);$/;"	m	class:HTMLInputElement	signature:(<+long:optional+>)
 stop	/home/david/html5/index.html	/^  void stop();$/;"	m	class:HTMLMarqueeElement	signature:()
 stop	/home/david/html5/index.html	/^  void stop();$/;"	m	class:Window	signature:()
-strong	/home/david/html5/index.html	/^http://html5/#strong$/;"	v	class:strong	inherits:HTMLElement
+strong	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:strong	inherits:HTMLElement	link:#the-strong-element
 style	/home/david/html5/index.html	/^  readonly attribute CSSStyleDeclaration style;$/;"	v	class:HTMLElement
-style	/home/david/html5/index.html	/^http://html5/#style$/;"	v	class:style	inherits:HTMLStyleElement
+style	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmlstyleelement">HTMLStyleElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:style	inherits:HTMLStyleElement	link:#the-style-element
 submit	/home/david/html5/index.html	/^  void submit();$/;"	m	class:HTMLFormElement	signature:()
 summary	/home/david/html5/index.html	/^           attribute DOMString summary;$/;"	v	class:HTMLTableElement
-summary	/home/david/html5/index.html	/^http://html5/#summary$/;"	v	class:summary	inherits:HTMLElement
+summary	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:summary	inherits:HTMLElement	link:#the-summary-element
 swapCache	/home/david/html5/index.html	/^  void swapCache();$/;"	m	class:ApplicationCache	signature:()
 tBodies	/home/david/html5/index.html	/^  readonly attribute HTMLCollection tBodies;$/;"	v	class:HTMLTableElement
 tFoot	/home/david/html5/index.html	/^           attribute HTMLTableSectionElement tFoot;$/;"	v	class:HTMLTableElement
 tHead	/home/david/html5/index.html	/^           attribute HTMLTableSectionElement tHead;$/;"	v	class:HTMLTableElement
 tabIndex	/home/david/html5/index.html	/^           attribute long tabIndex;$/;"	v	class:HTMLElement
-table	/home/david/html5/index.html	/^http://html5/#table$/;"	v	class:table	inherits:HTMLTableElement
+table	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmltableelement">HTMLTableElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:table	inherits:HTMLTableElement	link:#the-table-element
 tags	/home/david/html5/index.html	/^  HTMLAllCollection tags(in DOMString tagName);$/;"	m	class:HTMLAllCollection	signature:(<+tagName:DOMString+>)
 target	/home/david/html5/index.html	/^           attribute DOMString target;$/;"	v	class:HTMLAnchorElement
 target	/home/david/html5/index.html	/^           attribute DOMString target;$/;"	v	class:HTMLAreaElement
 target	/home/david/html5/index.html	/^           attribute DOMString target;$/;"	v	class:HTMLBaseElement
 target	/home/david/html5/index.html	/^           attribute DOMString target;$/;"	v	class:HTMLFormElement
 target	/home/david/html5/index.html	/^           attribute DOMString target;$/;"	v	class:HTMLLinkElement
-tbody	/home/david/html5/index.html	/^http://html5/#tbody$/;"	v	class:tbody	inherits:HTMLTableSectionElement
-td	/home/david/html5/index.html	/^http://html5/#td$/;"	v	class:td	inherits:HTMLTableDataCellElement
+tbody	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmltablesectionelement">HTMLTableSectionElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:tbody	inherits:HTMLTableSectionElement	link:#the-tbody-element
+tbody	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmltablesectionelement">HTMLTableSectionElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:tbody	inherits:HTMLTableSectionElement	link:#the-tbody-element	link:#the-thead-element
+tbody	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmltablesectionelement">HTMLTableSectionElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:tbody	inherits:HTMLTableSectionElement	link:#the-tbody-element	link:#the-thead-element	link:#the-tfoot-element
+td	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmltabledatacellelement">HTMLTableDataCellElement</dfn> : <a href="#htmltablecellelement">HTMLTableCellElement</a> {};</pre>$/;"	v	class:td	inherits:HTMLTableDataCellElement	link:#the-td-element
 text	/home/david/html5/index.html	/^           attribute DOMString text;$/;"	v	class:HTMLAnchorElement
 text	/home/david/html5/index.html	/^           attribute DOMString text;$/;"	v	class:HTMLBodyElement
 text	/home/david/html5/index.html	/^           attribute DOMString text;$/;"	v	class:HTMLOptionElement
 text	/home/david/html5/index.html	/^           attribute DOMString text;$/;"	v	class:HTMLScriptElement
 text	/home/david/html5/index.html	/^           attribute DOMString text;$/;"	v	class:HTMLTitleElement
-textarea	/home/david/html5/index.html	/^http://html5/#textarea$/;"	v	class:textarea	inherits:HTMLTextAreaElement
-th	/home/david/html5/index.html	/^http://html5/#th$/;"	v	class:th	inherits:HTMLTableHeaderCellElement
-time	/home/david/html5/index.html	/^http://html5/#time$/;"	v	class:time	inherits:HTMLTimeElement
+textarea	/home/david/html5/index.html	/^<pre class="idl">interface <dfn id="htmltextareaelement">HTMLTextAreaElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:textarea	inherits:HTMLTextAreaElement	link:#the-textarea-element
+th	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmltableheadercellelement">HTMLTableHeaderCellElement</dfn> : <a href="#htmltablecellelement">HTMLTableCellElement</a> {$/;"	v	class:th	inherits:HTMLTableHeaderCellElement	link:#the-th-element
+th	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmltableheadercellelement">HTMLTableHeaderCellElement</dfn> : <a href="#htmltablecellelement">HTMLTableCellElement</a> {$/;"	v	class:th	inherits:HTMLTableHeaderCellElement	link:#the-th-element	link:#the-form-element
 title	/home/david/html5/index.html	/^           attribute DOMString title;$/;"	v	class:HTMLDocument
 title	/home/david/html5/index.html	/^           attribute DOMString title;$/;"	v	class:HTMLElement
-title	/home/david/html5/index.html	/^http://html5/#title$/;"	v	class:title	inherits:HTMLTitleElement
+title	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmltitleelement">HTMLTitleElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:title	inherits:HTMLTitleElement	link:#the-title-element-0
 toDataURL	/home/david/html5/index.html	/^  DOMString toDataURL(in optional DOMString type, in any... args);$/;"	m	class:HTMLCanvasElement	signature:(<+DOMString:optional+>, <+args:any+>)
 toggle	/home/david/html5/index.html	/^  boolean toggle(in DOMString token);$/;"	m	class:DOMTokenList	signature:(<+token:DOMString+>)
 tooLong	/home/david/html5/index.html	/^  readonly attribute boolean tooLong;$/;"	v	class:ValidityState
 toolbar	/home/david/html5/index.html	/^   readonly attribute BarProp toolbar;$/;"	v	class:Window
 top	/home/david/html5/index.html	/^  readonly attribute WindowProxy top;$/;"	v	class:Window
-tr	/home/david/html5/index.html	/^http://html5/#tr$/;"	v	class:tr	inherits:HTMLTableRowElement
+tr	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmltablerowelement">HTMLTableRowElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:tr	inherits:HTMLTableRowElement	link:#the-tr-element
 trueSpeed	/home/david/html5/index.html	/^           attribute DOMString trueSpeed;$/;"	v	class:HTMLMarqueeElement
 type	/home/david/html5/index.html	/^           attribute DOMString type;$/;"	v	class:HTMLAnchorElement
 type	/home/david/html5/index.html	/^           attribute DOMString type;$/;"	v	class:HTMLAreaElement
@@ -1067,7 +1071,7 @@ type	/home/david/html5/index.html	/^  readonly attribute DOMString type;$/;"	v	c
 type	/home/david/html5/index.html	/^  readonly attribute DOMString type;$/;"	v	class:HTMLTextAreaElement
 typeMismatch	/home/david/html5/index.html	/^  readonly attribute boolean typeMismatch;$/;"	v	class:ValidityState
 types	/home/david/html5/index.html	/^  readonly attribute DOMStringList types;$/;"	v	class:DataTransfer
-ul	/home/david/html5/index.html	/^http://html5/#ul$/;"	v	class:ul	inherits:HTMLUListElement
+ul	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmlulistelement">HTMLUListElement</dfn> : <a href="#htmlelement">HTMLElement</a> {};</pre>$/;"	v	class:ul	inherits:HTMLUListElement	link:#the-ul-element
 undoManager	/home/david/html5/index.html	/^  readonly attribute UndoManager undoManager;$/;"	v	class:Window
 update	/home/david/html5/index.html	/^  void update();$/;"	m	class:ApplicationCache	signature:()
 useMap	/home/david/html5/index.html	/^           attribute DOMString useMap;$/;"	v	class:HTMLImageElement
@@ -1113,16 +1117,20 @@ valueAsDate	/home/david/html5/index.html	/^  readonly attribute Date valueAsDate
 valueAsNumber	/home/david/html5/index.html	/^           attribute double valueAsNumber;$/;"	v	class:HTMLInputElement
 valueMissing	/home/david/html5/index.html	/^  readonly attribute boolean valueMissing;$/;"	v	class:ValidityState
 valueType	/home/david/html5/index.html	/^           attribute DOMString valueType;$/;"	v	class:HTMLParamElement
-var	/home/david/html5/index.html	/^http://html5/#var$/;"	v	class:var	inherits:HTMLElement
+var	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:var	inherits:HTMLElement	link:#the-var-element
 version	/home/david/html5/index.html	/^           attribute DOMString version;$/;"	v	class:HTMLHtmlElement
-video	/home/david/html5/index.html	/^http://html5/#video$/;"	v	class:video	inherits:HTMLVideoElement
+video	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmlvideoelement">HTMLVideoElement</dfn> : <a href="#htmlmediaelement">HTMLMediaElement</a> {$/;"	v	class:video	inherits:HTMLVideoElement	link:#video
+video	/home/david/html5/index.html	/^    <pre class="idl">interface <dfn id="htmlvideoelement">HTMLVideoElement</dfn> : <a href="#htmlmediaelement">HTMLMediaElement</a> {$/;"	v	class:video	inherits:HTMLVideoElement	link:#video	link:#audio
 visible	/home/david/html5/index.html	/^           attribute boolean visible;$/;"	v	class:BarProp
 vlinkColor	/home/david/html5/index.html	/^           attribute DOMString vlinkColor;$/;"	v	class:HTMLDocument
 void	/home/david/html5/index.html	/^  creator void (in DOMString name, in DOMString value);$/;"	m	class:DOMStringMap	signature:(<+name:DOMString+>, <+value:DOMString+>)
 void	/home/david/html5/index.html	/^  deleter void (in DOMString name);$/;"	m	class:DOMStringMap	signature:(<+name:DOMString+>)
 void	/home/david/html5/index.html	/^  setter void (in DOMString name, in DOMString value);$/;"	m	class:DOMStringMap	signature:(<+name:DOMString+>, <+value:DOMString+>)
 volume	/home/david/html5/index.html	/^           attribute float volume;$/;"	v	class:HTMLMediaElement
-wbr	/home/david/html5/index.html	/^http://html5/#wbr$/;"	v	class:wbr	inherits:HTMLElement
+wbr	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:wbr	inherits:HTMLElement	link:#the-wbr-element
+wbr	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:wbr	inherits:HTMLElement	link:#the-wbr-element	link:#the-ins-element
+wbr	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:wbr	inherits:HTMLElement	link:#the-wbr-element	link:#the-ins-element	link:#the-del-element
+wbr	/home/david/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:wbr	inherits:HTMLElement	link:#the-wbr-element	link:#the-ins-element	link:#the-del-element	link:#the-img-element
 width	/home/david/html5/index.html	/^           attribute DOMString width;$/;"	v	class:HTMLAppletElement
 width	/home/david/html5/index.html	/^           attribute DOMString width;$/;"	v	class:HTMLEmbedElement
 width	/home/david/html5/index.html	/^           attribute DOMString width;$/;"	v	class:HTMLHRElement

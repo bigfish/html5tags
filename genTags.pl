@@ -153,6 +153,7 @@ my $element_name = "";
 my $element_interface = "";
 my $doc_url = "http://html5/";
 my $got_interface = 1;
+my $link = "";
 
 foreach(@lines){
 
@@ -164,6 +165,7 @@ foreach(@lines){
 	if ($line =~ /The\s<dfn>\s*<code>([^<]*)<\/code>\s*<\/dfn>\s*element/ ){
 		$element_name = $1;
 		if ($element_name !~ /^\s*$/ ){
+			$link = "";
 			$got_interface = 0;
 		}
 	}
@@ -173,21 +175,29 @@ foreach(@lines){
 		if ($line =~ /<dd>\s*Uses\s*<code>\s*<a[^>]*>([^<]*)<\/a>/ ) {
 			#print "$element_name implements interface: $1 \n";
 			$element_interface = $1;
-			$cmd = $doc_url."#".$element_name;
-			$tag_line = $element_name.$TAB.$html_spec.$TAB.'/^'.$cmd.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$element_name.$TAB.'inherits:'.$element_interface;
-			push(@tag_lines, $tag_line);
-			$got_interface = 1;
+			$tag_line = $element_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$element_name.$TAB.'inherits:'.$element_interface;
+			#push(@tag_lines, $tag_line);
+			#$got_interface = 1;
 		}
 
 		if ($line =~ /<pre\s+class="idl">interface\s<dfn[^>]+>([A-Za-z]+)<\/dfn>/g ) {
 			#print "$element_name implements interface: $1 \n";
 			$element_interface = $1;
-			$cmd = $doc_url."#".$element_name;
-			$tag_line = $element_name.$TAB.$html_spec.$TAB.'/^'.$cmd.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$element_name.$TAB.'inherits:'.$element_interface;
-			push(@tag_lines, $tag_line);
-			$got_interface = 1;
+			$tag_line = $element_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$element_name.$TAB.'inherits:'.$element_interface;
+			#push(@tag_lines, $tag_line);
+			#$got_interface = 1;
 		}
-		
+		#grab the link to the definition in the spec
+		#note this is only for the elements themselves not properties
+		if ($line =~ /<a\s*href="(#[^"]*)"\s*>\s*([A-Za-z_0-9]*)\s*<\/a>/ ){
+			$link = $1;
+			if ($2 =~ /$element_name/ ) {
+				#print "el name: $element_name  link: $link \n";
+				$tag_line = $tag_line.$TAB."link:".$link;
+				push(@tag_lines, $tag_line);
+				$got_interface = 1;
+			}
+		}
 	}
 	
 } 
