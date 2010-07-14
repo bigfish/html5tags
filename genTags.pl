@@ -51,7 +51,7 @@ foreach(@lines){
 		$inherit = $2;
 		$link = $3;
 		#set cmd to the url of the definition
-		$tag_line = $interface_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name;
+		$tag_line = $interface_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name.$TAB.'type:constructor';
 		if ($inherit) {
 			$tag_line = $tag_line.$TAB.'inherits:'.$inherit;
 		}
@@ -74,7 +74,7 @@ foreach(@lines){
 			$attr_name = $3;
 			$link = $4;
 			$typeToken = "v";
-			$tag_line = $attr_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name;
+			$tag_line = $attr_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name.$TAB.'type:'.$attr_type;
 			if ($link){
 				$tag_line = $tag_line.$TAB.'link:'.$link;
 			}
@@ -114,7 +114,7 @@ foreach(@lines){
 			}
 
 			$sig .= ")";
-			$tag_line = $method_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name.$TAB.'signature:'.$sig;
+			$tag_line = $method_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$interface_name.$TAB.'signature:'.$sig.$TAB.'type:'.$return_type;
 			if ($link){
 				$tag_line = $tag_line.$TAB.'link:'.$link;
 			}
@@ -186,7 +186,7 @@ foreach(@lines){
 		if ($line =~ /<dd>\s*Uses\s*<code>\s*<a[^>]*>([^<]*)<\/a>/ ) {
 			#print "$element_name implements interface: $1 \n";
 			$element_interface = $1;
-			$tag_line = $element_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$element_name.$TAB.'inherits:'.$element_interface;
+			$tag_line = $element_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$element_name.$TAB.'type:'.$element_name.$TAB.'inherits:'.$element_interface;
 			#push(@tag_lines, $tag_line);
 			#$got_interface = 1;
 		}
@@ -194,7 +194,7 @@ foreach(@lines){
 		if ($line =~ /<pre\s+class="idl">interface\s<dfn[^>]+>([A-Za-z]+)<\/dfn>/g ) {
 			#print "$element_name implements interface: $1 \n";
 			$element_interface = $1;
-			$tag_line = $element_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$element_name.$TAB.'inherits:'.$element_interface;
+			$tag_line = $element_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$element_name.$TAB.'type:'.$element_name.$TAB.'inherits:'.$element_interface;
 			#push(@tag_lines, $tag_line);
 			#$got_interface = 1;
 		}
