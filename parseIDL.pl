@@ -61,7 +61,7 @@ foreach(@lines){
 	
 	if ($is_idl){
 
-	 	if($line =~ /(.*)<\/pre>/) {
+	 	if($line =~ /(.*)<\/pre>/i) {
 
 			$is_idl = 0;
            
@@ -74,7 +74,7 @@ foreach(@lines){
 
 	}
 
-  if (!$is_idl && $line =~ /<pre\s+class\s*=\s*"idl"[^>]*>(.*)/) {
+  if (!$is_idl && $line =~ /<pre\s+class\s*=\s*"idl"[^>]*>(.*)/i) {
 		$is_idl = 1;
 
 		push(@idl_lines, processLine($1));

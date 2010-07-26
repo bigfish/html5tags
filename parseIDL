@@ -1,15 +1,23 @@
 #!/bin/bash
 #this must be run from same dir as other files
-SPEC_FILE="./index.html"
+if [ -z $1 ];then
+	echo "need first argument to parseIDL: spec file"
+	exit 1
+fi
+if [ -z $2 ];then
+	echo "need second argument to parseIDL: IDL output"
+	exit 1
+fi
+SPEC_FILE=$1
 TMP_FILE="./tmp.html"
-IDL_FILE="./html5.idl"
+IDL_FILE=$2
 
 #pre-process file 
-stripComments.pl $SPEC_FILE | sed 's/<pre class="idl"/\
-<pre class="idl"/g' | sed 's/<\/pre>/\
-<\/pre>/g' > $TMP_FILE
+stripComments.pl $SPEC_FILE | sed -E 's/<pre class="idl"/\
+<pre class="idl"/gI' | sed -E 's/<\/pre>/\
+<\/pre>/gI' > $TMP_FILE
 
 #extract IDL into output file
 parseIDL.pl $TMP_FILE > $IDL_FILE
 
-rm $TMP_FILE
+#rm $TMP_FILE

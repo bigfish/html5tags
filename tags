@@ -485,7 +485,7 @@ href	/Users/davidwilhelm/html5/index.html	/^           attribute DOMString href;
 hreflang	/Users/davidwilhelm/html5/index.html	/^           attribute DOMString hreflang;#dom-a-hreflang$/;"	v	class:HTMLAnchorElement	type:DOMString	link:#dom-a-hreflang
 hreflang	/Users/davidwilhelm/html5/index.html	/^           attribute DOMString hreflang;#dom-area-hreflang$/;"	v	class:HTMLAreaElement	type:DOMString	link:#dom-area-hreflang
 hreflang	/Users/davidwilhelm/html5/index.html	/^           attribute DOMString hreflang;#dom-link-hreflang$/;"	v	class:HTMLLinkElement	type:DOMString	link:#dom-link-hreflang
-html	/Users/davidwilhelm/html5/index.html	/^    <pre class="idl">interface <dfn id="htmlhtmlelement">HTMLHtmlElement</dfn> : <a href="#htmlelement">HTMLElement</a> {};</pre>$/;"	v	class:html	type:html	inherits:HTMLHtmlElement	link:#the-html-element-0
+html	/Users/davidwilhelm/html5/index.html	/^    <pre class="idl">interface <dfn id="htmlhtmlelement">HTMLHtmlElement</dfn> : <a href="#htmlelement">HTMLElement</a> {};</pre>$/;"	v	class:html	type:html	inherits:HTMLHtmlElement	link:#htmlelement
 htmlFor	/Users/davidwilhelm/html5/index.html	/^           attribute DOMString htmlFor;#dom-label-htmlfor$/;"	v	class:HTMLLabelElement	type:DOMString	link:#dom-label-htmlfor
 htmlFor	/Users/davidwilhelm/html5/index.html	/^           attribute DOMString htmlFor;#dom-script-htmlfor$/;"	v	class:HTMLScriptElement	type:DOMString	link:#dom-script-htmlfor
 htmlFor	/Users/davidwilhelm/html5/index.html	/^   readonly attribute DOMSettableTokenList htmlFor;#domsettabletokenlist$/;"	v	class:HTMLOutputElement	type:DOMSettableTokenList	link:#domsettabletokenlist
@@ -538,7 +538,7 @@ length	/Users/davidwilhelm/html5/index.html	/^  readonly attribute long length;#
 length	/Users/davidwilhelm/html5/index.html	/^  readonly attribute long length;#dom-history-length$/;"	v	class:History	type:long	link:#dom-history-length
 li	/Users/davidwilhelm/html5/index.html	/^<pre class="idl">interface <dfn id="htmllielement">HTMLLIElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:li	type:li	inherits:HTMLLIElement	link:#the-li-element
 link	/Users/davidwilhelm/html5/index.html	/^           attribute DOMString link;#dom-body-link$/;"	v	class:HTMLBodyElement	type:DOMString	link:#dom-body-link
-link	/Users/davidwilhelm/html5/index.html	/^<pre class="idl">interface <dfn id="htmllinkelement">HTMLLinkElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:link	type:link	inherits:HTMLLinkElement	link:#the-link-element
+link	/Users/davidwilhelm/html5/index.html	/^<pre class="idl">interface <dfn id="htmllinkelement">HTMLLinkElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:link	type:link	inherits:HTMLLinkElement	link:#htmllinkelement
 linkColor	/Users/davidwilhelm/html5/index.html	/^           attribute DOMString linkColor;#dom-document-linkcolor$/;"	v	class:HTMLDocument	type:DOMString	link:#dom-document-linkcolor
 links	/Users/davidwilhelm/html5/index.html	/^  readonly attribute HTMLCollection links;#htmlcollection$/;"	v	class:HTMLDocument	type:HTMLCollection	link:#htmlcollection
 list	/Users/davidwilhelm/html5/index.html	/^  readonly attribute HTMLElement list;#htmlelement$/;"	v	class:HTMLInputElement	type:HTMLElement	link:#htmlelement
@@ -883,8 +883,8 @@ protocol	/Users/davidwilhelm/html5/index.html	/^           attribute DOMString p
 protocol	/Users/davidwilhelm/html5/index.html	/^           attribute DOMString protocol;#dom-location-protocol$/;"	v	class:Location	type:DOMString	link:#dom-location-protocol
 pubDate	/Users/davidwilhelm/html5/index.html	/^           attribute boolean pubDate;#dom-time-pubdate$/;"	v	class:HTMLTimeElement	type:boolean	link:#dom-time-pubdate
 pushState	/Users/davidwilhelm/html5/index.html	/^  void pushState(in any data, in DOMString title, in optional DOMString url);#dom-history-pushstate$/;"	m	class:History	signature:(<+data:any+>, <+title:DOMString+>, <+DOMString:optional+>)	type:void	link:#dom-history-pushstate
-q	/Users/davidwilhelm/html5/index.html	/^   <dd>Uses <code><a href="#htmlquoteelement">HTMLQuoteElement</a></code>.</dd>$/;"	v	class:q	type:q	inherits:HTMLQuoteElement	link:#the-q-element
-q	/Users/davidwilhelm/html5/index.html	/^   <dd>Uses <code><a href="#htmlquoteelement">HTMLQuoteElement</a></code>.</dd>$/;"	v	class:q	type:q	inherits:HTMLQuoteElement	link:#the-q-element	link:#the-dfn-element
+q	/Users/davidwilhelm/html5/index.html	/^   <dd>Uses <code><a href="#htmlquoteelement">HTMLQuoteElement</a></code>.</dd>$/;"	v	class:q	type:q	inherits:HTMLQuoteElement	link:#htmlquoteelement
+q	/Users/davidwilhelm/html5/index.html	/^   <dd>Uses <code><a href="#htmlquoteelement">HTMLQuoteElement</a></code>.</dd>$/;"	v	class:q	type:q	inherits:HTMLQuoteElement	link:#htmlquoteelement	link:#the-dfn-element
 queryCommandEnabled	/Users/davidwilhelm/html5/index.html	/^  boolean queryCommandEnabled(in DOMString commandId);#dom-document-querycommandenabled$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)	type:boolean	link:#dom-document-querycommandenabled
 queryCommandIndeterm	/Users/davidwilhelm/html5/index.html	/^  boolean queryCommandIndeterm(in DOMString commandId);#dom-document-querycommandindeterm$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)	type:boolean	link:#dom-document-querycommandindeterm
 queryCommandState	/Users/davidwilhelm/html5/index.html	/^  boolean queryCommandState(in DOMString commandId);#dom-document-querycommandstate$/;"	m	class:HTMLDocument	signature:(<+commandId:DOMString+>)	type:boolean	link:#dom-document-querycommandstate
@@ -1010,7 +1010,7 @@ stop	/Users/davidwilhelm/html5/index.html	/^  void stop();#dom-marquee-stop$/;"	
 stop	/Users/davidwilhelm/html5/index.html	/^  void stop();#dom-window-stop$/;"	m	class:Window	signature:()	type:void	link:#dom-window-stop
 strong	/Users/davidwilhelm/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:strong	type:strong	inherits:HTMLElement	link:#the-strong-element
 style	/Users/davidwilhelm/html5/index.html	/^  readonly attribute CSSStyleDeclaration style;#dom-style$/;"	v	class:HTMLElement	type:CSSStyleDeclaration	link:#dom-style
-style	/Users/davidwilhelm/html5/index.html	/^<pre class="idl">interface <dfn id="htmlstyleelement">HTMLStyleElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:style	type:style	inherits:HTMLStyleElement	link:#the-style-element
+style	/Users/davidwilhelm/html5/index.html	/^<pre class="idl">interface <dfn id="htmlstyleelement">HTMLStyleElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:style	type:style	inherits:HTMLStyleElement	link:#htmlstyleelement
 submit	/Users/davidwilhelm/html5/index.html	/^  void submit();#dom-form-submit$/;"	m	class:HTMLFormElement	signature:()	type:void	link:#dom-form-submit
 summary	/Users/davidwilhelm/html5/index.html	/^           attribute DOMString summary;#dom-table-summary$/;"	v	class:HTMLTableElement	type:DOMString	link:#dom-table-summary
 summary	/Users/davidwilhelm/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:summary	type:summary	inherits:HTMLElement	link:#the-summary-element
@@ -1019,7 +1019,7 @@ tBodies	/Users/davidwilhelm/html5/index.html	/^  readonly attribute HTMLCollecti
 tFoot	/Users/davidwilhelm/html5/index.html	/^           attribute HTMLTableSectionElement tFoot;#htmltablesectionelement$/;"	v	class:HTMLTableElement	type:HTMLTableSectionElement	link:#htmltablesectionelement
 tHead	/Users/davidwilhelm/html5/index.html	/^           attribute HTMLTableSectionElement tHead;#htmltablesectionelement$/;"	v	class:HTMLTableElement	type:HTMLTableSectionElement	link:#htmltablesectionelement
 tabIndex	/Users/davidwilhelm/html5/index.html	/^           attribute long tabIndex;#dom-tabindex$/;"	v	class:HTMLElement	type:long	link:#dom-tabindex
-table	/Users/davidwilhelm/html5/index.html	/^<pre class="idl">interface <dfn id="htmltableelement">HTMLTableElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:table	type:table	inherits:HTMLTableElement	link:#the-table-element
+table	/Users/davidwilhelm/html5/index.html	/^<pre class="idl">interface <dfn id="htmltableelement">HTMLTableElement</dfn> : <a href="#htmlelement">HTMLElement</a> {$/;"	v	class:table	type:table	inherits:HTMLTableElement	link:#htmltablecaptionelement
 tags	/Users/davidwilhelm/html5/index.html	/^  HTMLAllCollection tags(in DOMString tagName);#htmlallcollection$/;"	m	class:HTMLAllCollection	signature:(<+tagName:DOMString+>)	type:HTMLAllCollection	link:#htmlallcollection
 target	/Users/davidwilhelm/html5/index.html	/^           attribute DOMString target;#dom-a-target$/;"	v	class:HTMLAnchorElement	type:DOMString	link:#dom-a-target
 target	/Users/davidwilhelm/html5/index.html	/^           attribute DOMString target;#dom-area-target$/;"	v	class:HTMLAreaElement	type:DOMString	link:#dom-area-target
@@ -1129,8 +1129,8 @@ void	/Users/davidwilhelm/html5/index.html	/^  setter void (in DOMString name, in
 volume	/Users/davidwilhelm/html5/index.html	/^           attribute float volume;#dom-media-volume$/;"	v	class:HTMLMediaElement	type:float	link:#dom-media-volume
 wbr	/Users/davidwilhelm/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:wbr	type:wbr	inherits:HTMLElement	link:#the-wbr-element
 wbr	/Users/davidwilhelm/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:wbr	type:wbr	inherits:HTMLElement	link:#the-wbr-element	link:#the-ins-element
-wbr	/Users/davidwilhelm/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:wbr	type:wbr	inherits:HTMLElement	link:#the-wbr-element	link:#the-ins-element	link:#the-del-element
-wbr	/Users/davidwilhelm/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:wbr	type:wbr	inherits:HTMLElement	link:#the-wbr-element	link:#the-ins-element	link:#the-del-element	link:#the-img-element
+wbr	/Users/davidwilhelm/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:wbr	type:wbr	inherits:HTMLElement	link:#the-wbr-element	link:#the-ins-element	link:#htmlmodelement
+wbr	/Users/davidwilhelm/html5/index.html	/^   <dd>Uses <code><a href="#htmlelement">HTMLElement</a></code>.</dd>$/;"	v	class:wbr	type:wbr	inherits:HTMLElement	link:#the-wbr-element	link:#the-ins-element	link:#htmlmodelement	link:#the-img-element
 width	/Users/davidwilhelm/html5/index.html	/^           attribute DOMString width;#dom-applet-width$/;"	v	class:HTMLAppletElement	type:DOMString	link:#dom-applet-width
 width	/Users/davidwilhelm/html5/index.html	/^           attribute DOMString width;#dom-col-width$/;"	v	class:HTMLTableColElement	type:DOMString	link:#dom-col-width
 width	/Users/davidwilhelm/html5/index.html	/^           attribute DOMString width;#dom-dim-width$/;"	v	class:HTMLEmbedElement	type:DOMString	link:#dom-dim-width

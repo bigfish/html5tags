@@ -2,9 +2,9 @@
 
 use File::Basename;
 
+$file = shift;
 $html_spec = shift;
 $doc_url = shift;
-$file = "html5.idl";
 
 (my $filename, my $filepath, my $ext) = fileparse($file, qr{\..*});
 #read file 
@@ -44,7 +44,7 @@ foreach(@lines){
 
 	my $line = $_;
 
-	if ($line =~ /^interface\s+([A-Za-z]+)\s*(?::\s*([A-Za-z]+))?\s*{\s*(?:};)?(#.*)?/) {
+	if ($line =~ /^interface\s+([A-Za-z]+)\s*(?::\s*([A-Za-z]+))?\s*{\s*(?:};)?(#.*)?/i) {
 
 		$typeToken = "c";
 		$interface_name = $1;
@@ -67,7 +67,7 @@ foreach(@lines){
 	if ($interface_name) {
 		
 		#attributes
-		if ($line =~ /^\s*(readonly)?\s+attribute\s+([A-Za-z]*)\s+([A-Za-z_0-9]*);(#.*)?/) {
+		if ($line =~ /^\s*(readonly)?\s+attribute\s+([A-Za-z]*)\s+([A-Za-z_0-9]*);(#.*)?/i) {
 
 			$is_readonly = $1;
 			$attr_type = $2;
@@ -82,7 +82,7 @@ foreach(@lines){
 		}
 
 		#methods
-		if ($line =~ /^\s*([A-Za-z]+)\s*(?:<[^>]*>\s*)?([A-Za-z0-9_]+)\s*(?:\s*<[^>]*>)?\s*\(([^)]*)\);(#.*)?/ ) {
+		if ($line =~ /^\s*([A-Za-z]+)\s*(?:<[^>]*>\s*)?([A-Za-z0-9_]+)\s*(?:\s*<[^>]*>)?\s*\(([^)]*)\);(#.*)?/i ) {
 			$typeToken = "m";
 			$return_type = $1;
 			$method_name = $2;
@@ -98,7 +98,7 @@ foreach(@lines){
 				foreach(@params_str) {
 					$param_str = $_;
 
-					if ( $param_str =~ /\s*(?:in)?\s*([A-Za-z]+)[\.]*\s+([A-Za-z_]+)\s*/ ){
+					if ( $param_str =~ /\s*(?:in)?\s*([A-Za-z]+)[\.]*\s+([A-Za-z_]+)\s*/i ){
 						$param_type = $1;
 						$param_name = $2;
 						if ($isfirstparam) {
@@ -162,7 +162,7 @@ close(HANDLE);
 my $TAB = '	';
 my $element_name = "";
 my $element_interface = "";
-my $doc_url = "http://html5/";
+#my $doc_url = "http://html5/";
 my $got_interface = 1;
 my $link = "";
 
@@ -173,7 +173,7 @@ foreach(@lines){
 	my $line = $_;
 	
 	#start of element declaration ... get name
-	if ($line =~ /The\s<dfn>\s*<code>([^<]*)<\/code>\s*<\/dfn>\s*element/ ){
+	if ($line =~ /The\s<dfn>\s*<code>([^<]*)<\/code>\s*<\/dfn>\s*element/i ){
 		$element_name = $1;
 		if ($element_name !~ /^\s*$/ ){
 			$link = "";
@@ -183,7 +183,7 @@ foreach(@lines){
 	
 	if (!$got_interface) {
 
-		if ($line =~ /<dd>\s*Uses\s*<code>\s*<a[^>]*>([^<]*)<\/a>/ ) {
+		if ($line =~ /<dd>\s*Uses\s*<code>\s*<a[^>]*>([^<]*)<\/a>/i ) {
 			#print "$element_name implements interface: $1 \n";
 			$element_interface = $1;
 			$tag_line = $element_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$element_name.$TAB.'type:'.$element_name.$TAB.'inherits:'.$element_interface;
@@ -191,7 +191,7 @@ foreach(@lines){
 			#$got_interface = 1;
 		}
 
-		if ($line =~ /<pre\s+class="idl">interface\s<dfn[^>]+>([A-Za-z]+)<\/dfn>/g ) {
+		if ($line =~ /<pre\s+class="idl">interface\s<dfn[^>]+>([A-Za-z]+)<\/dfn>/gi ) {
 			#print "$element_name implements interface: $1 \n";
 			$element_interface = $1;
 			$tag_line = $element_name.$TAB.$html_spec.$TAB.'/^'.$_.'$/;"'.$TAB.$typeToken.$TAB.'class:'.$element_name.$TAB.'type:'.$element_name.$TAB.'inherits:'.$element_interface;
@@ -200,9 +200,9 @@ foreach(@lines){
 		}
 		#grab the link to the definition in the spec
 		#note this is only for the elements themselves not properties
-		if ($line =~ /<a\s*href="(#[^"]*)"\s*>\s*([A-Za-z_0-9]*)\s*<\/a>/ ){
+		if ($line =~ /<a\s*href="(#[^"]*)"\s*>\s*([A-Za-z_0-9]*)\s*<\/a>/i ){
 			$link = $1;
-			if ($2 =~ /$element_name/ ) {
+			if ($2 =~ /$element_name/i ) {
 				#print "el name: $element_name  link: $link \n";
 				$tag_line = $tag_line.$TAB."link:".$link;
 				push(@tag_lines, $tag_line);
