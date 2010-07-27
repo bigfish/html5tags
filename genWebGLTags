@@ -11,4 +11,4 @@ echo '!_TAG_PROGRAM_NAME	Exuberant Ctags	'
 echo '!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	'
 echo '!_TAG_PROGRAM_VERSION	5.8	//'
 
-./genTags.pl "${WEBGL_HOME}/webgl.idl" ${WEBGL_HOME}/index.html ${WEBGL_URL}
+${HTML5_HOME}/genTags.pl "${WEBGL_HOME}/webgl.idl" ${WEBGL_HOME}/index.html ${WEBGL_URL}

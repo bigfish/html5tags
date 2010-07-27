@@ -9,15 +9,15 @@ if [ -z $2 ];then
 	exit 1
 fi
 SPEC_FILE=$1
-TMP_FILE="./tmp.html"
+TMP_FILE="$HTML5_HOME/tmp.html"
 IDL_FILE=$2
 
 #pre-process file 
-stripComments.pl $SPEC_FILE | sed -E 's/<pre class="idl"/\
+${HTML5_HOME}/stripComments.pl $SPEC_FILE | sed -E 's/<pre class="idl"/\
 <pre class="idl"/gI' | sed -E 's/<\/pre>/\
 <\/pre>/gI' > $TMP_FILE
 
 #extract IDL into output file
-parseIDL.pl $TMP_FILE > $IDL_FILE
+${HTML5_HOME}/parseIDL.pl $TMP_FILE > $IDL_FILE
 
-#rm $TMP_FILE
+rm $TMP_FILE
