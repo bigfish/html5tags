@@ -44,7 +44,7 @@ foreach(@lines){
 
 	my $line = $_;
 
-	if ($line =~ /^interface\s+([A-Za-z]+)\s*(?::\s*([A-Za-z]+))?\s*{\s*(?:};)?(#.*)?/i) {
+	if ($line =~ /^interface\s+([A-Za-z0-9]+)\s*(?::\s*([A-Za-z0-9]+))?\s*{\s*(?:};)?(#.*)?/i) {
 
 		$typeToken = "c";
 		$interface_name = $1;
@@ -67,7 +67,7 @@ foreach(@lines){
 	if ($interface_name) {
 		
 		#attributes
-		if ($line =~ /^\s*(readonly)?\s+attribute\s+([A-Za-z]*)\s+([A-Za-z_0-9]*);(#.*)?/i) {
+		if ($line =~ /^\s*(readonly)?\s+attribute\s+([A-Za-z0-9]*)\s+([A-Za-z_0-9]*);(#.*)?/i) {
 
 			$is_readonly = $1;
 			$attr_type = $2;
@@ -98,7 +98,7 @@ foreach(@lines){
 				foreach(@params_str) {
 					$param_str = $_;
 
-					if ( $param_str =~ /\s*(?:in)?\s*([A-Za-z]+)[\.]*\s+([A-Za-z_]+)\s*/i ){
+					if ( $param_str =~ /\s*(?:in)?\s*([A-Za-z0-9]+)[\.]*\s+([A-Za-z_0-9]+)\s*/i ){
 						$param_type = $1;
 						$param_name = $2;
 						if ($isfirstparam) {

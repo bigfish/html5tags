@@ -1,0 +1,75 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	
+!_TAG_PROGRAM_VERSION	5.8	//
+CanvasGradient	/Users/davidwilhelm/html5/canvas/index.html	/^interface CanvasGradient {$/;"	c	class:CanvasGradient	type:constructor
+CanvasPattern	/Users/davidwilhelm/html5/canvas/index.html	/^interface CanvasPattern {$/;"	c	class:CanvasPattern	type:constructor
+CanvasPixelArray	/Users/davidwilhelm/html5/canvas/index.html	/^interface CanvasPixelArray {$/;"	c	class:CanvasPixelArray	type:constructor
+CanvasRenderingContext2D	/Users/davidwilhelm/html5/canvas/index.html	/^interface CanvasRenderingContext2D {$/;"	c	class:CanvasRenderingContext2D	type:constructor
+ImageData	/Users/davidwilhelm/html5/canvas/index.html	/^interface ImageData {$/;"	c	class:ImageData	type:constructor
+TextMetrics	/Users/davidwilhelm/html5/canvas/index.html	/^interface TextMetrics {$/;"	c	class:TextMetrics	type:constructor
+addColorStop	/Users/davidwilhelm/html5/canvas/index.html	/^  void addColorStop(in float offset, in DOMString color);$/;"	m	class:CanvasGradient	signature:(<+offset:float+>, <+color:DOMString+>)	type:void
+arc	/Users/davidwilhelm/html5/canvas/index.html	/^  void arc(in float x, in float y, in float radius, in float startAngle, in float endAngle, in boolean anticlockwise);$/;"	m	class:CanvasRenderingContext2D	signature:(<+x:float+>, <+y:float+>, <+radius:float+>, <+startAngle:float+>, <+endAngle:float+>, <+anticlockwise:boolean+>)	type:void
+arcTo	/Users/davidwilhelm/html5/canvas/index.html	/^  void arcTo(in float x1, in float y1, in float x2, in float y2, in float radius);$/;"	m	class:CanvasRenderingContext2D	signature:(<+x1:float+>, <+y1:float+>, <+x2:float+>, <+y2:float+>, <+radius:float+>)	type:void
+beginPath	/Users/davidwilhelm/html5/canvas/index.html	/^  void beginPath();$/;"	m	class:CanvasRenderingContext2D	signature:()	type:void
+bezierCurveTo	/Users/davidwilhelm/html5/canvas/index.html	/^  void bezierCurveTo(in float cp1x, in float cp1y, in float cp2x, in float cp2y, in float x, in float y);$/;"	m	class:CanvasRenderingContext2D	signature:(<+cp1x:float+>, <+cp1y:float+>, <+cp2x:float+>, <+cp2y:float+>, <+x:float+>, <+y:float+>)	type:void
+canvas	/Users/davidwilhelm/html5/canvas/index.html	/^  readonly attribute HTMLCanvasElement canvas;$/;"	v	class:CanvasRenderingContext2D	type:HTMLCanvasElement
+clearRect	/Users/davidwilhelm/html5/canvas/index.html	/^  void clearRect(in float x, in float y, in float w, in float h);$/;"	m	class:CanvasRenderingContext2D	signature:(<+x:float+>, <+y:float+>, <+w:float+>, <+h:float+>)	type:void
+clip	/Users/davidwilhelm/html5/canvas/index.html	/^  void clip();$/;"	m	class:CanvasRenderingContext2D	signature:()	type:void
+closePath	/Users/davidwilhelm/html5/canvas/index.html	/^  void closePath();$/;"	m	class:CanvasRenderingContext2D	signature:()	type:void
+createImageData	/Users/davidwilhelm/html5/canvas/index.html	/^  ImageData createImageData(in ImageData imagedata);$/;"	m	class:CanvasRenderingContext2D	signature:(<+imagedata:ImageData+>)	type:ImageData
+createImageData	/Users/davidwilhelm/html5/canvas/index.html	/^  ImageData createImageData(in float sw, in float sh);$/;"	m	class:CanvasRenderingContext2D	signature:(<+sw:float+>, <+sh:float+>)	type:ImageData
+createLinearGradient	/Users/davidwilhelm/html5/canvas/index.html	/^  CanvasGradient createLinearGradient(in float x0, in float y0, in float x1, in float y1);$/;"	m	class:CanvasRenderingContext2D	signature:(<+x0:float+>, <+y0:float+>, <+x1:float+>, <+y1:float+>)	type:CanvasGradient
+createPattern	/Users/davidwilhelm/html5/canvas/index.html	/^  CanvasPattern createPattern(in HTMLCanvasElement image, in DOMString repetition);$/;"	m	class:CanvasRenderingContext2D	signature:(<+image:HTMLCanvasElement+>, <+repetition:DOMString+>)	type:CanvasPattern
+createPattern	/Users/davidwilhelm/html5/canvas/index.html	/^  CanvasPattern createPattern(in HTMLImageElement image, in DOMString repetition);$/;"	m	class:CanvasRenderingContext2D	signature:(<+image:HTMLImageElement+>, <+repetition:DOMString+>)	type:CanvasPattern
+createPattern	/Users/davidwilhelm/html5/canvas/index.html	/^  CanvasPattern createPattern(in HTMLVideoElement image, in DOMString repetition);$/;"	m	class:CanvasRenderingContext2D	signature:(<+image:HTMLVideoElement+>, <+repetition:DOMString+>)	type:CanvasPattern
+createRadialGradient	/Users/davidwilhelm/html5/canvas/index.html	/^  CanvasGradient createRadialGradient(in float x0, in float y0, in float r0, in float x1, in float y1, in float r1);$/;"	m	class:CanvasRenderingContext2D	signature:(<+x0:float+>, <+y0:float+>, <+r0:float+>, <+x1:float+>, <+y1:float+>, <+r1:float+>)	type:CanvasGradient
+data	/Users/davidwilhelm/html5/canvas/index.html	/^  readonly attribute CanvasPixelArray data;$/;"	v	class:ImageData	type:CanvasPixelArray
+drawFocusRing	/Users/davidwilhelm/html5/canvas/index.html	/^  boolean drawFocusRing(in Element element, in float xCaret, in float yCaret, in optional boolean canDrawCustom);$/;"	m	class:CanvasRenderingContext2D	signature:(<+element:Element+>, <+xCaret:float+>, <+yCaret:float+>, <+boolean:optional+>)	type:boolean
+drawImage	/Users/davidwilhelm/html5/canvas/index.html	/^  void drawImage(in HTMLCanvasElement image, in float dx, in float dy, in optional float dw, in float dh);$/;"	m	class:CanvasRenderingContext2D	signature:(<+image:HTMLCanvasElement+>, <+dx:float+>, <+dy:float+>, <+float:optional+>, <+dh:float+>)	type:void
+drawImage	/Users/davidwilhelm/html5/canvas/index.html	/^  void drawImage(in HTMLCanvasElement image, in float sx, in float sy, in float sw, in float sh, in float dx, in float dy, in float dw, in float dh);$/;"	m	class:CanvasRenderingContext2D	signature:(<+image:HTMLCanvasElement+>, <+sx:float+>, <+sy:float+>, <+sw:float+>, <+sh:float+>, <+dx:float+>, <+dy:float+>, <+dw:float+>, <+dh:float+>)	type:void
+drawImage	/Users/davidwilhelm/html5/canvas/index.html	/^  void drawImage(in HTMLImageElement image, in float dx, in float dy, in optional float dw, in float dh);$/;"	m	class:CanvasRenderingContext2D	signature:(<+image:HTMLImageElement+>, <+dx:float+>, <+dy:float+>, <+float:optional+>, <+dh:float+>)	type:void
+drawImage	/Users/davidwilhelm/html5/canvas/index.html	/^  void drawImage(in HTMLImageElement image, in float sx, in float sy, in float sw, in float sh, in float dx, in float dy, in float dw, in float dh);$/;"	m	class:CanvasRenderingContext2D	signature:(<+image:HTMLImageElement+>, <+sx:float+>, <+sy:float+>, <+sw:float+>, <+sh:float+>, <+dx:float+>, <+dy:float+>, <+dw:float+>, <+dh:float+>)	type:void
+drawImage	/Users/davidwilhelm/html5/canvas/index.html	/^  void drawImage(in HTMLVideoElement image, in float dx, in float dy, in optional float dw, in float dh);$/;"	m	class:CanvasRenderingContext2D	signature:(<+image:HTMLVideoElement+>, <+dx:float+>, <+dy:float+>, <+float:optional+>, <+dh:float+>)	type:void
+drawImage	/Users/davidwilhelm/html5/canvas/index.html	/^  void drawImage(in HTMLVideoElement image, in float sx, in float sy, in float sw, in float sh, in float dx, in float dy, in float dw, in float dh);$/;"	m	class:CanvasRenderingContext2D	signature:(<+image:HTMLVideoElement+>, <+sx:float+>, <+sy:float+>, <+sw:float+>, <+sh:float+>, <+dx:float+>, <+dy:float+>, <+dw:float+>, <+dh:float+>)	type:void
+fill	/Users/davidwilhelm/html5/canvas/index.html	/^  void fill();$/;"	m	class:CanvasRenderingContext2D	signature:()	type:void
+fillRect	/Users/davidwilhelm/html5/canvas/index.html	/^  void fillRect(in float x, in float y, in float w, in float h);$/;"	m	class:CanvasRenderingContext2D	signature:(<+x:float+>, <+y:float+>, <+w:float+>, <+h:float+>)	type:void
+fillStyle	/Users/davidwilhelm/html5/canvas/index.html	/^           attribute any fillStyle; $/;"	v	class:CanvasRenderingContext2D	type:any
+fillText	/Users/davidwilhelm/html5/canvas/index.html	/^  void fillText(in DOMString text, in float x, in float y, in optional float maxWidth);$/;"	m	class:CanvasRenderingContext2D	signature:(<+text:DOMString+>, <+x:float+>, <+y:float+>, <+float:optional+>)	type:void
+font	/Users/davidwilhelm/html5/canvas/index.html	/^           attribute DOMString font; $/;"	v	class:CanvasRenderingContext2D	type:DOMString
+getImageData	/Users/davidwilhelm/html5/canvas/index.html	/^  ImageData getImageData(in float sx, in float sy, in float sw, in float sh);$/;"	m	class:CanvasRenderingContext2D	signature:(<+sx:float+>, <+sy:float+>, <+sw:float+>, <+sh:float+>)	type:ImageData
+globalAlpha	/Users/davidwilhelm/html5/canvas/index.html	/^           attribute float globalAlpha; $/;"	v	class:CanvasRenderingContext2D	type:float
+globalCompositeOperation	/Users/davidwilhelm/html5/canvas/index.html	/^           attribute DOMString globalCompositeOperation; $/;"	v	class:CanvasRenderingContext2D	type:DOMString
+isPointInPath	/Users/davidwilhelm/html5/canvas/index.html	/^  boolean isPointInPath(in float x, in float y);$/;"	m	class:CanvasRenderingContext2D	signature:(<+x:float+>, <+y:float+>)	type:boolean
+lineCap	/Users/davidwilhelm/html5/canvas/index.html	/^           attribute DOMString lineCap; $/;"	v	class:CanvasRenderingContext2D	type:DOMString
+lineJoin	/Users/davidwilhelm/html5/canvas/index.html	/^           attribute DOMString lineJoin; $/;"	v	class:CanvasRenderingContext2D	type:DOMString
+lineTo	/Users/davidwilhelm/html5/canvas/index.html	/^  void lineTo(in float x, in float y);$/;"	m	class:CanvasRenderingContext2D	signature:(<+x:float+>, <+y:float+>)	type:void
+lineWidth	/Users/davidwilhelm/html5/canvas/index.html	/^           attribute float lineWidth; $/;"	v	class:CanvasRenderingContext2D	type:float
+measureText	/Users/davidwilhelm/html5/canvas/index.html	/^  TextMetrics measureText(in DOMString text);$/;"	m	class:CanvasRenderingContext2D	signature:(<+text:DOMString+>)	type:TextMetrics
+miterLimit	/Users/davidwilhelm/html5/canvas/index.html	/^           attribute float miterLimit; $/;"	v	class:CanvasRenderingContext2D	type:float
+moveTo	/Users/davidwilhelm/html5/canvas/index.html	/^  void moveTo(in float x, in float y);$/;"	m	class:CanvasRenderingContext2D	signature:(<+x:float+>, <+y:float+>)	type:void
+octet	/Users/davidwilhelm/html5/canvas/index.html	/^  getter octet (in unsigned long index);$/;"	m	class:CanvasPixelArray	signature:(<+long:unsigned+>)	type:getter
+putImageData	/Users/davidwilhelm/html5/canvas/index.html	/^  void putImageData(in ImageData imagedata, in float dx, in float dy, in optional float dirtyX, in float dirtyY, in float dirtyWidth, in float dirtyHeight);$/;"	m	class:CanvasRenderingContext2D	signature:(<+imagedata:ImageData+>, <+dx:float+>, <+dy:float+>, <+float:optional+>, <+dirtyY:float+>, <+dirtyWidth:float+>, <+dirtyHeight:float+>)	type:void
+quadraticCurveTo	/Users/davidwilhelm/html5/canvas/index.html	/^  void quadraticCurveTo(in float cpx, in float cpy, in float x, in float y);$/;"	m	class:CanvasRenderingContext2D	signature:(<+cpx:float+>, <+cpy:float+>, <+x:float+>, <+y:float+>)	type:void
+rect	/Users/davidwilhelm/html5/canvas/index.html	/^  void rect(in float x, in float y, in float w, in float h);$/;"	m	class:CanvasRenderingContext2D	signature:(<+x:float+>, <+y:float+>, <+w:float+>, <+h:float+>)	type:void
+restore	/Users/davidwilhelm/html5/canvas/index.html	/^  void restore(); $/;"	m	class:CanvasRenderingContext2D	signature:()	type:void
+rotate	/Users/davidwilhelm/html5/canvas/index.html	/^  void rotate(in float angle);$/;"	m	class:CanvasRenderingContext2D	signature:(<+angle:float+>)	type:void
+save	/Users/davidwilhelm/html5/canvas/index.html	/^  void save(); $/;"	m	class:CanvasRenderingContext2D	signature:()	type:void
+scale	/Users/davidwilhelm/html5/canvas/index.html	/^  void scale(in float x, in float y);$/;"	m	class:CanvasRenderingContext2D	signature:(<+x:float+>, <+y:float+>)	type:void
+setTransform	/Users/davidwilhelm/html5/canvas/index.html	/^  void setTransform(in float m11, in float m12, in float m21, in float m22, in float dx, in float dy);$/;"	m	class:CanvasRenderingContext2D	signature:(<+m11:float+>, <+m12:float+>, <+m21:float+>, <+m22:float+>, <+dx:float+>, <+dy:float+>)	type:void
+shadowBlur	/Users/davidwilhelm/html5/canvas/index.html	/^           attribute float shadowBlur; $/;"	v	class:CanvasRenderingContext2D	type:float
+shadowColor	/Users/davidwilhelm/html5/canvas/index.html	/^           attribute DOMString shadowColor; $/;"	v	class:CanvasRenderingContext2D	type:DOMString
+shadowOffsetX	/Users/davidwilhelm/html5/canvas/index.html	/^           attribute float shadowOffsetX; $/;"	v	class:CanvasRenderingContext2D	type:float
+shadowOffsetY	/Users/davidwilhelm/html5/canvas/index.html	/^           attribute float shadowOffsetY; $/;"	v	class:CanvasRenderingContext2D	type:float
+stroke	/Users/davidwilhelm/html5/canvas/index.html	/^  void stroke();$/;"	m	class:CanvasRenderingContext2D	signature:()	type:void
+strokeRect	/Users/davidwilhelm/html5/canvas/index.html	/^  void strokeRect(in float x, in float y, in float w, in float h);$/;"	m	class:CanvasRenderingContext2D	signature:(<+x:float+>, <+y:float+>, <+w:float+>, <+h:float+>)	type:void
+strokeStyle	/Users/davidwilhelm/html5/canvas/index.html	/^           attribute any strokeStyle; $/;"	v	class:CanvasRenderingContext2D	type:any
+strokeText	/Users/davidwilhelm/html5/canvas/index.html	/^  void strokeText(in DOMString text, in float x, in float y, in optional float maxWidth);$/;"	m	class:CanvasRenderingContext2D	signature:(<+text:DOMString+>, <+x:float+>, <+y:float+>, <+float:optional+>)	type:void
+textAlign	/Users/davidwilhelm/html5/canvas/index.html	/^           attribute DOMString textAlign; $/;"	v	class:CanvasRenderingContext2D	type:DOMString
+textBaseline	/Users/davidwilhelm/html5/canvas/index.html	/^           attribute DOMString textBaseline; $/;"	v	class:CanvasRenderingContext2D	type:DOMString
+transform	/Users/davidwilhelm/html5/canvas/index.html	/^  void transform(in float m11, in float m12, in float m21, in float m22, in float dx, in float dy);$/;"	m	class:CanvasRenderingContext2D	signature:(<+m11:float+>, <+m12:float+>, <+m21:float+>, <+m22:float+>, <+dx:float+>, <+dy:float+>)	type:void
+translate	/Users/davidwilhelm/html5/canvas/index.html	/^  void translate(in float x, in float y);$/;"	m	class:CanvasRenderingContext2D	signature:(<+x:float+>, <+y:float+>)	type:void
+void	/Users/davidwilhelm/html5/canvas/index.html	/^  setter void (in unsigned long index, in octet value);$/;"	m	class:CanvasPixelArray	signature:(<+long:unsigned+>, <+value:octet+>)	type:setter
+width	/Users/davidwilhelm/html5/canvas/index.html	/^  readonly attribute float width;$/;"	v	class:TextMetrics	type:float

@@ -1,0 +1,93 @@
+interface CanvasRenderingContext2D {
+  
+  readonly attribute HTMLCanvasElement canvas;
+  
+  void save(); 
+  void restore(); 
+  
+  void scale(in float x, in float y);
+  void rotate(in float angle);
+  void translate(in float x, in float y);
+  void transform(in float m11, in float m12, in float m21, in float m22, in float dx, in float dy);
+  void setTransform(in float m11, in float m12, in float m21, in float m22, in float dx, in float dy);
+  
+           attribute float globalAlpha; 
+           attribute DOMString globalCompositeOperation; 
+  
+           attribute any strokeStyle; 
+           attribute any fillStyle; 
+  CanvasGradient createLinearGradient(in float x0, in float y0, in float x1, in float y1);
+  CanvasGradient createRadialGradient(in float x0, in float y0, in float r0, in float x1, in float y1, in float r1);
+  CanvasPattern createPattern(in HTMLImageElement image, in DOMString repetition);
+  CanvasPattern createPattern(in HTMLCanvasElement image, in DOMString repetition);
+  CanvasPattern createPattern(in HTMLVideoElement image, in DOMString repetition);
+  
+           attribute float lineWidth; 
+           attribute DOMString lineCap; 
+           attribute DOMString lineJoin; 
+           attribute float miterLimit; 
+  
+           attribute float shadowOffsetX; 
+           attribute float shadowOffsetY; 
+           attribute float shadowBlur; 
+           attribute DOMString shadowColor; 
+  
+  void clearRect(in float x, in float y, in float w, in float h);
+  void fillRect(in float x, in float y, in float w, in float h);
+  void strokeRect(in float x, in float y, in float w, in float h);
+  
+  void beginPath();
+  void closePath();
+  void moveTo(in float x, in float y);
+  void lineTo(in float x, in float y);
+  void quadraticCurveTo(in float cpx, in float cpy, in float x, in float y);
+  void bezierCurveTo(in float cp1x, in float cp1y, in float cp2x, in float cp2y, in float x, in float y);
+  void arcTo(in float x1, in float y1, in float x2, in float y2, in float radius);
+  void rect(in float x, in float y, in float w, in float h);
+  void arc(in float x, in float y, in float radius, in float startAngle, in float endAngle, in boolean anticlockwise);
+  void fill();
+  void stroke();
+  void clip();
+  boolean isPointInPath(in float x, in float y);
+  
+  boolean drawFocusRing(in Element element, in float xCaret, in float yCaret, in optional boolean canDrawCustom);
+  
+           attribute DOMString font; 
+           attribute DOMString textAlign; 
+           attribute DOMString textBaseline; 
+  void fillText(in DOMString text, in float x, in float y, in optional float maxWidth);
+  void strokeText(in DOMString text, in float x, in float y, in optional float maxWidth);
+  TextMetrics measureText(in DOMString text);
+  
+  void drawImage(in HTMLImageElement image, in float dx, in float dy, in optional float dw, in float dh);
+  void drawImage(in HTMLImageElement image, in float sx, in float sy, in float sw, in float sh, in float dx, in float dy, in float dw, in float dh);
+  void drawImage(in HTMLCanvasElement image, in float dx, in float dy, in optional float dw, in float dh);
+  void drawImage(in HTMLCanvasElement image, in float sx, in float sy, in float sw, in float sh, in float dx, in float dy, in float dw, in float dh);
+  void drawImage(in HTMLVideoElement image, in float dx, in float dy, in optional float dw, in float dh);
+  void drawImage(in HTMLVideoElement image, in float sx, in float sy, in float sw, in float sh, in float dx, in float dy, in float dw, in float dh);
+  
+  ImageData createImageData(in float sw, in float sh);
+  ImageData createImageData(in ImageData imagedata);
+  ImageData getImageData(in float sx, in float sy, in float sw, in float sh);
+  void putImageData(in ImageData imagedata, in float dx, in float dy, in optional float dirtyX, in float dirtyY, in float dirtyWidth, in float dirtyHeight);
+};
+interface CanvasGradient {
+  
+  void addColorStop(in float offset, in DOMString color);
+};
+interface CanvasPattern {
+  
+};
+interface TextMetrics {
+  readonly attribute float width;
+};
+interface ImageData {
+  readonly attribute unsigned long width;
+  readonly attribute unsigned long height;
+  readonly attribute CanvasPixelArray data;
+};
+interface CanvasPixelArray {
+  readonly attribute unsigned long length;
+  getter octet (in unsigned long index);
+  setter void (in unsigned long index, in octet value);
+};
