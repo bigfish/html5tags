@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<!-- saved from url=(0031)http://www.w3.org/TR/2dcontext/ -->
+<!-- saved from url=(0031)/canvas/ -->
 <HTML lang="en-US-x-Hixie" style="zoom: 100%; "><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><TITLE>HTML Canvas 2D Context</TITLE><STYLE type="text/css">
    pre { margin-left: 2em; white-space: pre-wrap; }
    h2 { margin: 3em 0 1em 0; }
@@ -314,7 +314,7 @@
    <DL><DT>This Version:</DT>
     <DD><A href="http://www.w3.org/TR/2010/WD-2dcontext-20100624/">http://www.w3.org/TR/2010/WD-2dcontext-20100624/</A></DD>
     <DT>Latest Published Version:</DT>
-    <DD><A href="./index_files/index.html">http://www.w3.org/TR/2dcontext/</A></DD>
+    <DD><A href="./index_files/index.html">/canvas/</A></DD>
     <DT>Latest Editor's Draft:</DT>
     <DD><A href="http://dev.w3.org/html5/2dcontext/">http://dev.w3.org/html5/2dcontext/</A></DD>
 <!-- ZZZ: add the new version after it has shipped -->
@@ -422,37 +422,37 @@
   6 of the W3C Patent Policy</A>.</P><H2 class="no-num no-toc" id="contents">Table of Contents</H2>
 <!--begin-toc-->
 <OL class="toc">
- <LI><A href="http://www.w3.org/TR/2dcontext/#conformance-requirements"><SPAN class="secno">1 </SPAN>Conformance requirements</A></LI>
- <LI><A href="http://www.w3.org/TR/2dcontext/#the-canvas-state"><SPAN class="secno">2 </SPAN>The canvas state</A></LI>
- <LI><A href="http://www.w3.org/TR/2dcontext/#transformations"><SPAN class="secno">3 </SPAN>Transformations</A></LI>
- <LI><A href="http://www.w3.org/TR/2dcontext/#compositing"><SPAN class="secno">4 </SPAN>Compositing</A></LI>
- <LI><A href="http://www.w3.org/TR/2dcontext/#colors-and-styles"><SPAN class="secno">5 </SPAN>Colors and styles</A></LI>
- <LI><A href="http://www.w3.org/TR/2dcontext/#line-styles"><SPAN class="secno">6 </SPAN>Line styles</A></LI>
- <LI><A href="http://www.w3.org/TR/2dcontext/#shadows"><SPAN class="secno">7 </SPAN>Shadows</A></LI>
- <LI><A href="http://www.w3.org/TR/2dcontext/#simple-shapes-rectangles"><SPAN class="secno">8 </SPAN>Simple shapes (rectangles)</A></LI>
- <LI><A href="http://www.w3.org/TR/2dcontext/#complex-shapes-paths"><SPAN class="secno">9 </SPAN>Complex shapes (paths)</A></LI>
- <LI><A href="http://www.w3.org/TR/2dcontext/#focus-management"><SPAN class="secno">10 </SPAN>Focus management</A></LI>
- <LI><A href="http://www.w3.org/TR/2dcontext/#text"><SPAN class="secno">11 </SPAN>Text</A></LI>
- <LI><A href="http://www.w3.org/TR/2dcontext/#images"><SPAN class="secno">12 </SPAN>Images</A></LI>
- <LI><A href="http://www.w3.org/TR/2dcontext/#pixel-manipulation"><SPAN class="secno">13 </SPAN>Pixel manipulation</A></LI>
- <LI class="impl"><A href="http://www.w3.org/TR/2dcontext/#drawing-model"><SPAN class="secno">14 </SPAN>Drawing model</A></LI>
- <LI><A href="http://www.w3.org/TR/2dcontext/#examples"><SPAN class="secno">15 </SPAN>Examples</A></LI>
- <LI><A class="no-num" href="http://www.w3.org/TR/2dcontext/#references">References</A></LI>
- <LI><A class="no-num" href="http://www.w3.org/TR/2dcontext/#acknowledgements">Acknowledgements</A></LI></OL>
+ <LI><A href="/canvas/#conformance-requirements"><SPAN class="secno">1 </SPAN>Conformance requirements</A></LI>
+ <LI><A href="/canvas/#the-canvas-state"><SPAN class="secno">2 </SPAN>The canvas state</A></LI>
+ <LI><A href="/canvas/#transformations"><SPAN class="secno">3 </SPAN>Transformations</A></LI>
+ <LI><A href="/canvas/#compositing"><SPAN class="secno">4 </SPAN>Compositing</A></LI>
+ <LI><A href="/canvas/#colors-and-styles"><SPAN class="secno">5 </SPAN>Colors and styles</A></LI>
+ <LI><A href="/canvas/#line-styles"><SPAN class="secno">6 </SPAN>Line styles</A></LI>
+ <LI><A href="/canvas/#shadows"><SPAN class="secno">7 </SPAN>Shadows</A></LI>
+ <LI><A href="/canvas/#simple-shapes-rectangles"><SPAN class="secno">8 </SPAN>Simple shapes (rectangles)</A></LI>
+ <LI><A href="/canvas/#complex-shapes-paths"><SPAN class="secno">9 </SPAN>Complex shapes (paths)</A></LI>
+ <LI><A href="/canvas/#focus-management"><SPAN class="secno">10 </SPAN>Focus management</A></LI>
+ <LI><A href="/canvas/#text"><SPAN class="secno">11 </SPAN>Text</A></LI>
+ <LI><A href="/canvas/#images"><SPAN class="secno">12 </SPAN>Images</A></LI>
+ <LI><A href="/canvas/#pixel-manipulation"><SPAN class="secno">13 </SPAN>Pixel manipulation</A></LI>
+ <LI class="impl"><A href="/canvas/#drawing-model"><SPAN class="secno">14 </SPAN>Drawing model</A></LI>
+ <LI><A href="/canvas/#examples"><SPAN class="secno">15 </SPAN>Examples</A></LI>
+ <LI><A class="no-num" href="/canvas/#references">References</A></LI>
+ <LI><A class="no-num" href="/canvas/#acknowledgements">Acknowledgements</A></LI></OL>
 <!--end-toc--><HR><H2 id="conformance-requirements"><SPAN class="secno">1 </SPAN>Conformance requirements</H2><P>This specification is an HTML specification. All the conformance
   requirements, conformance classes, definitions, dependencies,
   terminology, and typographical conventions described in the core
-  HTML5 specification apply to this specification. <A href="http://www.w3.org/TR/2dcontext/#refsHTML5">[HTML5]</A></P><DIV class="impl">
+  HTML5 specification apply to this specification. <A href="/canvas/#refsHTML5">[HTML5]</A></P><DIV class="impl">
 
   
   <P>When the <CODE title="dom-canvas-getContext">getContext()</CODE>
   method of a <CODE>canvas</CODE> element is invoked with <DFN id="canvas-context-2d" title="canvas-context-2d"><CODE>2d</CODE></DFN> as the argument, a
-  <CODE><A href="http://www.w3.org/TR/2dcontext/#canvasrenderingcontext2d">CanvasRenderingContext2D</A></CODE> object must be returned.</P>
+  <CODE><A href="/canvas/#canvasrenderingcontext2d">CanvasRenderingContext2D</A></CODE> object must be returned.</P>
   
 
-  <P>There is only one <CODE><A href="http://www.w3.org/TR/2dcontext/#canvasrenderingcontext2d">CanvasRenderingContext2D</A></CODE> object
+  <P>There is only one <CODE><A href="/canvas/#canvasrenderingcontext2d">CanvasRenderingContext2D</A></CODE> object
   per canvas, so calling the <CODE title="dom-canvas-getContext">getContext()</CODE> method with the
-  <CODE title="canvas-context-2d"><A href="http://www.w3.org/TR/2dcontext/#canvas-context-2d">2d</A></CODE> argument a second time
+  <CODE title="canvas-context-2d"><A href="/canvas/#canvas-context-2d">2d</A></CODE> argument a second time
   must return the same object.</P>
 
   </DIV><P>The 2D context represents a flat Cartesian surface whose origin
@@ -460,11 +460,11 @@
   <VAR title="">x</VAR> values increasing when going right, and <VAR title="">y</VAR> values increasing when going down.</P><PRE class="idl">interface <DFN id="canvasrenderingcontext2d">CanvasRenderingContext2D</DFN> {
 
   // back-reference to the canvas
-  readonly attribute <SPAN>HTMLCanvasElement</SPAN> <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-canvas" title="dom-context-2d-canvas">canvas</A>;
+  readonly attribute <SPAN>HTMLCanvasElement</SPAN> <A href="/canvas/#dom-context-2d-canvas" title="dom-context-2d-canvas">canvas</A>;
 
   // state
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-save" title="dom-context-2d-save">save</A>(); // push state on state stack
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-restore" title="dom-context-2d-restore">restore</A>(); // pop state stack and restore state
+  void <A href="/canvas/#dom-context-2d-save" title="dom-context-2d-save">save</A>(); // push state on state stack
+  void <A href="/canvas/#dom-context-2d-restore" title="dom-context-2d-restore">restore</A>(); // pop state stack and restore state
 <!--
   // v5 we've also received requests for:
           attribute boolean <span title="dom-context-2d-forceHighQuality">forceHighQuality</span> // (default false)
@@ -472,19 +472,19 @@
   // useful e.g. for when an image manipulation app uses <canvas> both for UI previews and the actual work
 -->
   // transformations (default transform is the identity matrix)
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-scale" title="dom-context-2d-scale">scale</A>(in float x, in float y);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-rotate" title="dom-context-2d-rotate">rotate</A>(in float angle);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-translate" title="dom-context-2d-translate">translate</A>(in float x, in float y);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-transform" title="dom-context-2d-transform">transform</A>(in float m11, in float m12, in float m21, in float m22, in float dx, in float dy);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-settransform" title="dom-context-2d-setTransform">setTransform</A>(in float m11, in float m12, in float m21, in float m22, in float dx, in float dy);
+  void <A href="/canvas/#dom-context-2d-scale" title="dom-context-2d-scale">scale</A>(in float x, in float y);
+  void <A href="/canvas/#dom-context-2d-rotate" title="dom-context-2d-rotate">rotate</A>(in float angle);
+  void <A href="/canvas/#dom-context-2d-translate" title="dom-context-2d-translate">translate</A>(in float x, in float y);
+  void <A href="/canvas/#dom-context-2d-transform" title="dom-context-2d-transform">transform</A>(in float m11, in float m12, in float m21, in float m22, in float dx, in float dy);
+  void <A href="/canvas/#dom-context-2d-settransform" title="dom-context-2d-setTransform">setTransform</A>(in float m11, in float m12, in float m21, in float m22, in float dx, in float dy);
 <!--
   // v5 we've also received requests for:
   void skew(...);
   void reflect(...); // or mirror(...)
 -->
   // compositing
-           attribute float <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalalpha" title="dom-context-2d-globalAlpha">globalAlpha</A>; // (default 1.0)
-           attribute DOMString <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalcompositeoperation" title="dom-context-2d-globalCompositeOperation">globalCompositeOperation</A>; // (default source-over)
+           attribute float <A href="/canvas/#dom-context-2d-globalalpha" title="dom-context-2d-globalAlpha">globalAlpha</A>; // (default 1.0)
+           attribute DOMString <A href="/canvas/#dom-context-2d-globalcompositeoperation" title="dom-context-2d-globalCompositeOperation">globalCompositeOperation</A>; // (default source-over)
 <!--
   // v5 we've also received requests for:
   - turning off antialiasing to avoid seams when patterns are painted next to each other
@@ -495,77 +495,77 @@
       http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2008-August/015567.html
 -->
   // colors and styles
-           attribute any <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-strokestyle" title="dom-context-2d-strokeStyle">strokeStyle</A>; // (default black)
-           attribute any <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-fillstyle" title="dom-context-2d-fillStyle">fillStyle</A>; // (default black)
-  <A href="http://www.w3.org/TR/2dcontext/#canvasgradient">CanvasGradient</A> <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-createlineargradient" title="dom-context-2d-createLinearGradient">createLinearGradient</A>(in float x0, in float y0, in float x1, in float y1);
-  <A href="http://www.w3.org/TR/2dcontext/#canvasgradient">CanvasGradient</A> <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-createradialgradient" title="dom-context-2d-createRadialGradient">createRadialGradient</A>(in float x0, in float y0, in float r0, in float x1, in float y1, in float r1);
-  <A href="http://www.w3.org/TR/2dcontext/#canvaspattern">CanvasPattern</A> <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-createpattern" title="dom-context-2d-createPattern">createPattern</A>(in <SPAN>HTMLImageElement</SPAN> image, in DOMString repetition);
-  <A href="http://www.w3.org/TR/2dcontext/#canvaspattern">CanvasPattern</A> <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-createpattern" title="dom-context-2d-createPattern">createPattern</A>(in <SPAN>HTMLCanvasElement</SPAN> image, in DOMString repetition);
-  <A href="http://www.w3.org/TR/2dcontext/#canvaspattern">CanvasPattern</A> <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-createpattern" title="dom-context-2d-createPattern">createPattern</A>(in <SPAN>HTMLVideoElement</SPAN> image, in DOMString repetition);
+           attribute any <A href="/canvas/#dom-context-2d-strokestyle" title="dom-context-2d-strokeStyle">strokeStyle</A>; // (default black)
+           attribute any <A href="/canvas/#dom-context-2d-fillstyle" title="dom-context-2d-fillStyle">fillStyle</A>; // (default black)
+  <A href="/canvas/#canvasgradient">CanvasGradient</A> <A href="/canvas/#dom-context-2d-createlineargradient" title="dom-context-2d-createLinearGradient">createLinearGradient</A>(in float x0, in float y0, in float x1, in float y1);
+  <A href="/canvas/#canvasgradient">CanvasGradient</A> <A href="/canvas/#dom-context-2d-createradialgradient" title="dom-context-2d-createRadialGradient">createRadialGradient</A>(in float x0, in float y0, in float r0, in float x1, in float y1, in float r1);
+  <A href="/canvas/#canvaspattern">CanvasPattern</A> <A href="/canvas/#dom-context-2d-createpattern" title="dom-context-2d-createPattern">createPattern</A>(in <SPAN>HTMLImageElement</SPAN> image, in DOMString repetition);
+  <A href="/canvas/#canvaspattern">CanvasPattern</A> <A href="/canvas/#dom-context-2d-createpattern" title="dom-context-2d-createPattern">createPattern</A>(in <SPAN>HTMLCanvasElement</SPAN> image, in DOMString repetition);
+  <A href="/canvas/#canvaspattern">CanvasPattern</A> <A href="/canvas/#dom-context-2d-createpattern" title="dom-context-2d-createPattern">createPattern</A>(in <SPAN>HTMLVideoElement</SPAN> image, in DOMString repetition);
 
   // line caps/joins
-           attribute float <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linewidth" title="dom-context-2d-lineWidth">lineWidth</A>; // (default 1)
-           attribute DOMString <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linecap" title="dom-context-2d-lineCap">lineCap</A>; // "butt", "round", "square" (default "butt")
-           attribute DOMString <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linejoin" title="dom-context-2d-lineJoin">lineJoin</A>; // "round", "bevel", "miter" (default "miter")
-           attribute float <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-miterlimit" title="dom-context-2d-miterLimit">miterLimit</A>; // (default 10)
+           attribute float <A href="/canvas/#dom-context-2d-linewidth" title="dom-context-2d-lineWidth">lineWidth</A>; // (default 1)
+           attribute DOMString <A href="/canvas/#dom-context-2d-linecap" title="dom-context-2d-lineCap">lineCap</A>; // "butt", "round", "square" (default "butt")
+           attribute DOMString <A href="/canvas/#dom-context-2d-linejoin" title="dom-context-2d-lineJoin">lineJoin</A>; // "round", "bevel", "miter" (default "miter")
+           attribute float <A href="/canvas/#dom-context-2d-miterlimit" title="dom-context-2d-miterLimit">miterLimit</A>; // (default 10)
 
   // shadows
-           attribute float <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowoffsetx" title="dom-context-2d-shadowOffsetX">shadowOffsetX</A>; // (default 0)
-           attribute float <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowoffsety" title="dom-context-2d-shadowOffsetY">shadowOffsetY</A>; // (default 0)
-           attribute float <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowblur" title="dom-context-2d-shadowBlur">shadowBlur</A>; // (default 0)
-           attribute DOMString <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowcolor" title="dom-context-2d-shadowColor">shadowColor</A>; // (default transparent black)
+           attribute float <A href="/canvas/#dom-context-2d-shadowoffsetx" title="dom-context-2d-shadowOffsetX">shadowOffsetX</A>; // (default 0)
+           attribute float <A href="/canvas/#dom-context-2d-shadowoffsety" title="dom-context-2d-shadowOffsetY">shadowOffsetY</A>; // (default 0)
+           attribute float <A href="/canvas/#dom-context-2d-shadowblur" title="dom-context-2d-shadowBlur">shadowBlur</A>; // (default 0)
+           attribute DOMString <A href="/canvas/#dom-context-2d-shadowcolor" title="dom-context-2d-shadowColor">shadowColor</A>; // (default transparent black)
 
   // rects
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-clearrect" title="dom-context-2d-clearRect">clearRect</A>(in float x, in float y, in float w, in float h);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-fillrect" title="dom-context-2d-fillRect">fillRect</A>(in float x, in float y, in float w, in float h);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-strokerect" title="dom-context-2d-strokeRect">strokeRect</A>(in float x, in float y, in float w, in float h);
+  void <A href="/canvas/#dom-context-2d-clearrect" title="dom-context-2d-clearRect">clearRect</A>(in float x, in float y, in float w, in float h);
+  void <A href="/canvas/#dom-context-2d-fillrect" title="dom-context-2d-fillRect">fillRect</A>(in float x, in float y, in float w, in float h);
+  void <A href="/canvas/#dom-context-2d-strokerect" title="dom-context-2d-strokeRect">strokeRect</A>(in float x, in float y, in float w, in float h);
 
   // path API
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-beginpath" title="dom-context-2d-beginPath">beginPath</A>();
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-closepath" title="dom-context-2d-closePath">closePath</A>();
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-moveto" title="dom-context-2d-moveTo">moveTo</A>(in float x, in float y);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-lineto" title="dom-context-2d-lineTo">lineTo</A>(in float x, in float y);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-quadraticcurveto" title="dom-context-2d-quadraticCurveTo">quadraticCurveTo</A>(in float cpx, in float cpy, in float x, in float y);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-beziercurveto" title="dom-context-2d-bezierCurveTo">bezierCurveTo</A>(in float cp1x, in float cp1y, in float cp2x, in float cp2y, in float x, in float y);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-arcto" title="dom-context-2d-arcTo">arcTo</A>(in float x1, in float y1, in float x2, in float y2, in float radius);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-rect" title="dom-context-2d-rect">rect</A>(in float x, in float y, in float w, in float h);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-arc" title="dom-context-2d-arc">arc</A>(in float x, in float y, in float radius, in float startAngle, in float endAngle, in boolean anticlockwise);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-fill" title="dom-context-2d-fill">fill</A>();
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-stroke" title="dom-context-2d-stroke">stroke</A>();
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-clip" title="dom-context-2d-clip">clip</A>();
-  boolean <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-ispointinpath" title="dom-context-2d-isPointInPath">isPointInPath</A>(in float x, in float y);
+  void <A href="/canvas/#dom-context-2d-beginpath" title="dom-context-2d-beginPath">beginPath</A>();
+  void <A href="/canvas/#dom-context-2d-closepath" title="dom-context-2d-closePath">closePath</A>();
+  void <A href="/canvas/#dom-context-2d-moveto" title="dom-context-2d-moveTo">moveTo</A>(in float x, in float y);
+  void <A href="/canvas/#dom-context-2d-lineto" title="dom-context-2d-lineTo">lineTo</A>(in float x, in float y);
+  void <A href="/canvas/#dom-context-2d-quadraticcurveto" title="dom-context-2d-quadraticCurveTo">quadraticCurveTo</A>(in float cpx, in float cpy, in float x, in float y);
+  void <A href="/canvas/#dom-context-2d-beziercurveto" title="dom-context-2d-bezierCurveTo">bezierCurveTo</A>(in float cp1x, in float cp1y, in float cp2x, in float cp2y, in float x, in float y);
+  void <A href="/canvas/#dom-context-2d-arcto" title="dom-context-2d-arcTo">arcTo</A>(in float x1, in float y1, in float x2, in float y2, in float radius);
+  void <A href="/canvas/#dom-context-2d-rect" title="dom-context-2d-rect">rect</A>(in float x, in float y, in float w, in float h);
+  void <A href="/canvas/#dom-context-2d-arc" title="dom-context-2d-arc">arc</A>(in float x, in float y, in float radius, in float startAngle, in float endAngle, in boolean anticlockwise);
+  void <A href="/canvas/#dom-context-2d-fill" title="dom-context-2d-fill">fill</A>();
+  void <A href="/canvas/#dom-context-2d-stroke" title="dom-context-2d-stroke">stroke</A>();
+  void <A href="/canvas/#dom-context-2d-clip" title="dom-context-2d-clip">clip</A>();
+  boolean <A href="/canvas/#dom-context-2d-ispointinpath" title="dom-context-2d-isPointInPath">isPointInPath</A>(in float x, in float y);
 
   // focus management
-  boolean <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawfocusring" title="dom-context-2d-drawFocusRing">drawFocusRing</A>(in <SPAN>Element</SPAN> element, in float xCaret, in float yCaret, in optional boolean canDrawCustom);
+  boolean <A href="/canvas/#dom-context-2d-drawfocusring" title="dom-context-2d-drawFocusRing">drawFocusRing</A>(in <SPAN>Element</SPAN> element, in float xCaret, in float yCaret, in optional boolean canDrawCustom);
 
   // text
-           attribute DOMString <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-font" title="dom-context-2d-font">font</A>; // (default 10px sans-serif)
-           attribute DOMString <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textalign" title="dom-context-2d-textAlign">textAlign</A>; // "start", "end", "left", "right", "center" (default: "start")
-           attribute DOMString <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline" title="dom-context-2d-textBaseline">textBaseline</A>; // "top", "hanging", "middle", "alphabetic", "ideographic", "bottom" (default: "alphabetic")
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-filltext" title="dom-context-2d-fillText">fillText</A>(in DOMString text, in float x, in float y, in optional float maxWidth);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-stroketext" title="dom-context-2d-strokeText">strokeText</A>(in DOMString text, in float x, in float y, in optional float maxWidth);<!-- v5DVT
+           attribute DOMString <A href="/canvas/#dom-context-2d-font" title="dom-context-2d-font">font</A>; // (default 10px sans-serif)
+           attribute DOMString <A href="/canvas/#dom-context-2d-textalign" title="dom-context-2d-textAlign">textAlign</A>; // "start", "end", "left", "right", "center" (default: "start")
+           attribute DOMString <A href="/canvas/#dom-context-2d-textbaseline" title="dom-context-2d-textBaseline">textBaseline</A>; // "top", "hanging", "middle", "alphabetic", "ideographic", "bottom" (default: "alphabetic")
+  void <A href="/canvas/#dom-context-2d-filltext" title="dom-context-2d-fillText">fillText</A>(in DOMString text, in float x, in float y, in optional float maxWidth);
+  void <A href="/canvas/#dom-context-2d-stroketext" title="dom-context-2d-strokeText">strokeText</A>(in DOMString text, in float x, in float y, in optional float maxWidth);<!-- v5DVT
   void <span title="dom-context-2d-fillVerticalText">fillVerticalText</span>(in DOMString text, in float x, in float y, in optional float maxHeight);
   void <span title="dom-context-2d-strokeVerticalText">strokeVerticalText</span>(in DOMString text, in float x, in float y, in optional float maxHeight); -->
-  <A href="http://www.w3.org/TR/2dcontext/#textmetrics">TextMetrics</A> <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-measuretext" title="dom-context-2d-measureText">measureText</A>(in DOMString text);
+  <A href="/canvas/#textmetrics">TextMetrics</A> <A href="/canvas/#dom-context-2d-measuretext" title="dom-context-2d-measureText">measureText</A>(in DOMString text);
 
   // drawing images
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage" title="dom-context-2d-drawImage">drawImage</A>(in <SPAN>HTMLImageElement</SPAN> image, in float dx, in float dy, in optional float dw, in float dh);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage" title="dom-context-2d-drawImage">drawImage</A>(in <SPAN>HTMLImageElement</SPAN> image, in float sx, in float sy, in float sw, in float sh, in float dx, in float dy, in float dw, in float dh);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage" title="dom-context-2d-drawImage">drawImage</A>(in <SPAN>HTMLCanvasElement</SPAN> image, in float dx, in float dy, in optional float dw, in float dh);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage" title="dom-context-2d-drawImage">drawImage</A>(in <SPAN>HTMLCanvasElement</SPAN> image, in float sx, in float sy, in float sw, in float sh, in float dx, in float dy, in float dw, in float dh);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage" title="dom-context-2d-drawImage">drawImage</A>(in <SPAN>HTMLVideoElement</SPAN> image, in float dx, in float dy, in optional float dw, in float dh);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage" title="dom-context-2d-drawImage">drawImage</A>(in <SPAN>HTMLVideoElement</SPAN> image, in float sx, in float sy, in float sw, in float sh, in float dx, in float dy, in float dw, in float dh);
+  void <A href="/canvas/#dom-context-2d-drawimage" title="dom-context-2d-drawImage">drawImage</A>(in <SPAN>HTMLImageElement</SPAN> image, in float dx, in float dy, in optional float dw, in float dh);
+  void <A href="/canvas/#dom-context-2d-drawimage" title="dom-context-2d-drawImage">drawImage</A>(in <SPAN>HTMLImageElement</SPAN> image, in float sx, in float sy, in float sw, in float sh, in float dx, in float dy, in float dw, in float dh);
+  void <A href="/canvas/#dom-context-2d-drawimage" title="dom-context-2d-drawImage">drawImage</A>(in <SPAN>HTMLCanvasElement</SPAN> image, in float dx, in float dy, in optional float dw, in float dh);
+  void <A href="/canvas/#dom-context-2d-drawimage" title="dom-context-2d-drawImage">drawImage</A>(in <SPAN>HTMLCanvasElement</SPAN> image, in float sx, in float sy, in float sw, in float sh, in float dx, in float dy, in float dw, in float dh);
+  void <A href="/canvas/#dom-context-2d-drawimage" title="dom-context-2d-drawImage">drawImage</A>(in <SPAN>HTMLVideoElement</SPAN> image, in float dx, in float dy, in optional float dw, in float dh);
+  void <A href="/canvas/#dom-context-2d-drawimage" title="dom-context-2d-drawImage">drawImage</A>(in <SPAN>HTMLVideoElement</SPAN> image, in float sx, in float sy, in float sw, in float sh, in float dx, in float dy, in float dw, in float dh);
 
   // pixel manipulation
-  <A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A> <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-createimagedata" title="dom-context-2d-createImageData">createImageData</A>(in float sw, in float sh);
-  <A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A> <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-createimagedata" title="dom-context-2d-createImageData">createImageData</A>(in <A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A> imagedata);
-  <A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A> <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-getimagedata" title="dom-context-2d-getImageData">getImageData</A>(in float sx, in float sy, in float sw, in float sh);
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-putimagedata" title="dom-context-2d-putImageData">putImageData</A>(in <A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A> imagedata, in float dx, in float dy, in optional float dirtyX, in float dirtyY, in float dirtyWidth, in float dirtyHeight);
+  <A href="/canvas/#imagedata">ImageData</A> <A href="/canvas/#dom-context-2d-createimagedata" title="dom-context-2d-createImageData">createImageData</A>(in float sw, in float sh);
+  <A href="/canvas/#imagedata">ImageData</A> <A href="/canvas/#dom-context-2d-createimagedata" title="dom-context-2d-createImageData">createImageData</A>(in <A href="/canvas/#imagedata">ImageData</A> imagedata);
+  <A href="/canvas/#imagedata">ImageData</A> <A href="/canvas/#dom-context-2d-getimagedata" title="dom-context-2d-getImageData">getImageData</A>(in float sx, in float sy, in float sw, in float sh);
+  void <A href="/canvas/#dom-context-2d-putimagedata" title="dom-context-2d-putImageData">putImageData</A>(in <A href="/canvas/#imagedata">ImageData</A> imagedata, in float dx, in float dy, in optional float dirtyX, in float dirtyY, in float dirtyWidth, in float dirtyHeight);
 };
 
 interface <DFN id="canvasgradient">CanvasGradient</DFN> {
   // opaque object
-  void <A href="http://www.w3.org/TR/2dcontext/#dom-canvasgradient-addcolorstop" title="dom-canvasgradient-addColorStop">addColorStop</A>(in float offset, in DOMString color);
+  void <A href="/canvas/#dom-canvasgradient-addcolorstop" title="dom-canvasgradient-addColorStop">addColorStop</A>(in float offset, in DOMString color);
 };
 
 interface <DFN id="canvaspattern">CanvasPattern</DFN> {
@@ -573,20 +573,20 @@ interface <DFN id="canvaspattern">CanvasPattern</DFN> {
 };
 
 interface <DFN id="textmetrics">TextMetrics</DFN> {
-  readonly attribute float <A href="http://www.w3.org/TR/2dcontext/#dom-textmetrics-width" title="dom-textmetrics-width">width</A>;
+  readonly attribute float <A href="/canvas/#dom-textmetrics-width" title="dom-textmetrics-width">width</A>;
 };
 
 interface <DFN id="imagedata">ImageData</DFN> {
-  readonly attribute unsigned long <A href="http://www.w3.org/TR/2dcontext/#dom-imagedata-width" title="dom-imagedata-width">width</A>;
-  readonly attribute unsigned long <A href="http://www.w3.org/TR/2dcontext/#dom-imagedata-height" title="dom-imagedata-height">height</A>;
-  readonly attribute <A href="http://www.w3.org/TR/2dcontext/#canvaspixelarray">CanvasPixelArray</A> <A href="http://www.w3.org/TR/2dcontext/#dom-imagedata-data" title="dom-imagedata-data">data</A>;
+  readonly attribute unsigned long <A href="/canvas/#dom-imagedata-width" title="dom-imagedata-width">width</A>;
+  readonly attribute unsigned long <A href="/canvas/#dom-imagedata-height" title="dom-imagedata-height">height</A>;
+  readonly attribute <A href="/canvas/#canvaspixelarray">CanvasPixelArray</A> <A href="/canvas/#dom-imagedata-data" title="dom-imagedata-data">data</A>;
 };
 
 interface <DFN id="canvaspixelarray">CanvasPixelArray</DFN> {
-  readonly attribute unsigned long <A href="http://www.w3.org/TR/2dcontext/#dom-canvaspixelarray-length" title="dom-canvaspixelarray-length">length</A>;
-  <A href="http://www.w3.org/TR/2dcontext/#dom-canvaspixelarray-get" title="dom-CanvasPixelArray-get">getter</A> octet (in unsigned long index);
-  <A href="http://www.w3.org/TR/2dcontext/#dom-canvaspixelarray-set" title="dom-CanvasPixelArray-set">setter</A> void (in unsigned long index, in octet value);
-};</PRE><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-canvas"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-canvas">canvas</A></CODE></DT>
+  readonly attribute unsigned long <A href="/canvas/#dom-canvaspixelarray-length" title="dom-canvaspixelarray-length">length</A>;
+  <A href="/canvas/#dom-canvaspixelarray-get" title="dom-CanvasPixelArray-get">getter</A> octet (in unsigned long index);
+  <A href="/canvas/#dom-canvaspixelarray-set" title="dom-CanvasPixelArray-set">setter</A> void (in unsigned long index, in octet value);
+};</PRE><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-canvas"><A href="/canvas/#dom-context-2d-canvas">canvas</A></CODE></DT>
 
    <DD>
 
@@ -627,15 +627,15 @@ interface <DFN id="canvaspixelarray">CanvasPixelArray</DFN> {
   <SPAN>in a <CODE>Document</CODE></SPAN>), then the "computed value
   of the 'color' property" for the purposes of determining the
   computed value of the <CODE title="">currentColor</CODE> keyword is
-  fully opaque black. <A href="http://www.w3.org/TR/2dcontext/#refsCSSCOLOR">[CSSCOLOR]</A></P>
+  fully opaque black. <A href="/canvas/#refsCSSCOLOR">[CSSCOLOR]</A></P>
 
-  </DIV><H2 id="the-canvas-state"><SPAN class="secno">2 </SPAN>The canvas state</H2><P>Each context maintains a stack of drawing states. <DFN id="drawing-state" title="drawing state">Drawing states</DFN> consist of:</P><UL class="brief"><LI>The current <A href="http://www.w3.org/TR/2dcontext/#transformations" title="dom-context-2d-transformation">transformation matrix</A>.</LI>
-   <LI>The current <A href="http://www.w3.org/TR/2dcontext/#clipping-region">clipping region</A>.</LI>
-   <LI>The current values of the following attributes: <CODE title="dom-context-2d-strokeStyle"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-strokestyle">strokeStyle</A></CODE>, <CODE title="dom-context-2d-fillStyle"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-fillstyle">fillStyle</A></CODE>, <CODE title="dom-context-2d-globalAlpha"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalalpha">globalAlpha</A></CODE>, <CODE title="dom-context-2d-lineWidth"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linewidth">lineWidth</A></CODE>, <CODE title="dom-context-2d-lineCap"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linecap">lineCap</A></CODE>, <CODE title="dom-context-2d-lineJoin"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linejoin">lineJoin</A></CODE>, <CODE title="dom-context-2d-miterLimit"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-miterlimit">miterLimit</A></CODE>, <CODE title="dom-context-2d-shadowOffsetX"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowoffsetx">shadowOffsetX</A></CODE>, <CODE title="dom-context-2d-shadowOffsetY"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowoffsety">shadowOffsetY</A></CODE>, <CODE title="dom-context-2d-shadowBlur"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowblur">shadowBlur</A></CODE>, <CODE title="dom-context-2d-shadowColor"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowcolor">shadowColor</A></CODE>, <CODE title="dom-context-2d-globalCompositeOperation"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalcompositeoperation">globalCompositeOperation</A></CODE>, <CODE title="dom-context-2d-font"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-font">font</A></CODE>, <CODE title="dom-context-2d-textAlign"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textalign">textAlign</A></CODE>, <CODE title="dom-context-2d-textBaseline"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline">textBaseline</A></CODE>.</LI>
+  </DIV><H2 id="the-canvas-state"><SPAN class="secno">2 </SPAN>The canvas state</H2><P>Each context maintains a stack of drawing states. <DFN id="drawing-state" title="drawing state">Drawing states</DFN> consist of:</P><UL class="brief"><LI>The current <A href="/canvas/#transformations" title="dom-context-2d-transformation">transformation matrix</A>.</LI>
+   <LI>The current <A href="/canvas/#clipping-region">clipping region</A>.</LI>
+   <LI>The current values of the following attributes: <CODE title="dom-context-2d-strokeStyle"><A href="/canvas/#dom-context-2d-strokestyle">strokeStyle</A></CODE>, <CODE title="dom-context-2d-fillStyle"><A href="/canvas/#dom-context-2d-fillstyle">fillStyle</A></CODE>, <CODE title="dom-context-2d-globalAlpha"><A href="/canvas/#dom-context-2d-globalalpha">globalAlpha</A></CODE>, <CODE title="dom-context-2d-lineWidth"><A href="/canvas/#dom-context-2d-linewidth">lineWidth</A></CODE>, <CODE title="dom-context-2d-lineCap"><A href="/canvas/#dom-context-2d-linecap">lineCap</A></CODE>, <CODE title="dom-context-2d-lineJoin"><A href="/canvas/#dom-context-2d-linejoin">lineJoin</A></CODE>, <CODE title="dom-context-2d-miterLimit"><A href="/canvas/#dom-context-2d-miterlimit">miterLimit</A></CODE>, <CODE title="dom-context-2d-shadowOffsetX"><A href="/canvas/#dom-context-2d-shadowoffsetx">shadowOffsetX</A></CODE>, <CODE title="dom-context-2d-shadowOffsetY"><A href="/canvas/#dom-context-2d-shadowoffsety">shadowOffsetY</A></CODE>, <CODE title="dom-context-2d-shadowBlur"><A href="/canvas/#dom-context-2d-shadowblur">shadowBlur</A></CODE>, <CODE title="dom-context-2d-shadowColor"><A href="/canvas/#dom-context-2d-shadowcolor">shadowColor</A></CODE>, <CODE title="dom-context-2d-globalCompositeOperation"><A href="/canvas/#dom-context-2d-globalcompositeoperation">globalCompositeOperation</A></CODE>, <CODE title="dom-context-2d-font"><A href="/canvas/#dom-context-2d-font">font</A></CODE>, <CODE title="dom-context-2d-textAlign"><A href="/canvas/#dom-context-2d-textalign">textAlign</A></CODE>, <CODE title="dom-context-2d-textBaseline"><A href="/canvas/#dom-context-2d-textbaseline">textBaseline</A></CODE>.</LI>
   </UL><P class="note">The current path and the current bitmap are not part
   of the drawing state. The current path is persistent, and can only
-  be reset using the <CODE title="dom-context-2d-beginPath"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-beginpath">beginPath()</A></CODE> method. The
-  current bitmap is a property of the canvas, not the context.</P><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-save"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-save">save</A></CODE>()</DT>
+  be reset using the <CODE title="dom-context-2d-beginPath"><A href="/canvas/#dom-context-2d-beginpath">beginPath()</A></CODE> method. The
+  current bitmap is a property of the canvas, not the context.</P><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-save"><A href="/canvas/#dom-context-2d-save">save</A></CODE>()</DT>
 
    <DD>
 
@@ -643,7 +643,7 @@ interface <DFN id="canvaspixelarray">CanvasPixelArray</DFN> {
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-restore"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-restore">restore</A></CODE>()</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-restore"><A href="/canvas/#dom-context-2d-restore">restore</A></CODE>()</DT>
 
    <DD>
 
@@ -695,7 +695,7 @@ idea from Mihai:
   tall is then drawn on the canvas, the actual result will be a
   square.</P>
 
-  </DIV><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-scale"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-scale">scale</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>)</DT>
+  </DIV><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-scale"><A href="/canvas/#dom-context-2d-scale">scale</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>)</DT>
 
    <DD>
 
@@ -703,7 +703,7 @@ idea from Mihai:
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-rotate"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-rotate">rotate</A></CODE>(<VAR title="">angle</VAR>)</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-rotate"><A href="/canvas/#dom-context-2d-rotate">rotate</A></CODE>(<VAR title="">angle</VAR>)</DT>
 
    <DD>
 
@@ -711,7 +711,7 @@ idea from Mihai:
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-translate"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-translate">translate</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>)</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-translate"><A href="/canvas/#dom-context-2d-translate">translate</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>)</DT>
 
    <DD>
 
@@ -719,7 +719,7 @@ idea from Mihai:
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-transform"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-transform">transform</A></CODE>(<VAR title="">m11</VAR>, <VAR title="">m12</VAR>, <VAR title="">m21</VAR>, <VAR title="">m22</VAR>, <VAR title="">dx</VAR>, <VAR title="">dy</VAR>)</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-transform"><A href="/canvas/#dom-context-2d-transform">transform</A></CODE>(<VAR title="">m11</VAR>, <VAR title="">m12</VAR>, <VAR title="">m21</VAR>, <VAR title="">m22</VAR>, <VAR title="">dx</VAR>, <VAR title="">dy</VAR>)</DT>
 
    <DD>
 
@@ -727,7 +727,7 @@ idea from Mihai:
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-setTransform"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-settransform">setTransform</A></CODE>(<VAR title="">m11</VAR>, <VAR title="">m12</VAR>, <VAR title="">m21</VAR>, <VAR title="">m22</VAR>, <VAR title="">dx</VAR>, <VAR title="">dy</VAR>)</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-setTransform"><A href="/canvas/#dom-context-2d-settransform">setTransform</A></CODE>(<VAR title="">m11</VAR>, <VAR title="">m12</VAR>, <VAR title="">m21</VAR>, <VAR title="">m22</VAR>, <VAR title="">dx</VAR>, <VAR title="">dy</VAR>)</DT>
 
    <DD>
 
@@ -771,10 +771,10 @@ idea from Mihai:
 
   <P>The <DFN id="dom-context-2d-settransform" title="dom-context-2d-setTransform"><CODE>setTransform(<VAR title="">m11</VAR>, <VAR title="">m12</VAR>, <VAR title="">m21</VAR>, <VAR title="">m22</VAR>, <VAR title="">dx</VAR>,
   <VAR title="">dy</VAR>)</CODE></DFN> method must reset the current
-  transform to the identity matrix, and then invoke the <CODE><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-transform" title="dom-context-2d-transform">transform</A>(<VAR title="">m11</VAR>, <VAR title="">m12</VAR>, <VAR title="">m21</VAR>, <VAR title="">m22</VAR>, <VAR title="">dx</VAR>,
+  transform to the identity matrix, and then invoke the <CODE><A href="/canvas/#dom-context-2d-transform" title="dom-context-2d-transform">transform</A>(<VAR title="">m11</VAR>, <VAR title="">m12</VAR>, <VAR title="">m21</VAR>, <VAR title="">m22</VAR>, <VAR title="">dx</VAR>,
   <VAR title="">dy</VAR>)</CODE> method with the same arguments.</P>
 
-  </DIV><H2 id="compositing"><SPAN class="secno">4 </SPAN>Compositing</H2><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-globalAlpha"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalalpha">globalAlpha</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
+  </DIV><H2 id="compositing"><SPAN class="secno">4 </SPAN>Compositing</H2><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-globalAlpha"><A href="/canvas/#dom-context-2d-globalalpha">globalAlpha</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
 
    <DD>
 
@@ -786,7 +786,7 @@ idea from Mihai:
    </DD>
 
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-globalCompositeOperation"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalcompositeoperation">globalCompositeOperation</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-globalCompositeOperation"><A href="/canvas/#dom-context-2d-globalcompositeoperation">globalCompositeOperation</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
 
    <DD>
 
@@ -800,7 +800,7 @@ idea from Mihai:
   </DL><DIV class="impl">
 
   <P>All drawing operations are affected by the global compositing
-  attributes, <CODE title="dom-context-2d-globalAlpha"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalalpha">globalAlpha</A></CODE> and <CODE title="dom-context-2d-globalCompositeOperation"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalcompositeoperation">globalCompositeOperation</A></CODE>.</P>
+  attributes, <CODE title="dom-context-2d-globalAlpha"><A href="/canvas/#dom-context-2d-globalalpha">globalAlpha</A></CODE> and <CODE title="dom-context-2d-globalCompositeOperation"><A href="/canvas/#dom-context-2d-globalcompositeoperation">globalCompositeOperation</A></CODE>.</P>
 
   <!-- conformance criteria for painting are described in the "drawing
   model" section below -->
@@ -812,12 +812,12 @@ idea from Mihai:
   transparency). If an attempt is made to set the attribute to a value
   outside this range, including Infinity and Not-a-Number (NaN)
   values, the attribute must retain its previous value. When the
-  context is created, the <CODE title="dom-context-2d-globalAlpha"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalalpha">globalAlpha</A></CODE> attribute must
+  context is created, the <CODE title="dom-context-2d-globalAlpha"><A href="/canvas/#dom-context-2d-globalalpha">globalAlpha</A></CODE> attribute must
   initially have the value 1.0.</P>
 
   <P>The <DFN id="dom-context-2d-globalcompositeoperation" title="dom-context-2d-globalCompositeOperation"><CODE>globalCompositeOperation</CODE></DFN>
   attribute sets how shapes and images are drawn onto the existing
-  bitmap, once they have had <CODE title="dom-context-2d-globalAlpha"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalalpha">globalAlpha</A></CODE> and the
+  bitmap, once they have had <CODE title="dom-context-2d-globalAlpha"><A href="/canvas/#dom-context-2d-globalalpha">globalAlpha</A></CODE> and the
   current transformation matrix applied. It must be set to a value
   from the following list. In the descriptions below, the source
   image, <VAR title="">A</VAR>, is the shape or image being rendered,
@@ -853,22 +853,22 @@ idea from Mihai:
 
    <DT><DFN id="gcop-destination-atop" title="gcop-destination-atop"><CODE>destination-atop</CODE></DFN></DT>
 
-   <DD><VAR title="">B</VAR> atop <VAR title="">A</VAR>. Same as <CODE title="gcop-source-atop"><A href="http://www.w3.org/TR/2dcontext/#gcop-source-atop">source-atop</A></CODE> but using the
+   <DD><VAR title="">B</VAR> atop <VAR title="">A</VAR>. Same as <CODE title="gcop-source-atop"><A href="/canvas/#gcop-source-atop">source-atop</A></CODE> but using the
    destination image instead of the source image and vice versa.</DD>
 
    <DT><DFN id="gcop-destination-in" title="gcop-destination-in"><CODE>destination-in</CODE></DFN></DT>
 
-   <DD><VAR title="">B</VAR> in <VAR title="">A</VAR>. Same as <CODE title="gcop-source-in"><A href="http://www.w3.org/TR/2dcontext/#gcop-source-in">source-in</A></CODE> but using the destination
+   <DD><VAR title="">B</VAR> in <VAR title="">A</VAR>. Same as <CODE title="gcop-source-in"><A href="/canvas/#gcop-source-in">source-in</A></CODE> but using the destination
    image instead of the source image and vice versa.</DD>
 
    <DT><DFN id="gcop-destination-out" title="gcop-destination-out"><CODE>destination-out</CODE></DFN></DT>
 
-   <DD><VAR title="">B</VAR> out <VAR title="">A</VAR>. Same as <CODE title="gcop-source-out"><A href="http://www.w3.org/TR/2dcontext/#gcop-source-out">source-out</A></CODE> but using the destination
+   <DD><VAR title="">B</VAR> out <VAR title="">A</VAR>. Same as <CODE title="gcop-source-out"><A href="/canvas/#gcop-source-out">source-out</A></CODE> but using the destination
    image instead of the source image and vice versa.</DD>
 
    <DT><DFN id="gcop-destination-over" title="gcop-destination-over"><CODE>destination-over</CODE></DFN></DT>
 
-   <DD><VAR title="">B</VAR> over <VAR title="">A</VAR>. Same as <CODE title="gcop-source-over"><A href="http://www.w3.org/TR/2dcontext/#gcop-source-over">source-over</A></CODE> but using the
+   <DD><VAR title="">B</VAR> over <VAR title="">A</VAR>. Same as <CODE title="gcop-source-over"><A href="/canvas/#gcop-source-over">source-over</A></CODE> but using the
    destination image instead of the source image and vice versa.</DD>
 
 
@@ -913,17 +913,17 @@ idea from Mihai:
 
   <P>The operators in the above list must be treated as described by
   the Porter-Duff operator given at the start of their description
-  (e.g. <VAR title="">A</VAR> over <VAR title="">B</VAR>). <A href="http://www.w3.org/TR/2dcontext/#refsPORTERDUFF">[PORTERDUFF]</A></P>
+  (e.g. <VAR title="">A</VAR> over <VAR title="">B</VAR>). <A href="/canvas/#refsPORTERDUFF">[PORTERDUFF]</A></P>
 
   <P>On setting, if the user agent does not recognize the specified
-  value, it must be ignored, leaving the value of <CODE title="dom-context-2d-globalCompositeOperation"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalcompositeoperation">globalCompositeOperation</A></CODE>
+  value, it must be ignored, leaving the value of <CODE title="dom-context-2d-globalCompositeOperation"><A href="/canvas/#dom-context-2d-globalcompositeoperation">globalCompositeOperation</A></CODE>
   unaffected.</P>
 
-  <P>When the context is created, the <CODE title="dom-context-2d-globalCompositeOperation"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalcompositeoperation">globalCompositeOperation</A></CODE>
+  <P>When the context is created, the <CODE title="dom-context-2d-globalCompositeOperation"><A href="/canvas/#dom-context-2d-globalcompositeoperation">globalCompositeOperation</A></CODE>
   attribute must initially have the value
   <CODE>source-over</CODE>.</P>
 
-  </DIV><H2 id="colors-and-styles"><SPAN class="secno">5 </SPAN>Colors and styles</H2><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-strokeStyle"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-strokestyle">strokeStyle</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
+  </DIV><H2 id="colors-and-styles"><SPAN class="secno">5 </SPAN>Colors and styles</H2><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-strokeStyle"><A href="/canvas/#dom-context-2d-strokestyle">strokeStyle</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
 
    <DD>
 
@@ -932,12 +932,12 @@ idea from Mihai:
     <P>Can be set, to change the stroke style.</P>
 
     <P>The style can be either a string containing a CSS color, or a
-    <CODE><A href="http://www.w3.org/TR/2dcontext/#canvasgradient">CanvasGradient</A></CODE> or <CODE><A href="http://www.w3.org/TR/2dcontext/#canvaspattern">CanvasPattern</A></CODE>
+    <CODE><A href="/canvas/#canvasgradient">CanvasGradient</A></CODE> or <CODE><A href="/canvas/#canvaspattern">CanvasPattern</A></CODE>
     object. Invalid values are ignored.</P>
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-fillStyle"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-fillstyle">fillStyle</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-fillStyle"><A href="/canvas/#dom-context-2d-fillstyle">fillStyle</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
 
    <DD>
 
@@ -946,7 +946,7 @@ idea from Mihai:
     <P>Can be set, to change the fill style.</P>
 
     <P>The style can be either a string containing a CSS color, or a
-    <CODE><A href="http://www.w3.org/TR/2dcontext/#canvasgradient">CanvasGradient</A></CODE> or <CODE><A href="http://www.w3.org/TR/2dcontext/#canvaspattern">CanvasPattern</A></CODE>
+    <CODE><A href="/canvas/#canvasgradient">CanvasGradient</A></CODE> or <CODE><A href="/canvas/#canvaspattern">CanvasPattern</A></CODE>
     object. Invalid values are ignored.</P>
 
    </DD>
@@ -986,23 +986,23 @@ idea from Mihai:
   shapes.</P>
 
   <P>Both attributes can be either strings,
-  <CODE><A href="http://www.w3.org/TR/2dcontext/#canvasgradient">CanvasGradient</A></CODE>s, or <CODE><A href="http://www.w3.org/TR/2dcontext/#canvaspattern">CanvasPattern</A></CODE>s. On
+  <CODE><A href="/canvas/#canvasgradient">CanvasGradient</A></CODE>s, or <CODE><A href="/canvas/#canvaspattern">CanvasPattern</A></CODE>s. On
   setting, strings must be parsed as CSS &lt;color&gt; values and the
-  color assigned, and <CODE><A href="http://www.w3.org/TR/2dcontext/#canvasgradient">CanvasGradient</A></CODE> and
-  <CODE><A href="http://www.w3.org/TR/2dcontext/#canvaspattern">CanvasPattern</A></CODE> objects must be assigned themselves. <A href="http://www.w3.org/TR/2dcontext/#refsCSSCOLOR">[CSSCOLOR]</A> If the value is a string but
+  color assigned, and <CODE><A href="/canvas/#canvasgradient">CanvasGradient</A></CODE> and
+  <CODE><A href="/canvas/#canvaspattern">CanvasPattern</A></CODE> objects must be assigned themselves. <A href="/canvas/#refsCSSCOLOR">[CSSCOLOR]</A> If the value is a string but
   is not a valid color, or is neither a string, a
-  <CODE><A href="http://www.w3.org/TR/2dcontext/#canvasgradient">CanvasGradient</A></CODE>, nor a <CODE><A href="http://www.w3.org/TR/2dcontext/#canvaspattern">CanvasPattern</A></CODE>, then
+  <CODE><A href="/canvas/#canvasgradient">CanvasGradient</A></CODE>, nor a <CODE><A href="/canvas/#canvaspattern">CanvasPattern</A></CODE>, then
   it must be ignored, and the attribute must retain its previous
   value.</P>
 
-  <P>When set to a <CODE><A href="http://www.w3.org/TR/2dcontext/#canvaspattern">CanvasPattern</A></CODE> or
-  <CODE><A href="http://www.w3.org/TR/2dcontext/#canvasgradient">CanvasGradient</A></CODE> object, the assignment is
+  <P>When set to a <CODE><A href="/canvas/#canvaspattern">CanvasPattern</A></CODE> or
+  <CODE><A href="/canvas/#canvasgradient">CanvasGradient</A></CODE> object, the assignment is
   <SPAN>live</SPAN>, meaning that changes made to the object after the
   assignment do affect subsequent stroking or filling of shapes.</P>
 
-  <P>On getting, if the value is a color, then the <A href="http://www.w3.org/TR/2dcontext/#serialization-of-a-color" title="serialization of a color">serialization of the color</A>
+  <P>On getting, if the value is a color, then the <A href="/canvas/#serialization-of-a-color" title="serialization of a color">serialization of the color</A>
   must be returned. Otherwise, if it is not a color but a
-  <CODE><A href="http://www.w3.org/TR/2dcontext/#canvasgradient">CanvasGradient</A></CODE> or <CODE><A href="http://www.w3.org/TR/2dcontext/#canvaspattern">CanvasPattern</A></CODE>, then the
+  <CODE><A href="/canvas/#canvasgradient">CanvasGradient</A></CODE> or <CODE><A href="/canvas/#canvaspattern">CanvasPattern</A></CODE>, then the
   respective object must be returned. (Such objects are opaque and
   therefore only useful for assigning to other attributes or for
   comparison to other gradients or patterns.)</P>
@@ -1027,12 +1027,12 @@ idea from Mihai:
   representing the fractional part of the alpha value, and finally a
   U+0029 RIGHT PARENTHESIS.</P>
 
-  <P>When the context is created, the <CODE title="dom-context-2d-strokeStyle"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-strokestyle">strokeStyle</A></CODE> and <CODE title="dom-context-2d-fillStyle"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-fillstyle">fillStyle</A></CODE> attributes must
+  <P>When the context is created, the <CODE title="dom-context-2d-strokeStyle"><A href="/canvas/#dom-context-2d-strokestyle">strokeStyle</A></CODE> and <CODE title="dom-context-2d-fillStyle"><A href="/canvas/#dom-context-2d-fillstyle">fillStyle</A></CODE> attributes must
   initially have the string value <CODE title="">#000000</CODE>.</P>
 
   </DIV><HR><P>There are two types of gradients, linear gradients and radial
   gradients, both represented by objects implementing the opaque
-  <CODE><A href="http://www.w3.org/TR/2dcontext/#canvasgradient">CanvasGradient</A></CODE> interface.</P><P id="interpolation">Once a gradient has been created (see below),
+  <CODE><A href="/canvas/#canvasgradient">CanvasGradient</A></CODE> interface.</P><P id="interpolation">Once a gradient has been created (see below),
   stops are placed along it to define how the colors are distributed
   along the gradient. <SPAN class="impl">The color of the gradient at
   each stop is the color specified for that stop. Between each such
@@ -1041,7 +1041,7 @@ idea from Mihai:
   value to find the color to use at that offset. Before the first
   stop, the color must be the color of the first stop. After the last
   stop, the color must be the color of the last stop. When there are
-  no stops, the gradient is transparent black.</SPAN></P><DL class="domintro"><DT><VAR title="">gradient</VAR> . <CODE title="dom-canvasgradient-addColorStop"><A href="http://www.w3.org/TR/2dcontext/#dom-canvasgradient-addcolorstop">addColorStop</A></CODE>(<VAR title="">offset</VAR>, <VAR title="">color</VAR>)</DT>
+  no stops, the gradient is transparent black.</SPAN></P><DL class="domintro"><DT><VAR title="">gradient</VAR> . <CODE title="dom-canvasgradient-addColorStop"><A href="/canvas/#dom-canvasgradient-addcolorstop">addColorStop</A></CODE>(<VAR title="">offset</VAR>, <VAR title="">color</VAR>)</DT>
 
    <DD>
 
@@ -1055,11 +1055,11 @@ idea from Mihai:
 
    </DD>
 
-   <DT><VAR title="">gradient</VAR> = <VAR title="">context</VAR> . <CODE title="dom-context-2d-createLinearGradient"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-createlineargradient">createLinearGradient</A></CODE>(<VAR title="">x0</VAR>, <VAR title="">y0</VAR>, <VAR title="">x1</VAR>, <VAR title="">y1</VAR>)</DT>
+   <DT><VAR title="">gradient</VAR> = <VAR title="">context</VAR> . <CODE title="dom-context-2d-createLinearGradient"><A href="/canvas/#dom-context-2d-createlineargradient">createLinearGradient</A></CODE>(<VAR title="">x0</VAR>, <VAR title="">y0</VAR>, <VAR title="">x1</VAR>, <VAR title="">y1</VAR>)</DT>
 
    <DD>
 
-    <P>Returns a <CODE><A href="http://www.w3.org/TR/2dcontext/#canvasgradient">CanvasGradient</A></CODE> object that represents a
+    <P>Returns a <CODE><A href="/canvas/#canvasgradient">CanvasGradient</A></CODE> object that represents a
     linear gradient that paints along the line given by the
     coordinates represented by the arguments.</P>
 
@@ -1068,11 +1068,11 @@ idea from Mihai:
 
    </DD>
 
-   <DT><VAR title="">gradient</VAR> = <VAR title="">context</VAR> . <CODE title="dom-context-2d-createRadialGradient"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-createradialgradient">createRadialGradient</A></CODE>(<VAR title="">x0</VAR>, <VAR title="">y0</VAR>, <VAR title="">r0</VAR>, <VAR title="">x1</VAR>, <VAR title="">y1</VAR>, <VAR title="">r1</VAR>)</DT>
+   <DT><VAR title="">gradient</VAR> = <VAR title="">context</VAR> . <CODE title="dom-context-2d-createRadialGradient"><A href="/canvas/#dom-context-2d-createradialgradient">createRadialGradient</A></CODE>(<VAR title="">x0</VAR>, <VAR title="">y0</VAR>, <VAR title="">r0</VAR>, <VAR title="">x1</VAR>, <VAR title="">y1</VAR>, <VAR title="">r1</VAR>)</DT>
 
    <DD>
 
-    <P>Returns a <CODE><A href="http://www.w3.org/TR/2dcontext/#canvasgradient">CanvasGradient</A></CODE> object that represents a
+    <P>Returns a <CODE><A href="/canvas/#canvasgradient">CanvasGradient</A></CODE> object that represents a
     radial gradient that paints along the cone given by the circles
     represented by the arguments.</P>
 
@@ -1085,7 +1085,7 @@ idea from Mihai:
   </DL><DIV class="impl">
 
   <P>The <DFN id="dom-canvasgradient-addcolorstop" title="dom-canvasgradient-addColorStop"><CODE>addColorStop(<VAR title="">offset</VAR>, <VAR title="">color</VAR>)</CODE></DFN>
-  method on the <CODE><A href="http://www.w3.org/TR/2dcontext/#canvasgradient">CanvasGradient</A></CODE> interface adds a new stop
+  method on the <CODE><A href="/canvas/#canvasgradient">CanvasGradient</A></CODE> interface adds a new stop
   to a gradient. If the <VAR title="">offset</VAR> is less than 0,
   greater than 1, infinite, or NaN, then an
   <CODE>INDEX_SIZE_ERR</CODE> exception must be raised. If the <VAR title="">color</VAR> cannot be parsed as a CSS color, then a
@@ -1101,18 +1101,18 @@ idea from Mihai:
 
   <P>The <DFN id="dom-context-2d-createlineargradient" title="dom-context-2d-createLinearGradient"><CODE>createLinearGradient(<VAR title="">x0</VAR>, <VAR title="">y0</VAR>, <VAR title="">x1</VAR>,
   <VAR title="">y1</VAR>)</CODE></DFN> method takes four arguments
-  that represent the start point (<VAR title="">x0</VAR>, <VAR title="">y0</VAR>) and end point (<VAR title="">x1</VAR>, <VAR title="">y1</VAR>) of the gradient. If any of the arguments to <CODE title="dom-context-2d-createLinearGradient"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-createlineargradient">createLinearGradient()</A></CODE>
+  that represent the start point (<VAR title="">x0</VAR>, <VAR title="">y0</VAR>) and end point (<VAR title="">x1</VAR>, <VAR title="">y1</VAR>) of the gradient. If any of the arguments to <CODE title="dom-context-2d-createLinearGradient"><A href="/canvas/#dom-context-2d-createlineargradient">createLinearGradient()</A></CODE>
   are infinite or NaN, the method must raise a
   <CODE>NOT_SUPPORTED_ERR</CODE> exception. Otherwise, the method must
-  return a linear <CODE><A href="http://www.w3.org/TR/2dcontext/#canvasgradient">CanvasGradient</A></CODE> initialized with the
+  return a linear <CODE><A href="/canvas/#canvasgradient">CanvasGradient</A></CODE> initialized with the
   specified line.</P>
 
   <P>Linear gradients must be rendered such that all points on a line
   perpendicular to the line that crosses the start and end points have
   the color at the point where those two lines cross (with the colors
-  coming from the <A href="http://www.w3.org/TR/2dcontext/#interpolation">interpolation and
+  coming from the <A href="/canvas/#interpolation">interpolation and
   extrapolation</A> described above). The points in the linear
-  gradient must be transformed as described by the <A href="http://www.w3.org/TR/2dcontext/#transformations" title="dom-context-2d-transformation">current transformation
+  gradient must be transformed as described by the <A href="/canvas/#transformations" title="dom-context-2d-transformation">current transformation
   matrix</A> when rendering.</P>
 
   <P>If <SPAN title=""><VAR title="">x0</VAR>&nbsp;=&nbsp;<VAR title="">x1</VAR></SPAN> and <SPAN title=""><VAR title="">y0</VAR>&nbsp;=&nbsp;<VAR title="">y1</VAR></SPAN>, then
@@ -1127,7 +1127,7 @@ idea from Mihai:
   <CODE>NOT_SUPPORTED_ERR</CODE> exception must be raised. If either
   of <VAR title="">r0</VAR> or <VAR title="">r1</VAR> are negative, an
   <CODE>INDEX_SIZE_ERR</CODE> exception must be raised. Otherwise,
-  the method must return a radial <CODE><A href="http://www.w3.org/TR/2dcontext/#canvasgradient">CanvasGradient</A></CODE>
+  the method must return a radial <CODE><A href="/canvas/#canvasgradient">CanvasGradient</A></CODE>
   initialized with the two specified circles.</P>
 
   <P>Radial gradients must be rendered by following these steps:</P>
@@ -1144,7 +1144,7 @@ idea from Mihai:
     <P>Let <SPAN title="">r(<VAR title="">ω</VAR>)&nbsp;=&nbsp;(<VAR title="">r<SUB>1</SUB></VAR>-<VAR title="">r<SUB>0</SUB></VAR>)<VAR title="">ω</VAR>&nbsp;+&nbsp;<VAR title="">r<SUB>0</SUB></VAR></SPAN></P>
 
     <P>Let the color at <VAR title="">ω</VAR> be the color at
-    that position on the gradient (with the colors coming from the <A href="http://www.w3.org/TR/2dcontext/#interpolation">interpolation and extrapolation</A>
+    that position on the gradient (with the colors coming from the <A href="/canvas/#interpolation">interpolation and extrapolation</A>
     described above).</P>
 
    </LI>
@@ -1164,7 +1164,7 @@ idea from Mihai:
   the gradient (transparent black).</P>
 
   <P>The points in the radial gradient must be transformed as
-  described by the <A href="http://www.w3.org/TR/2dcontext/#transformations" title="dom-context-2d-transformation">current
+  described by the <A href="/canvas/#transformations" title="dom-context-2d-transformation">current
   transformation matrix</A> when rendering.</P>
 
   <P>Gradients must be painted only where the relevant stroking or
@@ -1181,11 +1181,11 @@ idea from Mihai:
 -->
 
   </DIV><HR><P>Patterns are represented by objects implementing the opaque
-  <CODE><A href="http://www.w3.org/TR/2dcontext/#canvaspattern">CanvasPattern</A></CODE> interface.</P><DL class="domintro"><DT><VAR title="">pattern</VAR> = <VAR title="">context</VAR> . <CODE title="dom-context-2d-createPattern"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-createpattern">createPattern</A></CODE>(<VAR title="">image</VAR>, <VAR title="">repetition</VAR>)</DT>
+  <CODE><A href="/canvas/#canvaspattern">CanvasPattern</A></CODE> interface.</P><DL class="domintro"><DT><VAR title="">pattern</VAR> = <VAR title="">context</VAR> . <CODE title="dom-context-2d-createPattern"><A href="/canvas/#dom-context-2d-createpattern">createPattern</A></CODE>(<VAR title="">image</VAR>, <VAR title="">repetition</VAR>)</DT>
 
    <DD>
 
-    <P>Returns a <CODE><A href="http://www.w3.org/TR/2dcontext/#canvaspattern">CanvasPattern</A></CODE> object that uses the given image
+    <P>Returns a <CODE><A href="/canvas/#canvaspattern">CanvasPattern</A></CODE> object that uses the given image
     and repeats in the direction(s) given by the <VAR title="">repetition</VAR> argument.</P>
 
     <P>The allowed values for <VAR title="">repetition</VAR> are <CODE title="">repeat</CODE> (both directions), <CODE title="">repeat-x</CODE> (horizontal only), <CODE title="">repeat-y</CODE> (vertical only), and <CODE title="">no-repeat</CODE> (neither). If the <VAR title="">repetition</VAR> argument is empty or null, the value
@@ -1207,7 +1207,7 @@ idea from Mihai:
   method is used. The first argument gives the image to use as the
   pattern (either an <CODE>HTMLImageElement</CODE>,
   <CODE>HTMLCanvasElement</CODE>, or <CODE>HTMLVideoElement</CODE>
-  object). Modifying this image after calling the <CODE title="dom-context-2d-createPattern"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-createpattern">createPattern()</A></CODE> method
+  object). Modifying this image after calling the <CODE title="dom-context-2d-createPattern"><A href="/canvas/#dom-context-2d-createpattern">createPattern()</A></CODE> method
   must not affect the pattern. The second argument must be a string
   with one of the following values: <CODE title="">repeat</CODE>,
   <CODE title="">repeat-x</CODE>, <CODE title="">repeat-y</CODE>,
@@ -1216,7 +1216,7 @@ idea from Mihai:
   unrecognized value is given, then the user agent must raise a
   <CODE>SYNTAX_ERR</CODE> exception. User agents must recognize the
   four values described above exactly (e.g. they must not do case
-  folding). The method must return a <CODE><A href="http://www.w3.org/TR/2dcontext/#canvaspattern">CanvasPattern</A></CODE> object
+  folding). The method must return a <CODE><A href="/canvas/#canvaspattern">CanvasPattern</A></CODE> object
   suitably initialized.</P>
 
   <P>The <VAR title="">image</VAR> argument is an instance of either
@@ -1252,7 +1252,7 @@ idea from Mihai:
   stroking or filling effect requires that they be drawn, and are
   affected by the current transformation matrix.</P>
 
-  <P>When the <CODE title="dom-context-2d-createPattern"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-createpattern">createPattern()</A></CODE> method
+  <P>When the <CODE title="dom-context-2d-createPattern"><A href="/canvas/#dom-context-2d-createpattern">createPattern()</A></CODE> method
   is passed an animated image as its <VAR title="">image</VAR>
   argument, the user agent must use the poster frame of the animation,
   or, if there is no poster frame, the first frame of the
@@ -1275,7 +1275,7 @@ idea from Mihai:
       canvas then using that canvas as the pattern.
   -->
 
-  </DIV><H2 id="line-styles"><SPAN class="secno">6 </SPAN>Line styles</H2><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-lineWidth"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linewidth">lineWidth</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
+  </DIV><H2 id="line-styles"><SPAN class="secno">6 </SPAN>Line styles</H2><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-lineWidth"><A href="/canvas/#dom-context-2d-linewidth">lineWidth</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
 
    <DD>
 
@@ -1286,7 +1286,7 @@ idea from Mihai:
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-lineCap"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linecap">lineCap</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-lineCap"><A href="/canvas/#dom-context-2d-linecap">lineCap</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
 
    <DD>
 
@@ -1300,7 +1300,7 @@ idea from Mihai:
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-lineJoin"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linejoin">lineJoin</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-lineJoin"><A href="/canvas/#dom-context-2d-linejoin">lineJoin</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
 
    <DD>
 
@@ -1314,7 +1314,7 @@ idea from Mihai:
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-miterLimit"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-miterlimit">miterLimit</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-miterLimit"><A href="/canvas/#dom-context-2d-miterlimit">miterLimit</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
 
    <DD>
 
@@ -1334,7 +1334,7 @@ idea from Mihai:
   value unchanged; other values must change the current value to the
   new value.</P>
 
-  <P>When the context is created, the <CODE title="dom-context-2d-lineWidth"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linewidth">lineWidth</A></CODE> attribute must
+  <P>When the context is created, the <CODE title="dom-context-2d-lineWidth"><A href="/canvas/#dom-context-2d-linewidth">lineWidth</A></CODE> attribute must
   initially have the value <CODE>1.0</CODE>.</P>
 
   <HR><P>The <DFN id="dom-context-2d-linecap" title="dom-context-2d-lineCap"><CODE>lineCap</CODE></DFN> attribute
@@ -1356,7 +1356,7 @@ idea from Mihai:
   must be changed to the new value; other values must ignored, leaving
   the value unchanged.</P>
 
-  <P>When the context is created, the <CODE title="dom-context-2d-lineCap"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linecap">lineCap</A></CODE> attribute must
+  <P>When the context is created, the <CODE title="dom-context-2d-lineCap"><A href="/canvas/#dom-context-2d-linecap">lineCap</A></CODE> attribute must
   initially have the value <CODE>butt</CODE>.</P>
 
   <HR><P>The <DFN id="dom-context-2d-linejoin" title="dom-context-2d-lineJoin"><CODE>lineJoin</CODE></DFN>
@@ -1370,7 +1370,7 @@ idea from Mihai:
   must be changed to the new value; other values must be ignored,
   leaving the value unchanged.</P>
 
-  <P>When the context is created, the <CODE title="dom-context-2d-lineJoin"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linejoin">lineJoin</A></CODE> attribute must
+  <P>When the context is created, the <CODE title="dom-context-2d-lineJoin"><A href="/canvas/#dom-context-2d-linejoin">lineJoin</A></CODE> attribute must
   initially have the value <CODE>miter</CODE>.</P>
 
   <HR><P>A join exists at any point in a subpath shared by two consecutive
@@ -1386,7 +1386,7 @@ idea from Mihai:
 
   <P>A filled triangle connecting these two opposite corners with a
   straight line, with the third point of the triangle being the join
-  point, must be rendered at all joins. The <CODE title="dom-context-2d-lineJoin"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linejoin">lineJoin</A></CODE> attribute controls
+  point, must be rendered at all joins. The <CODE title="dom-context-2d-lineJoin"><A href="/canvas/#dom-context-2d-linejoin">lineJoin</A></CODE> attribute controls
   whether anything else is rendered. The three aforementioned values
   have the following meanings:</P>
 
@@ -1419,7 +1419,7 @@ idea from Mihai:
   the value unchanged; other values must change the current value to
   the new value.</P>
 
-  <P>When the context is created, the <CODE title="dom-context-2d-miterLimit"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-miterlimit">miterLimit</A></CODE> attribute must
+  <P>When the context is created, the <CODE title="dom-context-2d-miterLimit"><A href="/canvas/#dom-context-2d-miterlimit">miterLimit</A></CODE> attribute must
   initially have the value <CODE>10.0</CODE>.</P>
 
   <!--
@@ -1446,7 +1446,7 @@ hairline width with transform. ack Shaun Morris.
   -->
 
   </DIV><H2 id="shadows"><SPAN class="secno">7 </SPAN><DFN>Shadows</DFN></H2><P>All drawing operations are affected by the four global shadow
-  attributes.</P><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-shadowColor"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowcolor">shadowColor</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
+  attributes.</P><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-shadowColor"><A href="/canvas/#dom-context-2d-shadowcolor">shadowColor</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
 
    <DD>
 
@@ -1456,8 +1456,8 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-shadowOffsetX"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowoffsetx">shadowOffsetX</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-shadowOffsetY"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowoffsety">shadowOffsetY</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-shadowOffsetX"><A href="/canvas/#dom-context-2d-shadowoffsetx">shadowOffsetX</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-shadowOffsetY"><A href="/canvas/#dom-context-2d-shadowoffsety">shadowOffsetY</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
 
    <DD>
 
@@ -1467,7 +1467,7 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-shadowBlur"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowblur">shadowBlur</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-shadowBlur"><A href="/canvas/#dom-context-2d-shadowblur">shadowBlur</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
 
    <DD>
 
@@ -1482,16 +1482,16 @@ hairline width with transform. ack Shaun Morris.
   <P>The <DFN id="dom-context-2d-shadowcolor" title="dom-context-2d-shadowColor"><CODE>shadowColor</CODE></DFN>
   attribute sets the color of the shadow.</P>
 
-  <P>When the context is created, the <CODE title="dom-context-2d-shadowColor"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowcolor">shadowColor</A></CODE> attribute
+  <P>When the context is created, the <CODE title="dom-context-2d-shadowColor"><A href="/canvas/#dom-context-2d-shadowcolor">shadowColor</A></CODE> attribute
   initially must be fully-transparent black.</P>
 
-  <P>On getting, the <A href="http://www.w3.org/TR/2dcontext/#serialization-of-a-color" title="serialization of a
+  <P>On getting, the <A href="/canvas/#serialization-of-a-color" title="serialization of a
   color">serialization of the color</A> must be returned.</P>
 
   <P>On setting, the new value must be parsed as a CSS &lt;color&gt;
   value and the color assigned. If the value is not a valid color,
   then it must be ignored, and the attribute must retain its previous
-  value. <A href="http://www.w3.org/TR/2dcontext/#refsCSSCOLOR">[CSSCOLOR]</A></P>
+  value. <A href="/canvas/#refsCSSCOLOR">[CSSCOLOR]</A></P>
 
   <P>The <DFN id="dom-context-2d-shadowoffsetx" title="dom-context-2d-shadowOffsetX"><CODE>shadowOffsetX</CODE></DFN>
   and <DFN id="dom-context-2d-shadowoffsety" title="dom-context-2d-shadowOffsetY"><CODE>shadowOffsetY</CODE></DFN>
@@ -1513,7 +1513,7 @@ hairline width with transform. ack Shaun Morris.
   not map to coordinate space units, and are not affected by the
   current transformation matrix.)</P>
 
-  <P>When the context is created, the <CODE title="dom-context-2d-shadowBlur"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowblur">shadowBlur</A></CODE> attribute must
+  <P>When the context is created, the <CODE title="dom-context-2d-shadowBlur"><A href="/canvas/#dom-context-2d-shadowblur">shadowBlur</A></CODE> attribute must
   initially have the value <CODE>0</CODE>.</P>
 
   <P>On getting, the attribute must return its current value. On
@@ -1523,13 +1523,13 @@ hairline width with transform. ack Shaun Morris.
 
   <P><DFN id="when-shadows-are-drawn" title="when shadows are drawn">Shadows are only drawn
   if</DFN> the opacity component of the alpha component of the color
-  of <CODE title="dom-context-2d-shadowColor"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowcolor">shadowColor</A></CODE> is
-  non-zero and either the <CODE title="dom-context-2d-shadowBlur"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowblur">shadowBlur</A></CODE> is non-zero, or
-  the <CODE title="dom-context-2d-shadowOffsetX"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowoffsetx">shadowOffsetX</A></CODE>
-  is non-zero, or the <CODE title="dom-context-2d-shadowOffsetY"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowoffsety">shadowOffsetY</A></CODE> is
+  of <CODE title="dom-context-2d-shadowColor"><A href="/canvas/#dom-context-2d-shadowcolor">shadowColor</A></CODE> is
+  non-zero and either the <CODE title="dom-context-2d-shadowBlur"><A href="/canvas/#dom-context-2d-shadowblur">shadowBlur</A></CODE> is non-zero, or
+  the <CODE title="dom-context-2d-shadowOffsetX"><A href="/canvas/#dom-context-2d-shadowoffsetx">shadowOffsetX</A></CODE>
+  is non-zero, or the <CODE title="dom-context-2d-shadowOffsetY"><A href="/canvas/#dom-context-2d-shadowoffsety">shadowOffsetY</A></CODE> is
   non-zero.</P>
 
-  <P><A href="http://www.w3.org/TR/2dcontext/#when-shadows-are-drawn">When shadows are drawn</A>, they must be rendered as follows:</P>
+  <P><A href="/canvas/#when-shadows-are-drawn">When shadows are drawn</A>, they must be rendered as follows:</P>
 
   <OL><LI> <P>Let <VAR title="">A</VAR> be an infinite transparent black
    bitmap on which the source image for which a shadow is being
@@ -1538,17 +1538,17 @@ hairline width with transform. ack Shaun Morris.
    <LI> <P>Let <VAR title="">B</VAR> be an infinite transparent black
    bitmap, with a coordinate space and an origin identical to <VAR title="">A</VAR>.</P> </LI>
 
-   <LI> <P>Copy the alpha channel of <VAR title="">A</VAR> to <VAR title="">B</VAR>, offset by <CODE title="dom-context-2d-shadowOffsetX"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowoffsetx">shadowOffsetX</A></CODE> in the
-   positive <VAR title="">x</VAR> direction, and <CODE title="dom-context-2d-shadowOffsetY"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowoffsety">shadowOffsetY</A></CODE> in the
+   <LI> <P>Copy the alpha channel of <VAR title="">A</VAR> to <VAR title="">B</VAR>, offset by <CODE title="dom-context-2d-shadowOffsetX"><A href="/canvas/#dom-context-2d-shadowoffsetx">shadowOffsetX</A></CODE> in the
+   positive <VAR title="">x</VAR> direction, and <CODE title="dom-context-2d-shadowOffsetY"><A href="/canvas/#dom-context-2d-shadowoffsety">shadowOffsetY</A></CODE> in the
    positive <VAR title="">y</VAR> direction.</P> </LI>
 
-   <LI> <P>If <CODE title="dom-context-2d-shadowBlur"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowblur">shadowBlur</A></CODE> is greater than
+   <LI> <P>If <CODE title="dom-context-2d-shadowBlur"><A href="/canvas/#dom-context-2d-shadowblur">shadowBlur</A></CODE> is greater than
    0:</P>
 
-    <OL><LI> <P>If <CODE title="dom-context-2d-shadowBlur"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowblur">shadowBlur</A></CODE> is less than
-     8, let <VAR title="">σ</VAR> be half the value of <CODE title="dom-context-2d-shadowBlur"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowblur">shadowBlur</A></CODE>; otherwise,
+    <OL><LI> <P>If <CODE title="dom-context-2d-shadowBlur"><A href="/canvas/#dom-context-2d-shadowblur">shadowBlur</A></CODE> is less than
+     8, let <VAR title="">σ</VAR> be half the value of <CODE title="dom-context-2d-shadowBlur"><A href="/canvas/#dom-context-2d-shadowblur">shadowBlur</A></CODE>; otherwise,
      let <VAR title="">σ</VAR> be the square root of multiplying
-     the value of <CODE title="dom-context-2d-shadowBlur"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowblur">shadowBlur</A></CODE> by
+     the value of <CODE title="dom-context-2d-shadowBlur"><A href="/canvas/#dom-context-2d-shadowblur">shadowBlur</A></CODE> by
      2.</P></LI>
 
      <LI> <P>Perform a 2D Gaussian Blur on <VAR title="">B</VAR>,
@@ -1563,20 +1563,20 @@ hairline width with transform. ack Shaun Morris.
 
    <LI> <P>Set the red, green, and blue components of every pixel in
    <VAR title="">B</VAR> to the red, green, and blue components
-   (respectively) of the color of <CODE title="dom-context-2d-shadowColor"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowcolor">shadowColor</A></CODE>.</P> </LI>
+   (respectively) of the color of <CODE title="dom-context-2d-shadowColor"><A href="/canvas/#dom-context-2d-shadowcolor">shadowColor</A></CODE>.</P> </LI>
 
-   <LI> <P>Multiply the alpha component of every pixel in <VAR title="">B</VAR> by the alpha component of the color of <CODE title="dom-context-2d-shadowColor"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-shadowcolor">shadowColor</A></CODE>.</P> </LI>
+   <LI> <P>Multiply the alpha component of every pixel in <VAR title="">B</VAR> by the alpha component of the color of <CODE title="dom-context-2d-shadowColor"><A href="/canvas/#dom-context-2d-shadowcolor">shadowColor</A></CODE>.</P> </LI>
 
    <LI> <P>The shadow is in the bitmap <VAR title="">B</VAR>, and is
    rendered as part of the drawing model described below.</P> </LI>
 
-  </OL></DIV><P>If the current composition operation is <CODE title="gcop-copy"><A href="http://www.w3.org/TR/2dcontext/#gcop-copy">copy</A></CODE>, shadows effectively won't render
+  </OL></DIV><P>If the current composition operation is <CODE title="gcop-copy"><A href="/canvas/#gcop-copy">copy</A></CODE>, shadows effectively won't render
   (since the shape will overwrite the shadow).</P><H2 id="simple-shapes-rectangles"><SPAN class="secno">8 </SPAN>Simple shapes (rectangles)</H2><P>There are three methods that immediately draw rectangles to the
   bitmap. They each take four arguments; the first two give the <VAR title="">x</VAR> and <VAR title="">y</VAR> coordinates of the top
   left of the rectangle, and the second two give the width <VAR title="">w</VAR> and height <VAR title="">h</VAR> of the rectangle,
   respectively.</P><DIV class="impl">
 
-  <P>The <A href="http://www.w3.org/TR/2dcontext/#transformations" title="dom-context-2d-transformation">current
+  <P>The <A href="/canvas/#transformations" title="dom-context-2d-transformation">current
   transformation matrix</A> must be applied to the following four
   coordinates, which form the path that must then be closed to get the
   specified rectangle: <SPAN title="">(<VAR title="">x</VAR>, <VAR title="">y</VAR>)</SPAN>, <SPAN title="">(<SPAN title=""><VAR title="">x</VAR>+<VAR title="">w</VAR></SPAN>, <VAR title="">y</VAR>)</SPAN>,
@@ -1585,11 +1585,11 @@ hairline width with transform. ack Shaun Morris.
   <SPAN title="">(<VAR title="">x</VAR>, <SPAN title=""><VAR title="">y</VAR>+<VAR title="">h</VAR></SPAN>)</SPAN>.</P>
 
   <P>Shapes are painted without affecting the current path, and are
-  subject to the <A href="http://www.w3.org/TR/2dcontext/#clipping-region" title="clipping region">clipping region</A>,
-  and, with the exception of <CODE title="dom-context-2d-clearRect"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-clearrect">clearRect()</A></CODE>, also <A href="http://www.w3.org/TR/2dcontext/#shadows" title="shadows">shadow effects</A>, <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalalpha" title="dom-context-2d-globalAlpha">global alpha</A>, and <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalcompositeoperation" title="dom-context-2d-globalCompositeOperation">global composition
+  subject to the <A href="/canvas/#clipping-region" title="clipping region">clipping region</A>,
+  and, with the exception of <CODE title="dom-context-2d-clearRect"><A href="/canvas/#dom-context-2d-clearrect">clearRect()</A></CODE>, also <A href="/canvas/#shadows" title="shadows">shadow effects</A>, <A href="/canvas/#dom-context-2d-globalalpha" title="dom-context-2d-globalAlpha">global alpha</A>, and <A href="/canvas/#dom-context-2d-globalcompositeoperation" title="dom-context-2d-globalCompositeOperation">global composition
   operators</A>.</P>
 
-  </DIV><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-clearRect"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-clearrect">clearRect</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>, <VAR title="">w</VAR>, <VAR title="">h</VAR>)</DT>
+  </DIV><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-clearRect"><A href="/canvas/#dom-context-2d-clearrect">clearRect</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>, <VAR title="">w</VAR>, <VAR title="">h</VAR>)</DT>
 
    <DD>
 
@@ -1597,7 +1597,7 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-fillRect"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-fillrect">fillRect</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>, <VAR title="">w</VAR>, <VAR title="">h</VAR>)</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-fillRect"><A href="/canvas/#dom-context-2d-fillrect">fillRect</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>, <VAR title="">w</VAR>, <VAR title="">h</VAR>)</DT>
 
    <DD>
 
@@ -1605,7 +1605,7 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-strokeRect"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-strokerect">strokeRect</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>, <VAR title="">w</VAR>, <VAR title="">h</VAR>)</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-strokeRect"><A href="/canvas/#dom-context-2d-strokerect">strokeRect</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>, <VAR title="">w</VAR>, <VAR title="">h</VAR>)</DT>
 
    <DD>
 
@@ -1621,25 +1621,25 @@ hairline width with transform. ack Shaun Morris.
   height or width are zero, this method has no effect.</P>
 
   <P>The <DFN id="dom-context-2d-fillrect" title="dom-context-2d-fillRect"><CODE>fillRect(<VAR title="">x</VAR>, <VAR title="">y</VAR>, <VAR title="">w</VAR>, <VAR title="">h</VAR>)</CODE></DFN> method must paint the specified
-  rectangular area using the <CODE title="dom-context-2d-fillStyle"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-fillstyle">fillStyle</A></CODE>. If either height
+  rectangular area using the <CODE title="dom-context-2d-fillStyle"><A href="/canvas/#dom-context-2d-fillstyle">fillStyle</A></CODE>. If either height
   or width are zero, this method has no effect.</P>
 
   <P>The <DFN id="dom-context-2d-strokerect" title="dom-context-2d-strokeRect"><CODE>strokeRect(<VAR title="">x</VAR>, <VAR title="">y</VAR>, <VAR title="">w</VAR>, <VAR title="">h</VAR>)</CODE></DFN> method must stroke the specified
-  rectangle's path using the <CODE title="dom-context-2d-strokeStyle"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-strokestyle">strokeStyle</A></CODE>, <CODE title="dom-context-2d-lineWidth"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linewidth">lineWidth</A></CODE>, <CODE title="dom-context-2d-lineJoin"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linejoin">lineJoin</A></CODE>, and (if
-  appropriate) <CODE title="dom-context-2d-miterLimit"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-miterlimit">miterLimit</A></CODE> attributes. If
+  rectangle's path using the <CODE title="dom-context-2d-strokeStyle"><A href="/canvas/#dom-context-2d-strokestyle">strokeStyle</A></CODE>, <CODE title="dom-context-2d-lineWidth"><A href="/canvas/#dom-context-2d-linewidth">lineWidth</A></CODE>, <CODE title="dom-context-2d-lineJoin"><A href="/canvas/#dom-context-2d-linejoin">lineJoin</A></CODE>, and (if
+  appropriate) <CODE title="dom-context-2d-miterLimit"><A href="/canvas/#dom-context-2d-miterlimit">miterLimit</A></CODE> attributes. If
   both height and width are zero, this method has no effect, since
   there is no path to stroke (it's a point). If only one of the two is
   zero, then the method will draw a line instead (the path for the
   outline is just a straight line along the non-zero dimension).</P>
 
   </DIV><H2 id="complex-shapes-paths"><SPAN class="secno">9 </SPAN>Complex shapes (paths)</H2><P>The context always has a current path. There is only one current
-  path, it is not part of the <A href="http://www.w3.org/TR/2dcontext/#drawing-state">drawing state</A>.</P><P>A <DFN id="path">path</DFN> has a list of zero or more subpaths. Each
+  path, it is not part of the <A href="/canvas/#drawing-state">drawing state</A>.</P><P>A <DFN id="path">path</DFN> has a list of zero or more subpaths. Each
   subpath consists of a list of one or more points, connected by
   straight or curved lines, and a flag indicating whether the subpath
   is closed or not. A closed subpath is one where the last point of
   the subpath is connected to the first point of the subpath by a
   straight line. Subpaths with fewer than two points are ignored when
-  painting the path.</P><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-beginPath"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-beginpath">beginPath</A></CODE>()</DT>
+  painting the path.</P><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-beginPath"><A href="/canvas/#dom-context-2d-beginpath">beginPath</A></CODE>()</DT>
 
    <DD>
 
@@ -1647,7 +1647,7 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-moveTo"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-moveto">moveTo</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>)</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-moveTo"><A href="/canvas/#dom-context-2d-moveto">moveTo</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>)</DT>
 
    <DD>
 
@@ -1655,7 +1655,7 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-closePath"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-closepath">closePath</A></CODE>()</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-closePath"><A href="/canvas/#dom-context-2d-closepath">closePath</A></CODE>()</DT>
 
    <DD>
 
@@ -1663,7 +1663,7 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-lineTo"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-lineto">lineTo</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>)</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-lineTo"><A href="/canvas/#dom-context-2d-lineto">lineTo</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>)</DT>
 
    <DD>
 
@@ -1671,7 +1671,7 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-quadraticCurveTo"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-quadraticcurveto">quadraticCurveTo</A></CODE>(<VAR title="">cpx</VAR>, <VAR title="">cpy</VAR>, <VAR title="">x</VAR>, <VAR title="">y</VAR>)</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-quadraticCurveTo"><A href="/canvas/#dom-context-2d-quadraticcurveto">quadraticCurveTo</A></CODE>(<VAR title="">cpx</VAR>, <VAR title="">cpy</VAR>, <VAR title="">x</VAR>, <VAR title="">y</VAR>)</DT>
 
    <DD>
 
@@ -1679,7 +1679,7 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-bezierCurveTo"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-beziercurveto">bezierCurveTo</A></CODE>(<VAR title="">cp1x</VAR>, <VAR title="">cp1y</VAR>, <VAR title="">cp2x</VAR>, <VAR title="">cp2y</VAR>, <VAR title="">x</VAR>, <VAR title="">y</VAR>)</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-bezierCurveTo"><A href="/canvas/#dom-context-2d-beziercurveto">bezierCurveTo</A></CODE>(<VAR title="">cp1x</VAR>, <VAR title="">cp1y</VAR>, <VAR title="">cp2x</VAR>, <VAR title="">cp2y</VAR>, <VAR title="">x</VAR>, <VAR title="">y</VAR>)</DT>
 
    <DD>
 
@@ -1687,7 +1687,7 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-arcTo"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-arcto">arcTo</A></CODE>(<VAR title="">x1</VAR>, <VAR title="">y1</VAR>, <VAR title="">x2</VAR>, <VAR title="">y2</VAR>, <VAR title="">radius</VAR>)</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-arcTo"><A href="/canvas/#dom-context-2d-arcto">arcTo</A></CODE>(<VAR title="">x1</VAR>, <VAR title="">y1</VAR>, <VAR title="">x2</VAR>, <VAR title="">y2</VAR>, <VAR title="">radius</VAR>)</DT>
 
    <DD>
 
@@ -1701,7 +1701,7 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-arc"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-arc">arc</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>, <VAR title="">radius</VAR>, <VAR title="">startAngle</VAR>, <VAR title="">endAngle</VAR>, <VAR title="">anticlockwise</VAR>)</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-arc"><A href="/canvas/#dom-context-2d-arc">arc</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>, <VAR title="">radius</VAR>, <VAR title="">startAngle</VAR>, <VAR title="">endAngle</VAR>, <VAR title="">anticlockwise</VAR>)</DT>
 
    <DD>
 
@@ -1716,7 +1716,7 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-rect"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-rect">rect</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>, <VAR title="">w</VAR>, <VAR title="">h</VAR>)</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-rect"><A href="/canvas/#dom-context-2d-rect">rect</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>, <VAR title="">w</VAR>, <VAR title="">h</VAR>)</DT>
 
    <DD>
 
@@ -1724,7 +1724,7 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-fill"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-fill">fill</A></CODE>()</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-fill"><A href="/canvas/#dom-context-2d-fill">fill</A></CODE>()</DT>
 
    <DD>
 
@@ -1732,7 +1732,7 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-stroke"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-stroke">stroke</A></CODE>()</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-stroke"><A href="/canvas/#dom-context-2d-stroke">stroke</A></CODE>()</DT>
 
    <DD>
 
@@ -1740,7 +1740,7 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-clip"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-clip">clip</A></CODE>()</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-clip"><A href="/canvas/#dom-context-2d-clip">clip</A></CODE>()</DT>
 
    <DD>
 
@@ -1748,7 +1748,7 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-isPointInPath"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-ispointinpath">isPointInPath</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>)</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-isPointInPath"><A href="/canvas/#dom-context-2d-ispointinpath">isPointInPath</A></CODE>(<VAR title="">x</VAR>, <VAR title="">y</VAR>)</DT>
 
    <DD>
 
@@ -1761,7 +1761,7 @@ hairline width with transform. ack Shaun Morris.
   <P>Initially, the context's path must have zero subpaths.</P>
 
   <P>The points and lines added to the path by these methods must be
-  transformed according to the <A href="http://www.w3.org/TR/2dcontext/#transformations" title="dom-context-2d-transformation">current transformation
+  transformed according to the <A href="/canvas/#transformations" title="dom-context-2d-transformation">current transformation
   matrix</A> as they are added.</P>
 
 
@@ -1779,7 +1779,7 @@ hairline width with transform. ack Shaun Morris.
   user agent must check to see if the context has any subpaths, and if
   it does not, then the user agent must create a new subpath with the
   point (<VAR title="">x</VAR>, <VAR title="">y</VAR>) as its first
-  (and only) point, as if the <CODE title="dom-context-2d-moveTo"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-moveto">moveTo()</A></CODE> method had been
+  (and only) point, as if the <CODE title="dom-context-2d-moveTo"><A href="/canvas/#dom-context-2d-moveto">moveTo()</A></CODE> method had been
   called.</P>
 
 
@@ -1792,7 +1792,7 @@ hairline width with transform. ack Shaun Morris.
   <P class="note">If the last subpath had more than one point in its
   list of points, then this is equivalent to adding a straight line
   connecting the last point back to the first point, thus "closing"
-  the shape, and then repeating the last (possibly implied) <CODE title="dom-context-2d-moveTo"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-moveto">moveTo()</A></CODE> call.</P>
+  the shape, and then repeating the last (possibly implied) <CODE title="dom-context-2d-moveTo"><A href="/canvas/#dom-context-2d-moveto">moveTo()</A></CODE> call.</P>
 
 
   <P>New points and the lines connecting them are added to subpaths
@@ -1801,7 +1801,7 @@ hairline width with transform. ack Shaun Morris.
 
 
   <P>The <DFN id="dom-context-2d-lineto" title="dom-context-2d-lineTo"><CODE>lineTo(<VAR title="">x</VAR>, <VAR title="">y</VAR>)</CODE></DFN> method must
-  <A href="http://www.w3.org/TR/2dcontext/#ensure-there-is-a-subpath">ensure there is a subpath</A> for <SPAN title="">(<VAR title="">x</VAR>, <VAR title="">y</VAR>)</SPAN> if the context has
+  <A href="/canvas/#ensure-there-is-a-subpath">ensure there is a subpath</A> for <SPAN title="">(<VAR title="">x</VAR>, <VAR title="">y</VAR>)</SPAN> if the context has
   no subpaths. Otherwise, it must connect the last point in the
   subpath to the given point (<VAR title="">x</VAR>, <VAR title="">y</VAR>) using a straight line, and must then add the given
   point (<VAR title="">x</VAR>, <VAR title="">y</VAR>) to the
@@ -1809,22 +1809,22 @@ hairline width with transform. ack Shaun Morris.
 
 
   <P>The <DFN id="dom-context-2d-quadraticcurveto" title="dom-context-2d-quadraticCurveTo"><CODE>quadraticCurveTo(<VAR title="">cpx</VAR>, <VAR title="">cpy</VAR>, <VAR title="">x</VAR>,
-  <VAR title="">y</VAR>)</CODE></DFN> method must <A href="http://www.w3.org/TR/2dcontext/#ensure-there-is-a-subpath">ensure there
+  <VAR title="">y</VAR>)</CODE></DFN> method must <A href="/canvas/#ensure-there-is-a-subpath">ensure there
   is a subpath</A> for <SPAN title="">(<VAR title="">cpx</VAR>,
   <VAR title="">cpy</VAR>)</SPAN>, and then must connect the last
   point in the subpath to the given point (<VAR title="">x</VAR>, <VAR title="">y</VAR>) using a quadratic Bézier curve with control
   point (<VAR title="">cpx</VAR>, <VAR title="">cpy</VAR>), and must
-  then add the given point (<VAR title="">x</VAR>, <VAR title="">y</VAR>) to the subpath. <A href="http://www.w3.org/TR/2dcontext/#refsBEZIER">[BEZIER]</A></P>
+  then add the given point (<VAR title="">x</VAR>, <VAR title="">y</VAR>) to the subpath. <A href="/canvas/#refsBEZIER">[BEZIER]</A></P>
 
 
   <P>The <DFN id="dom-context-2d-beziercurveto" title="dom-context-2d-bezierCurveTo"><CODE>bezierCurveTo(<VAR title="">cp1x</VAR>, <VAR title="">cp1y</VAR>, <VAR title="">cp2x</VAR>, <VAR title="">cp2y</VAR>, <VAR title="">x</VAR>, <VAR title="">y</VAR>)</CODE></DFN> method must
-  <A href="http://www.w3.org/TR/2dcontext/#ensure-there-is-a-subpath">ensure there is a subpath</A> for <SPAN title="">(<VAR title="">cp1x</VAR>, <VAR title="">cp1y</VAR>)</SPAN>, and then must
+  <A href="/canvas/#ensure-there-is-a-subpath">ensure there is a subpath</A> for <SPAN title="">(<VAR title="">cp1x</VAR>, <VAR title="">cp1y</VAR>)</SPAN>, and then must
   connect the last point in the subpath to the given point (<VAR title="">x</VAR>, <VAR title="">y</VAR>) using a cubic Bézier
-  curve with control points (<VAR title="">cp1x</VAR>, <VAR title="">cp1y</VAR>) and (<VAR title="">cp2x</VAR>, <VAR title="">cp2y</VAR>). Then, it must add the point (<VAR title="">x</VAR>, <VAR title="">y</VAR>) to the subpath. <A href="http://www.w3.org/TR/2dcontext/#refsBEZIER">[BEZIER]</A></P>
+  curve with control points (<VAR title="">cp1x</VAR>, <VAR title="">cp1y</VAR>) and (<VAR title="">cp2x</VAR>, <VAR title="">cp2y</VAR>). Then, it must add the point (<VAR title="">x</VAR>, <VAR title="">y</VAR>) to the subpath. <A href="/canvas/#refsBEZIER">[BEZIER]</A></P>
 
   <HR><P>The <DFN id="dom-context-2d-arcto" title="dom-context-2d-arcTo"><CODE>arcTo(<VAR title="">x1</VAR>, <VAR title="">y1</VAR>, <VAR title="">x2</VAR>,
   <VAR title="">y2</VAR>, <VAR title="">radius</VAR>)</CODE></DFN>
-  method must first <A href="http://www.w3.org/TR/2dcontext/#ensure-there-is-a-subpath">ensure there is a subpath</A> for <SPAN title="">(<VAR title="">x1</VAR>, <VAR title="">y1</VAR>)</SPAN>. Then, the behavior depends on the
+  method must first <A href="/canvas/#ensure-there-is-a-subpath">ensure there is a subpath</A> for <SPAN title="">(<VAR title="">x1</VAR>, <VAR title="">y1</VAR>)</SPAN>. Then, the behavior depends on the
   arguments and the last point in the subpath, as described below.</P>
 
   <P>Negative values for <VAR title="">radius</VAR> must cause the
@@ -1919,7 +1919,7 @@ hairline width with transform. ack Shaun Morris.
 
   <P>The <DFN id="dom-context-2d-fill" title="dom-context-2d-fill"><CODE>fill()</CODE></DFN>
   method must fill all the subpaths of the current path, using
-  <CODE title="dom-context-2d-fillStyle"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-fillstyle">fillStyle</A></CODE>, and using
+  <CODE title="dom-context-2d-fillStyle"><A href="/canvas/#dom-context-2d-fillstyle">fillStyle</A></CODE>, and using
   the non-zero winding number rule. Open subpaths must be implicitly
   closed when being filled (without affecting the actual
   subpaths).</P>
@@ -1931,10 +1931,10 @@ hairline width with transform. ack Shaun Morris.
 
   <P>The <DFN id="dom-context-2d-stroke" title="dom-context-2d-stroke"><CODE>stroke()</CODE></DFN> method
   must calculate the strokes of all the subpaths of the current path,
-  using the <CODE title="dom-context-2d-lineWidth"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linewidth">lineWidth</A></CODE>,
-  <CODE title="dom-context-2d-lineCap"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linecap">lineCap</A></CODE>, <CODE title="dom-context-2d-lineJoin"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-linejoin">lineJoin</A></CODE>, and (if
-  appropriate) <CODE title="dom-context-2d-miterLimit"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-miterlimit">miterLimit</A></CODE> attributes, and
-  then fill the combined stroke area using the <CODE title="dom-context-2d-strokeStyle"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-strokestyle">strokeStyle</A></CODE>
+  using the <CODE title="dom-context-2d-lineWidth"><A href="/canvas/#dom-context-2d-linewidth">lineWidth</A></CODE>,
+  <CODE title="dom-context-2d-lineCap"><A href="/canvas/#dom-context-2d-linecap">lineCap</A></CODE>, <CODE title="dom-context-2d-lineJoin"><A href="/canvas/#dom-context-2d-linejoin">lineJoin</A></CODE>, and (if
+  appropriate) <CODE title="dom-context-2d-miterLimit"><A href="/canvas/#dom-context-2d-miterlimit">miterLimit</A></CODE> attributes, and
+  then fill the combined stroke area using the <CODE title="dom-context-2d-strokeStyle"><A href="/canvas/#dom-context-2d-strokestyle">strokeStyle</A></CODE>
   attribute.</P>
 
   <P class="note">Since the subpaths are all stroked as one,
@@ -1942,7 +1942,7 @@ hairline width with transform. ack Shaun Morris.
   as if their union was what was painted.</P>
 
   <P>Paths, when filled or stroked, must be painted without affecting
-  the current path, and must be subject to <A href="http://www.w3.org/TR/2dcontext/#shadows" title="shadows">shadow effects</A>, <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalalpha" title="dom-context-2d-globalAlpha">global alpha</A>, the <A href="http://www.w3.org/TR/2dcontext/#clipping-region" title="clipping region">clipping region</A>, and <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalcompositeoperation" title="dom-context-2d-globalCompositeOperation">global composition
+  the current path, and must be subject to <A href="/canvas/#shadows" title="shadows">shadow effects</A>, <A href="/canvas/#dom-context-2d-globalalpha" title="dom-context-2d-globalAlpha">global alpha</A>, the <A href="/canvas/#clipping-region" title="clipping region">clipping region</A>, and <A href="/canvas/#dom-context-2d-globalcompositeoperation" title="dom-context-2d-globalCompositeOperation">global composition
   operators</A>. (Transformations affect the path when the path is
   created, not when it is painted, though the stroke <EM>style</EM> is
   still affected by the transformation during painting.)</P>
@@ -1983,13 +1983,13 @@ hairline width with transform. ack Shaun Morris.
   </DIV><H2 id="focus-management"><SPAN class="secno">10 </SPAN>Focus management</H2><!-- a v4 feature --><P>When a canvas is interactive, authors should include focusable
   elements in the element's fallback content corresponding to each
   focusable part of the canvas.</P><P>To indicate which focusable part of the canvas is currently
-  focused, authors should use the <CODE title="dom-context-2d-drawFocusRing"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawfocusring">drawFocusRing()</A></CODE> method,
+  focused, authors should use the <CODE title="dom-context-2d-drawFocusRing"><A href="/canvas/#dom-context-2d-drawfocusring">drawFocusRing()</A></CODE> method,
   passing it the element for which a ring is being drawn. This method
   only draws the focus ring if the element is focused, so that it can
   simply be called whenever drawing the element, without checking
   whether the element is focused or not first. The position of the
   center of the control, or of the editing caret if the control has
-  one, should be given in the <VAR title="">x</VAR> and <VAR title="">y</VAR> arguments.</P><DL class="domintro"><DT><VAR title="">shouldDraw</VAR> = <VAR title="">context</VAR> . <CODE title="dom-context-2d-drawFocusRing"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawfocusring">drawFocusRing</A></CODE>(<VAR title="">element</VAR>, <VAR title="">x</VAR>, <VAR title="">y</VAR>, [ <VAR title="">canDrawCustom</VAR> ])</DT>
+  one, should be given in the <VAR title="">x</VAR> and <VAR title="">y</VAR> arguments.</P><DL class="domintro"><DT><VAR title="">shouldDraw</VAR> = <VAR title="">context</VAR> . <CODE title="dom-context-2d-drawFocusRing"><A href="/canvas/#dom-context-2d-drawfocusring">drawFocusRing</A></CODE>(<VAR title="">element</VAR>, <VAR title="">x</VAR>, <VAR title="">y</VAR>, [ <VAR title="">canDrawCustom</VAR> ])</DT>
 
    <DD>
 
@@ -2022,7 +2022,7 @@ hairline width with transform. ack Shaun Morris.
    descendant of the element with whose context the method is
    associated, then return false and abort these steps.</P></LI>
 
-   <LI><P>Transform the given point (<VAR title="">x</VAR>, <VAR title="">y</VAR>) according to the <A href="http://www.w3.org/TR/2dcontext/#transformations" title="dom-context-2d-transformation">current transformation
+   <LI><P>Transform the given point (<VAR title="">x</VAR>, <VAR title="">y</VAR>) according to the <A href="/canvas/#transformations" title="dom-context-2d-transformation">current transformation
    matrix</A>.</P></LI>
 
    <LI><P>Optionally, inform the user that the focus is at the given
@@ -2037,8 +2037,8 @@ hairline width with transform. ack Shaun Morris.
     following platform conventions, return false, and abort these
     steps.</P>
 
-    <P>The focus ring should not be subject to the <A href="http://www.w3.org/TR/2dcontext/#shadows" title="shadows">shadow effects</A>, the <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalalpha" title="dom-context-2d-globalAlpha">global alpha</A>, or the <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalcompositeoperation" title="dom-context-2d-globalCompositeOperation">global composition
-    operators</A>, but <EM>should</EM> be subject to the <A href="http://www.w3.org/TR/2dcontext/#clipping-region" title="clipping region">clipping region</A>.</P>
+    <P>The focus ring should not be subject to the <A href="/canvas/#shadows" title="shadows">shadow effects</A>, the <A href="/canvas/#dom-context-2d-globalalpha" title="dom-context-2d-globalAlpha">global alpha</A>, or the <A href="/canvas/#dom-context-2d-globalcompositeoperation" title="dom-context-2d-globalCompositeOperation">global composition
+    operators</A>, but <EM>should</EM> be subject to the <A href="/canvas/#clipping-region" title="clipping region">clipping region</A>.</P>
 
    </LI>
 
@@ -2113,7 +2113,7 @@ hairline width with transform. ack Shaun Morris.
 &lt;/script&gt;</PRE>
 <!-- http://software.hixie.ch/utilities/js/live-dom-viewer/saved/340 -->
 
-  </DIV><H2 id="text"><SPAN class="secno">11 </SPAN>Text</H2><!-- a v3 feature --><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-font"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-font">font</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
+  </DIV><H2 id="text"><SPAN class="secno">11 </SPAN>Text</H2><!-- a v3 feature --><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-font"><A href="/canvas/#dom-context-2d-font">font</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
 
    <DD>
 
@@ -2128,7 +2128,7 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-textAlign"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textalign">textAlign</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-textAlign"><A href="/canvas/#dom-context-2d-textalign">textAlign</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
 
    <DD>
 
@@ -2140,7 +2140,7 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-textBaseline"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline">textBaseline</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-textBaseline"><A href="/canvas/#dom-context-2d-textbaseline">textBaseline</A></CODE> [ = <VAR title="">value</VAR> ]</DT>
 
    <DD>
 
@@ -2152,8 +2152,8 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-fillText"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-filltext">fillText</A></CODE>(<VAR title="">text</VAR>, <VAR title="">x</VAR>, <VAR title="">y</VAR> [, <VAR title="">maxWidth</VAR> ] )</DT>
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-strokeText"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-stroketext">strokeText</A></CODE>(<VAR title="">text</VAR>, <VAR title="">x</VAR>, <VAR title="">y</VAR> [, <VAR title="">maxWidth</VAR> ] )</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-fillText"><A href="/canvas/#dom-context-2d-filltext">fillText</A></CODE>(<VAR title="">text</VAR>, <VAR title="">x</VAR>, <VAR title="">y</VAR> [, <VAR title="">maxWidth</VAR> ] )</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-strokeText"><A href="/canvas/#dom-context-2d-stroketext">strokeText</A></CODE>(<VAR title="">text</VAR>, <VAR title="">x</VAR>, <VAR title="">y</VAR> [, <VAR title="">maxWidth</VAR> ] )</DT>
 
    <DD>
 
@@ -2163,20 +2163,20 @@ hairline width with transform. ack Shaun Morris.
 
    </DD>
 
-   <DT><VAR title="">metrics</VAR> = <VAR title="">context</VAR> . <CODE title="dom-context-2d-measureText"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-measuretext">measureText</A></CODE>(<VAR title="">text</VAR>)</DT>
+   <DT><VAR title="">metrics</VAR> = <VAR title="">context</VAR> . <CODE title="dom-context-2d-measureText"><A href="/canvas/#dom-context-2d-measuretext">measureText</A></CODE>(<VAR title="">text</VAR>)</DT>
 
    <DD>
 
-    <P>Returns a <CODE><A href="http://www.w3.org/TR/2dcontext/#textmetrics">TextMetrics</A></CODE> object with the metrics of the given text in the current font.</P>
+    <P>Returns a <CODE><A href="/canvas/#textmetrics">TextMetrics</A></CODE> object with the metrics of the given text in the current font.</P>
 
    </DD>
 
-   <DT><VAR title="">metrics</VAR> . <CODE title="dom-textmetrics-width"><A href="http://www.w3.org/TR/2dcontext/#dom-textmetrics-width">width</A></CODE></DT>
+   <DT><VAR title="">metrics</VAR> . <CODE title="dom-textmetrics-width"><A href="/canvas/#dom-textmetrics-width">width</A></CODE></DT>
 
    <DD>
 
     <P>Returns the advance width of the text that was passed to the
-    <CODE title="dom-context-2d-measureText"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-measuretext">measureText()</A></CODE>
+    <CODE title="dom-context-2d-measureText"><A href="/canvas/#dom-context-2d-measuretext">measureText()</A></CODE>
     method.</P>
 
    </DD>
@@ -2193,23 +2193,23 @@ hairline width with transform. ack Shaun Morris.
   value is syntactically incorrect (including using
   property-independent style sheet syntax like 'inherit' or
   'initial'), then it must be ignored, without assigning a new font
-  value. <A href="http://www.w3.org/TR/2dcontext/#refsCSS">[CSS]</A></P>
+  value. <A href="/canvas/#refsCSS">[CSS]</A></P>
 
   <P>Font names must be interpreted in the context of the
   <CODE>canvas</CODE> element's stylesheets; any fonts embedded using
   <CODE title="">@font-face</CODE> must therefore be available once
   they are loaded. (If a font is referenced before it is fully loaded,
   then it must be treated as if it was an unknown font, falling back
-  to another as described by the relevant CSS specifications.) <A href="http://www.w3.org/TR/2dcontext/#refsCSSFONTS">[CSSFONTS]</A></P>
+  to another as described by the relevant CSS specifications.) <A href="/canvas/#refsCSSFONTS">[CSSFONTS]</A></P>
 
   <P>Only vector fonts should be used by the user agent; if a user
   agent were to use bitmap fonts then transformations would likely
   make the font look very ugly.</P>
 
-  <P>On getting, the <CODE title="dom-context-2d-font"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-font">font</A></CODE>
+  <P>On getting, the <CODE title="dom-context-2d-font"><A href="/canvas/#dom-context-2d-font">font</A></CODE>
   attribute must return the <SPAN title="serializing a CSS
   value">serialized form</SPAN> of the current font of the context
-  (with no 'line-height' component). <A href="http://www.w3.org/TR/2dcontext/#refsCSSOM">[CSSOM]</A></P>
+  (with no 'line-height' component). <A href="/canvas/#refsCSSOM">[CSSOM]</A></P>
 
   <DIV class="example">
 
@@ -2245,19 +2245,19 @@ hairline width with transform. ack Shaun Morris.
   attribute, on getting, must return the current value. On setting, if
   the value is one of <CODE title="">start</CODE>, <CODE title="">end</CODE>, <CODE title="">left</CODE>, <CODE title="">right</CODE>, or <CODE title="">center</CODE>, then the
   value must be changed to the new value. Otherwise, the new value
-  must be ignored. When the context is created, the <CODE title="dom-context-2d-textAlign"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textalign">textAlign</A></CODE> attribute must
+  must be ignored. When the context is created, the <CODE title="dom-context-2d-textAlign"><A href="/canvas/#dom-context-2d-textalign">textAlign</A></CODE> attribute must
   initially have the value <CODE title="">start</CODE>.</P>
 
   <P>The <DFN id="dom-context-2d-textbaseline" title="dom-context-2d-textBaseline"><CODE>textBaseline</CODE></DFN>
   IDL attribute, on getting, must return the current value. On
-  setting, if the value is one of <CODE title="dom-context-2d-textBaseline-top"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline-top">top</A></CODE>, <CODE title="dom-context-2d-textBaseline-hanging"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline-hanging">hanging</A></CODE>, <CODE title="dom-context-2d-textBaseline-middle"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline-middle">middle</A></CODE>, <CODE title="dom-context-2d-textBaseline-alphabetic"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline-alphabetic">alphabetic</A></CODE>,
-  <CODE title="dom-context-2d-textBaseline-ideographic"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline-ideographic">ideographic</A></CODE>,
-  or <CODE title="dom-context-2d-textBaseline-bottom"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline-bottom">bottom</A></CODE>,
+  setting, if the value is one of <CODE title="dom-context-2d-textBaseline-top"><A href="/canvas/#dom-context-2d-textbaseline-top">top</A></CODE>, <CODE title="dom-context-2d-textBaseline-hanging"><A href="/canvas/#dom-context-2d-textbaseline-hanging">hanging</A></CODE>, <CODE title="dom-context-2d-textBaseline-middle"><A href="/canvas/#dom-context-2d-textbaseline-middle">middle</A></CODE>, <CODE title="dom-context-2d-textBaseline-alphabetic"><A href="/canvas/#dom-context-2d-textbaseline-alphabetic">alphabetic</A></CODE>,
+  <CODE title="dom-context-2d-textBaseline-ideographic"><A href="/canvas/#dom-context-2d-textbaseline-ideographic">ideographic</A></CODE>,
+  or <CODE title="dom-context-2d-textBaseline-bottom"><A href="/canvas/#dom-context-2d-textbaseline-bottom">bottom</A></CODE>,
   then the value must be changed to the new value. Otherwise, the new
-  value must be ignored. When the context is created, the <CODE title="dom-context-2d-textBaseline"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline">textBaseline</A></CODE> attribute
+  value must be ignored. When the context is created, the <CODE title="dom-context-2d-textBaseline"><A href="/canvas/#dom-context-2d-textbaseline">textBaseline</A></CODE> attribute
   must initially have the value <CODE title="">alphabetic</CODE>.</P>
 
-  </DIV><P>The <CODE title="dom-context-2d-textBaseline"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline">textBaseline</A></CODE>
+  </DIV><P>The <CODE title="dom-context-2d-textBaseline"><A href="/canvas/#dom-context-2d-textbaseline">textBaseline</A></CODE>
   attribute's allowed keywords correspond to alignment points in the
   font:</P><P><IMG alt="The top of the em square is
   roughly at the top of the glyphs in a font, the hanging baseline is
@@ -2292,12 +2292,12 @@ hairline width with transform. ack Shaun Morris.
   <DFN id="dom-context-2d-stroketext" title="dom-context-2d-strokeText"><CODE>strokeText()</CODE></DFN>
   methods take three or four arguments, <VAR title="">text</VAR>, <VAR title="">x</VAR>, <VAR title="">y</VAR>, and optionally <VAR title="">maxWidth</VAR>, and render the given <VAR title="">text</VAR> at the given (<VAR title="">x</VAR>, <VAR title="">y</VAR>) coordinates ensuring that the text isn't wider
   than <VAR title="">maxWidth</VAR> if specified, using the current
-  <CODE title="dom-context-2d-font"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-font">font</A></CODE>, <CODE title="dom-context-2d-textAlign"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textalign">textAlign</A></CODE>, and <CODE title="dom-context-2d-textBaseline"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline">textBaseline</A></CODE>
+  <CODE title="dom-context-2d-font"><A href="/canvas/#dom-context-2d-font">font</A></CODE>, <CODE title="dom-context-2d-textAlign"><A href="/canvas/#dom-context-2d-textalign">textAlign</A></CODE>, and <CODE title="dom-context-2d-textBaseline"><A href="/canvas/#dom-context-2d-textbaseline">textBaseline</A></CODE>
   values. Specifically, when the methods are called, the user agent
   must run the following steps:</P>
 
   <OL><LI><P>Let <VAR title="">font</VAR> be the current font of the
-   context, as given by the <CODE title="dom-context-2d-font"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-font">font</A></CODE> attribute.</P></LI>
+   context, as given by the <CODE title="dom-context-2d-font"><A href="/canvas/#dom-context-2d-font">font</A></CODE> attribute.</P></LI>
 
    <LI><P>Replace all the <SPAN title="space character">space
    characters</SPAN> in <VAR title="">text</VAR> with U+0020 SPACE
@@ -2308,7 +2308,7 @@ hairline width with transform. ack Shaun Morris.
    with all the properties at their initial values except the 'font'
    property of the inline box set to <VAR title="">font</VAR> and the
    'direction' property of the inline box set to <SPAN>the
-   directionality</SPAN> of the <CODE>canvas</CODE> element. <A href="http://www.w3.org/TR/2dcontext/#refsCSS">[CSS]</A></P></LI>
+   directionality</SPAN> of the <CODE>canvas</CODE> element. <A href="/canvas/#refsCSS">[CSS]</A></P></LI>
 
    <!-- if you insert a step here, make sure to adjust the next step's
    final words -->
@@ -2324,32 +2324,32 @@ hairline width with transform. ack Shaun Morris.
    <LI>
 
     <P>Let the <VAR title="">anchor point</VAR> be a point on the
-    inline box, determined by the <CODE title="dom-context-2d-textAlign"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textalign">textAlign</A></CODE> and <CODE title="dom-context-2d-textBaseline"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline">textBaseline</A></CODE> values, as
+    inline box, determined by the <CODE title="dom-context-2d-textAlign"><A href="/canvas/#dom-context-2d-textalign">textAlign</A></CODE> and <CODE title="dom-context-2d-textBaseline"><A href="/canvas/#dom-context-2d-textbaseline">textBaseline</A></CODE> values, as
     follows:</P>
 
     <P>Horizontal position:</P>
 
-    <DL><DT> If <CODE title="dom-context-2d-textAlign"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textalign">textAlign</A></CODE> is <CODE title="">left</CODE></DT>
-     <DT> If <CODE title="dom-context-2d-textAlign"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textalign">textAlign</A></CODE> is <CODE title="">start</CODE> and <SPAN>the directionality</SPAN> of the
+    <DL><DT> If <CODE title="dom-context-2d-textAlign"><A href="/canvas/#dom-context-2d-textalign">textAlign</A></CODE> is <CODE title="">left</CODE></DT>
+     <DT> If <CODE title="dom-context-2d-textAlign"><A href="/canvas/#dom-context-2d-textalign">textAlign</A></CODE> is <CODE title="">start</CODE> and <SPAN>the directionality</SPAN> of the
      <CODE>canvas</CODE> element is 'ltr'</DT>
-     <DT> If <CODE title="dom-context-2d-textAlign"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textalign">textAlign</A></CODE> is <CODE title="">end</CODE> and <SPAN>the directionality</SPAN> of the
+     <DT> If <CODE title="dom-context-2d-textAlign"><A href="/canvas/#dom-context-2d-textalign">textAlign</A></CODE> is <CODE title="">end</CODE> and <SPAN>the directionality</SPAN> of the
      <CODE>canvas</CODE> element is 'rtl'</DT>
 
      <DD>Let the <VAR title="">anchor point</VAR>'s horizontal
      position be the left edge of the inline box.</DD>
 
 
-     <DT> If <CODE title="dom-context-2d-textAlign"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textalign">textAlign</A></CODE> is <CODE title="">right</CODE></DT>
-     <DT> If <CODE title="dom-context-2d-textAlign"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textalign">textAlign</A></CODE> is <CODE title="">end</CODE> and  <SPAN>the directionality</SPAN> of the
+     <DT> If <CODE title="dom-context-2d-textAlign"><A href="/canvas/#dom-context-2d-textalign">textAlign</A></CODE> is <CODE title="">right</CODE></DT>
+     <DT> If <CODE title="dom-context-2d-textAlign"><A href="/canvas/#dom-context-2d-textalign">textAlign</A></CODE> is <CODE title="">end</CODE> and  <SPAN>the directionality</SPAN> of the
      <CODE>canvas</CODE> element is 'ltr'</DT>
-     <DT> If <CODE title="dom-context-2d-textAlign"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textalign">textAlign</A></CODE> is <CODE title="">start</CODE> and <SPAN>the directionality</SPAN> of the
+     <DT> If <CODE title="dom-context-2d-textAlign"><A href="/canvas/#dom-context-2d-textalign">textAlign</A></CODE> is <CODE title="">start</CODE> and <SPAN>the directionality</SPAN> of the
      <CODE>canvas</CODE> element is 'rtl'</DT>
 
      <DD>Let the <VAR title="">anchor point</VAR>'s horizontal
      position be the right edge of the inline box.</DD>
 
 
-     <DT> If <CODE title="dom-context-2d-textAlign"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textalign">textAlign</A></CODE> is <CODE title="">center</CODE></DT>
+     <DT> If <CODE title="dom-context-2d-textAlign"><A href="/canvas/#dom-context-2d-textalign">textAlign</A></CODE> is <CODE title="">center</CODE></DT>
 
      <DD>Let the <VAR title="">anchor point</VAR>'s horizontal
      position be half way between the left and right edges of the
@@ -2357,42 +2357,42 @@ hairline width with transform. ack Shaun Morris.
 
     </DL><P>Vertical position:</P>
 
-    <DL><DT> If <CODE title="dom-context-2d-textBaseline"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline">textBaseline</A></CODE> is <CODE title="dom-context-2d-textBaseline-top"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline-top">top</A></CODE></DT>
+    <DL><DT> If <CODE title="dom-context-2d-textBaseline"><A href="/canvas/#dom-context-2d-textbaseline">textBaseline</A></CODE> is <CODE title="dom-context-2d-textBaseline-top"><A href="/canvas/#dom-context-2d-textbaseline-top">top</A></CODE></DT>
 
      <DD>Let the <VAR title="">anchor point</VAR>'s vertical position
      be the top of the em box of the first available font of the
      inline box.</DD>
 
 
-     <DT> If <CODE title="dom-context-2d-textBaseline"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline">textBaseline</A></CODE> is <CODE title="dom-context-2d-textBaseline-hanging"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline-hanging">hanging</A></CODE></DT>
+     <DT> If <CODE title="dom-context-2d-textBaseline"><A href="/canvas/#dom-context-2d-textbaseline">textBaseline</A></CODE> is <CODE title="dom-context-2d-textBaseline-hanging"><A href="/canvas/#dom-context-2d-textbaseline-hanging">hanging</A></CODE></DT>
 
      <DD>Let the <VAR title="">anchor point</VAR>'s vertical position
      be the hanging baseline of the first available font of the inline
      box.</DD>
 
 
-     <DT> If <CODE title="dom-context-2d-textBaseline"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline">textBaseline</A></CODE> is <CODE title="dom-context-2d-textBaseline-middle"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline-middle">middle</A></CODE></DT>
+     <DT> If <CODE title="dom-context-2d-textBaseline"><A href="/canvas/#dom-context-2d-textbaseline">textBaseline</A></CODE> is <CODE title="dom-context-2d-textBaseline-middle"><A href="/canvas/#dom-context-2d-textbaseline-middle">middle</A></CODE></DT>
 
      <DD>Let the <VAR title="">anchor point</VAR>'s vertical position
      be half way between the bottom and the top of the em box of the
      first available font of the inline box.</DD>
 
 
-     <DT> If <CODE title="dom-context-2d-textBaseline"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline">textBaseline</A></CODE> is <CODE title="dom-context-2d-textBaseline-alphabetic"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline-alphabetic">alphabetic</A></CODE></DT>
+     <DT> If <CODE title="dom-context-2d-textBaseline"><A href="/canvas/#dom-context-2d-textbaseline">textBaseline</A></CODE> is <CODE title="dom-context-2d-textBaseline-alphabetic"><A href="/canvas/#dom-context-2d-textbaseline-alphabetic">alphabetic</A></CODE></DT>
 
      <DD>Let the <VAR title="">anchor point</VAR>'s vertical position
      be the alphabetic baseline of the first available font of the inline
      box.</DD>
 
 
-     <DT> If <CODE title="dom-context-2d-textBaseline"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline">textBaseline</A></CODE> is <CODE title="dom-context-2d-textBaseline-ideographic"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline-ideographic">ideographic</A></CODE></DT>
+     <DT> If <CODE title="dom-context-2d-textBaseline"><A href="/canvas/#dom-context-2d-textbaseline">textBaseline</A></CODE> is <CODE title="dom-context-2d-textBaseline-ideographic"><A href="/canvas/#dom-context-2d-textbaseline-ideographic">ideographic</A></CODE></DT>
 
      <DD>Let the <VAR title="">anchor point</VAR>'s vertical position
      be the ideographic baseline of the first available font of the inline
      box.</DD>
 
 
-     <DT> If <CODE title="dom-context-2d-textBaseline"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline">textBaseline</A></CODE> is <CODE title="dom-context-2d-textBaseline-bottom"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-textbaseline-bottom">bottom</A></CODE></DT>
+     <DT> If <CODE title="dom-context-2d-textBaseline"><A href="/canvas/#dom-context-2d-textbaseline">textBaseline</A></CODE> is <CODE title="dom-context-2d-textBaseline-bottom"><A href="/canvas/#dom-context-2d-textbaseline-bottom">bottom</A></CODE></DT>
 
      <DD>Let the <VAR title="">anchor point</VAR>'s vertical position
      be the bottom of the em box of the first available font of the
@@ -2403,22 +2403,22 @@ hairline width with transform. ack Shaun Morris.
    <LI>
 
     <P>Paint the hypothetical inline box as the shape given by the
-    text's glyphs, as transformed by the <A href="http://www.w3.org/TR/2dcontext/#transformations" title="dom-context-2d-transformation">current transformation
+    text's glyphs, as transformed by the <A href="/canvas/#transformations" title="dom-context-2d-transformation">current transformation
     matrix</A>, and anchored and sized so that before applying the
-    <A href="http://www.w3.org/TR/2dcontext/#transformations" title="dom-context-2d-transformation">current transformation
+    <A href="/canvas/#transformations" title="dom-context-2d-transformation">current transformation
     matrix</A>, the <VAR title="">anchor point</VAR> is at (<VAR title="">x</VAR>, <VAR title="">y</VAR>) and each CSS pixel is
     mapped to one coordinate space unit.</P>
 
-    <P>For <CODE title="dom-context-2d-fillText"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-filltext">fillText()</A></CODE>
-    <CODE title="dom-context-2d-fillStyle"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-fillstyle">fillStyle</A></CODE> must be
-    applied to the glyphs and <CODE title="dom-context-2d-strokeStyle"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-strokestyle">strokeStyle</A></CODE> must be
-    ignored. For <CODE title="dom-context-2d-strokeText"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-stroketext">strokeText()</A></CODE> the reverse
-    holds and <CODE title="dom-context-2d-strokeStyle"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-strokestyle">strokeStyle</A></CODE> must be
-    applied to the glyph outlines and <CODE title="dom-context-2d-fillStyle"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-fillstyle">fillStyle</A></CODE> must be
+    <P>For <CODE title="dom-context-2d-fillText"><A href="/canvas/#dom-context-2d-filltext">fillText()</A></CODE>
+    <CODE title="dom-context-2d-fillStyle"><A href="/canvas/#dom-context-2d-fillstyle">fillStyle</A></CODE> must be
+    applied to the glyphs and <CODE title="dom-context-2d-strokeStyle"><A href="/canvas/#dom-context-2d-strokestyle">strokeStyle</A></CODE> must be
+    ignored. For <CODE title="dom-context-2d-strokeText"><A href="/canvas/#dom-context-2d-stroketext">strokeText()</A></CODE> the reverse
+    holds and <CODE title="dom-context-2d-strokeStyle"><A href="/canvas/#dom-context-2d-strokestyle">strokeStyle</A></CODE> must be
+    applied to the glyph outlines and <CODE title="dom-context-2d-fillStyle"><A href="/canvas/#dom-context-2d-fillstyle">fillStyle</A></CODE> must be
     ignored.</P>
 
     <P>Text is painted without affecting the current path, and is
-    subject to <A href="http://www.w3.org/TR/2dcontext/#shadows" title="shadows">shadow effects</A>, <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalalpha" title="dom-context-2d-globalAlpha">global alpha</A>, the <A href="http://www.w3.org/TR/2dcontext/#clipping-region" title="clipping region">clipping region</A>, and <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalcompositeoperation" title="dom-context-2d-globalCompositeOperation">global composition
+    subject to <A href="/canvas/#shadows" title="shadows">shadow effects</A>, <A href="/canvas/#dom-context-2d-globalalpha" title="dom-context-2d-globalAlpha">global alpha</A>, the <A href="/canvas/#clipping-region" title="clipping region">clipping region</A>, and <A href="/canvas/#dom-context-2d-globalcompositeoperation" title="dom-context-2d-globalCompositeOperation">global composition
     operators</A>.</P>
 
    </LI>
@@ -2578,20 +2578,20 @@ v5DVT (also check for '- -' bits in the part above) --><P>The <DFN id="dom-conte
   containing the text <VAR title="">text</VAR>, with all the
   properties at their initial values except the 'font' property of the
   inline element set to the current font of the context, as given by
-  the <CODE title="dom-context-2d-font"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-font">font</A></CODE> attribute, and
-  must then return a new <CODE><A href="http://www.w3.org/TR/2dcontext/#textmetrics">TextMetrics</A></CODE> object with its
-  <CODE title="dom-textmetrics-width"><A href="http://www.w3.org/TR/2dcontext/#dom-textmetrics-width">width</A></CODE> attribute set to
-  the width of that inline box, in CSS pixels. <A href="http://www.w3.org/TR/2dcontext/#refsCSS">[CSS]</A></P>
+  the <CODE title="dom-context-2d-font"><A href="/canvas/#dom-context-2d-font">font</A></CODE> attribute, and
+  must then return a new <CODE><A href="/canvas/#textmetrics">TextMetrics</A></CODE> object with its
+  <CODE title="dom-textmetrics-width"><A href="/canvas/#dom-textmetrics-width">width</A></CODE> attribute set to
+  the width of that inline box, in CSS pixels. <A href="/canvas/#refsCSS">[CSS]</A></P>
 
-  <P>The <CODE><A href="http://www.w3.org/TR/2dcontext/#textmetrics">TextMetrics</A></CODE> interface is used for the objects
-  returned from <CODE title="dom-context-2d-measureText"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-measuretext">measureText()</A></CODE>. It has one
+  <P>The <CODE><A href="/canvas/#textmetrics">TextMetrics</A></CODE> interface is used for the objects
+  returned from <CODE title="dom-context-2d-measureText"><A href="/canvas/#dom-context-2d-measuretext">measureText()</A></CODE>. It has one
   attribute, <DFN id="dom-textmetrics-width" title="dom-textmetrics-width"><CODE>width</CODE></DFN>, which is set
-  by the <CODE title="dom-context-2d-measureText"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-measuretext">measureText()</A></CODE>
+  by the <CODE title="dom-context-2d-measureText"><A href="/canvas/#dom-context-2d-measuretext">measureText()</A></CODE>
   method.</P>
 
-  <P class="note">Glyphs rendered using <CODE title="dom-context-2d-fillText"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-filltext">fillText()</A></CODE> and <CODE title="dom-context-2d-strokeText"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-stroketext">strokeText()</A></CODE> can spill out
+  <P class="note">Glyphs rendered using <CODE title="dom-context-2d-fillText"><A href="/canvas/#dom-context-2d-filltext">fillText()</A></CODE> and <CODE title="dom-context-2d-strokeText"><A href="/canvas/#dom-context-2d-stroketext">strokeText()</A></CODE> can spill out
   of the box given by the font size (the em square size) and the width
-  returned by <CODE title="dom-context-2d-measureText"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-measuretext">measureText()</A></CODE> (the text
+  returned by <CODE title="dom-context-2d-measureText"><A href="/canvas/#dom-context-2d-measuretext">measureText()</A></CODE> (the text
   width). This version of the specification does not provide a way to
   obtain the bounding box dimensions of the text. If the text is to be
   rendered and removed, care needs to be taken to replace the entire
@@ -2613,9 +2613,9 @@ v5DVT (also check for '- -' bits in the part above) --><P>The <DFN id="dom-conte
   </LI></UL><!-- v3: drawImage() of an ImageData object might make sense (when resizing as well as filtering) - ack Charles Pritchard --><P>Each of those three can take either an
   <CODE>HTMLImageElement</CODE>, an <CODE>HTMLCanvasElement</CODE>, or
   an <CODE>HTMLVideoElement</CODE> for the <VAR title="">image</VAR>
-  argument.</P><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-drawImage"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage">drawImage</A></CODE>(<VAR title="">image</VAR>, <VAR title="">dx</VAR>, <VAR title="">dy</VAR>)</DT>
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-drawImage"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage">drawImage</A></CODE>(<VAR title="">image</VAR>, <VAR title="">dx</VAR>, <VAR title="">dy</VAR>, <VAR title="">dw</VAR>, <VAR title="">dh</VAR>)</DT>
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-drawImage"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage">drawImage</A></CODE>(<VAR title="">image</VAR>, <VAR title="">sx</VAR>, <VAR title="">sy</VAR>, <VAR title="">sw</VAR>, <VAR title="">sh</VAR>, <VAR title="">dx</VAR>, <VAR title="">dy</VAR>, <VAR title="">dw</VAR>, <VAR title="">dh</VAR>)</DT>
+  argument.</P><DL class="domintro"><DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-drawImage"><A href="/canvas/#dom-context-2d-drawimage">drawImage</A></CODE>(<VAR title="">image</VAR>, <VAR title="">dx</VAR>, <VAR title="">dy</VAR>)</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-drawImage"><A href="/canvas/#dom-context-2d-drawimage">drawImage</A></CODE>(<VAR title="">image</VAR>, <VAR title="">dx</VAR>, <VAR title="">dy</VAR>, <VAR title="">dw</VAR>, <VAR title="">dh</VAR>)</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-drawImage"><A href="/canvas/#dom-context-2d-drawimage">drawImage</A></CODE>(<VAR title="">image</VAR>, <VAR title="">sx</VAR>, <VAR title="">sy</VAR>, <VAR title="">sw</VAR>, <VAR title="">sh</VAR>, <VAR title="">dx</VAR>, <VAR title="">dy</VAR>, <VAR title="">dw</VAR>, <VAR title="">dh</VAR>)</DT>
 
    <DD>
 
@@ -2676,10 +2676,10 @@ v5DVT (also check for '- -' bits in the part above) --><P>The <DFN id="dom-conte
   four points (<VAR title="">dx</VAR>, <VAR title="">dy</VAR>),
   (<SPAN title=""><VAR title="">dx</VAR>+<VAR title="">dw</VAR></SPAN>, <VAR title="">dy</VAR>), (<SPAN title=""><VAR title="">dx</VAR>+<VAR title="">dw</VAR></SPAN>, <SPAN title=""><VAR title="">dy</VAR>+<VAR title="">dh</VAR></SPAN>), (<VAR title="">dx</VAR>, <SPAN title=""><VAR title="">dy</VAR>+<VAR title="">dh</VAR></SPAN>).</P>
 
-  <P>When <CODE title="dom-context-2d-drawImage"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage">drawImage()</A></CODE> is
+  <P>When <CODE title="dom-context-2d-drawImage"><A href="/canvas/#dom-context-2d-drawimage">drawImage()</A></CODE> is
   invoked, the region of the image specified by the source rectangle
   must be painted on the region of the canvas specified by the
-  destination rectangle, after applying the <A href="http://www.w3.org/TR/2dcontext/#transformations" title="dom-context-2d-transformation">current transformation
+  destination rectangle, after applying the <A href="/canvas/#transformations" title="dom-context-2d-transformation">current transformation
   matrix</A> to the points of the destination rectangle.</P>
 
   <P>The original image data of the source image must be used, not the
@@ -2698,7 +2698,7 @@ v5DVT (also check for '- -' bits in the part above) --><P>The <DFN id="dom-conte
   back onto the canvas, so it is possible to copy parts of a canvas
   onto overlapping parts of itself.</P>
 
-  <P>When the <CODE title="dom-context-2d-drawImage"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage">drawImage()</A></CODE> method
+  <P>When the <CODE title="dom-context-2d-drawImage"><A href="/canvas/#dom-context-2d-drawimage">drawImage()</A></CODE> method
   is passed an animated image as its <VAR title="">image</VAR>
   argument, the user agent must use the poster frame of the animation,
   or, if there is no poster frame, the first frame of the
@@ -2715,25 +2715,25 @@ v5DVT (also check for '- -' bits in the part above) --><P>The <DFN id="dom-conte
   <!-- createPattern() has an equivalent paragraph -->
 
   <P>Images are painted without affecting the current path, and are
-  subject to <A href="http://www.w3.org/TR/2dcontext/#shadows" title="shadows">shadow effects</A>, <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalalpha" title="dom-context-2d-globalAlpha">global alpha</A>, the <A href="http://www.w3.org/TR/2dcontext/#clipping-region" title="clipping region">clipping region</A>, and <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalcompositeoperation" title="dom-context-2d-globalCompositeOperation">global composition
+  subject to <A href="/canvas/#shadows" title="shadows">shadow effects</A>, <A href="/canvas/#dom-context-2d-globalalpha" title="dom-context-2d-globalAlpha">global alpha</A>, the <A href="/canvas/#clipping-region" title="clipping region">clipping region</A>, and <A href="/canvas/#dom-context-2d-globalcompositeoperation" title="dom-context-2d-globalCompositeOperation">global composition
   operators</A>.</P>
 
-  </DIV><H2 id="pixel-manipulation"><SPAN class="secno">13 </SPAN><DFN>Pixel manipulation</DFN></H2><DL class="domintro"><DT><VAR title="">imagedata</VAR> = <VAR title="">context</VAR> . <CODE title="dom-context-2d-createImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-createimagedata">createImageData</A></CODE>(<VAR title="">sw</VAR>, <VAR title="">sh</VAR>)</DT>
+  </DIV><H2 id="pixel-manipulation"><SPAN class="secno">13 </SPAN><DFN>Pixel manipulation</DFN></H2><DL class="domintro"><DT><VAR title="">imagedata</VAR> = <VAR title="">context</VAR> . <CODE title="dom-context-2d-createImageData"><A href="/canvas/#dom-context-2d-createimagedata">createImageData</A></CODE>(<VAR title="">sw</VAR>, <VAR title="">sh</VAR>)</DT>
 
    <DD>
 
-    <P>Returns an <CODE><A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A></CODE> object with the given
+    <P>Returns an <CODE><A href="/canvas/#imagedata">ImageData</A></CODE> object with the given
     dimensions in CSS pixels (which might map to a different number of
     actual device pixels exposed by the object itself). All the pixels
     in the returned object are transparent black.</P>
 
    </DD>
 
-   <DT><VAR title="">imagedata</VAR> = <VAR title="">context</VAR> . <CODE title="dom-context-2d-createImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-createimagedata">createImageData</A></CODE>(<VAR title="">imagedata</VAR>)</DT>
+   <DT><VAR title="">imagedata</VAR> = <VAR title="">context</VAR> . <CODE title="dom-context-2d-createImageData"><A href="/canvas/#dom-context-2d-createimagedata">createImageData</A></CODE>(<VAR title="">imagedata</VAR>)</DT>
 
    <DD>
 
-    <P>Returns an <CODE><A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A></CODE> object with the same
+    <P>Returns an <CODE><A href="/canvas/#imagedata">ImageData</A></CODE> object with the same
     dimensions as the argument. All the pixels in the returned object
     are transparent black.</P>
 
@@ -2742,11 +2742,11 @@ v5DVT (also check for '- -' bits in the part above) --><P>The <DFN id="dom-conte
 
    </DD>
 
-   <DT><VAR title="">imagedata</VAR> = <VAR title="">context</VAR> . <CODE title="dom-context-2d-getImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-getimagedata">getImageData</A></CODE>(<VAR title="">sx</VAR>, <VAR title="">sy</VAR>, <VAR title="">sw</VAR>, <VAR title="">sh</VAR>)</DT>
+   <DT><VAR title="">imagedata</VAR> = <VAR title="">context</VAR> . <CODE title="dom-context-2d-getImageData"><A href="/canvas/#dom-context-2d-getimagedata">getImageData</A></CODE>(<VAR title="">sx</VAR>, <VAR title="">sy</VAR>, <VAR title="">sw</VAR>, <VAR title="">sh</VAR>)</DT>
 
    <DD>
 
-    <P>Returns an <CODE><A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A></CODE> object containing the image
+    <P>Returns an <CODE><A href="/canvas/#imagedata">ImageData</A></CODE> object containing the image
     data for the given rectangle of the canvas.</P>
 
     <P>Throws a <CODE>NOT_SUPPORTED_ERR</CODE> exception if any of the
@@ -2756,16 +2756,16 @@ v5DVT (also check for '- -' bits in the part above) --><P>The <DFN id="dom-conte
 
    </DD>
 
-   <DT><VAR title="">imagedata</VAR> . <CODE title="dom-imagedata-width"><A href="http://www.w3.org/TR/2dcontext/#dom-imagedata-width">width</A></CODE></DT>
-   <DT><VAR title="">imagedata</VAR> . <CODE title="dom-imagedata-height"><A href="http://www.w3.org/TR/2dcontext/#dom-imagedata-height">height</A></CODE></DT>
+   <DT><VAR title="">imagedata</VAR> . <CODE title="dom-imagedata-width"><A href="/canvas/#dom-imagedata-width">width</A></CODE></DT>
+   <DT><VAR title="">imagedata</VAR> . <CODE title="dom-imagedata-height"><A href="/canvas/#dom-imagedata-height">height</A></CODE></DT>
 
    <DD>
 
-    <P>Returns the actual dimensions of the data in the <CODE><A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A></CODE> object, in device pixels.</P>
+    <P>Returns the actual dimensions of the data in the <CODE><A href="/canvas/#imagedata">ImageData</A></CODE> object, in device pixels.</P>
 
    </DD>
 
-   <DT><VAR title="">imagedata</VAR> . <CODE title="dom-imagedata-data"><A href="http://www.w3.org/TR/2dcontext/#dom-imagedata-data">data</A></CODE></DT>
+   <DT><VAR title="">imagedata</VAR> . <CODE title="dom-imagedata-data"><A href="/canvas/#dom-imagedata-data">data</A></CODE></DT>
 
    <DD>
 
@@ -2773,22 +2773,22 @@ v5DVT (also check for '- -' bits in the part above) --><P>The <DFN id="dom-conte
 
    </DD>
 
-   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-putImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-putimagedata">putImageData</A></CODE>(<VAR title="">imagedata</VAR>, <VAR title="">dx</VAR>, <VAR title="">dy</VAR> [, <VAR title="">dirtyX</VAR>, <VAR title="">dirtyY</VAR>, <VAR title="">dirtyWidth</VAR>, <VAR title="">dirtyHeight</VAR> ])</DT>
+   <DT><VAR title="">context</VAR> . <CODE title="dom-context-2d-putImageData"><A href="/canvas/#dom-context-2d-putimagedata">putImageData</A></CODE>(<VAR title="">imagedata</VAR>, <VAR title="">dx</VAR>, <VAR title="">dy</VAR> [, <VAR title="">dirtyX</VAR>, <VAR title="">dirtyY</VAR>, <VAR title="">dirtyWidth</VAR>, <VAR title="">dirtyHeight</VAR> ])</DT>
 
    <DD>
 
-    <P>Paints the data from the given <CODE><A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A></CODE> object
+    <P>Paints the data from the given <CODE><A href="/canvas/#imagedata">ImageData</A></CODE> object
     onto the canvas. If a dirty rectangle is provided, only the pixels
     from that rectangle are painted.</P>
 
-    <P>The <CODE title="dom-context-2d-globalAlpha"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalalpha">globalAlpha</A></CODE>
-    and <CODE title="dom-context-2d-globalCompositeOperation"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalcompositeoperation">globalCompositeOperation</A></CODE>
+    <P>The <CODE title="dom-context-2d-globalAlpha"><A href="/canvas/#dom-context-2d-globalalpha">globalAlpha</A></CODE>
+    and <CODE title="dom-context-2d-globalCompositeOperation"><A href="/canvas/#dom-context-2d-globalcompositeoperation">globalCompositeOperation</A></CODE>
     attributes, as well as the shadow attributes, are ignored for the
     purposes of this method call; pixels in the canvas are replaced
     wholesale, with no composition, alpha blending, no shadows,
     etc.</P>
 
-    <P>If the first argument isn't an <CODE><A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A></CODE> object,
+    <P>If the first argument isn't an <CODE><A href="/canvas/#imagedata">ImageData</A></CODE> object,
     throws a <CODE>TYPE_MISMATCH_ERR</CODE> exception. Throws a
     <CODE>NOT_SUPPORTED_ERR</CODE> exception if any of the other
     arguments are not finite.</P>
@@ -2798,19 +2798,19 @@ v5DVT (also check for '- -' bits in the part above) --><P>The <DFN id="dom-conte
   </DL><DIV class="impl">
 
   <P>The <DFN id="dom-context-2d-createimagedata" title="dom-context-2d-createImageData"><CODE>createImageData()</CODE></DFN>
-  method is used to instantiate new blank <CODE><A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A></CODE>
+  method is used to instantiate new blank <CODE><A href="/canvas/#imagedata">ImageData</A></CODE>
   objects. When the method is invoked with two arguments <VAR title="">sw</VAR> and <VAR title="">sh</VAR>, it must return an
-  <CODE><A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A></CODE> object representing a rectangle with a width
+  <CODE><A href="/canvas/#imagedata">ImageData</A></CODE> object representing a rectangle with a width
   in CSS pixels equal to the absolute magnitude of <VAR title="">sw</VAR> and a height in CSS pixels equal to the absolute
   magnitude of <VAR title="">sh</VAR>. When invoked with a single <VAR title="">imagedata</VAR> argument, it must return an
-  <CODE><A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A></CODE> object representing a rectangle with the same
-  dimensions as the <CODE><A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A></CODE> object passed as the
-  argument. The <CODE><A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A></CODE> object return must be filled
+  <CODE><A href="/canvas/#imagedata">ImageData</A></CODE> object representing a rectangle with the same
+  dimensions as the <CODE><A href="/canvas/#imagedata">ImageData</A></CODE> object passed as the
+  argument. The <CODE><A href="/canvas/#imagedata">ImageData</A></CODE> object return must be filled
   with transparent black.</P>
 
   <P>The <DFN id="dom-context-2d-getimagedata" title="dom-context-2d-getImageData"><CODE>getImageData(<VAR title="">sx</VAR>, <VAR title="">sy</VAR>, <VAR title="">sw</VAR>,
   <VAR title="">sh</VAR>)</CODE></DFN> method must return an
-  <CODE><A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A></CODE> object representing the underlying pixel data
+  <CODE><A href="/canvas/#imagedata">ImageData</A></CODE> object representing the underlying pixel data
   for the area of the canvas denoted by the rectangle whose corners are
   the four points (<VAR title="">sx</VAR>, <VAR title="">sy</VAR>),
   (<SPAN title=""><VAR title="">sx</VAR>+<VAR title="">sw</VAR></SPAN>, <VAR title="">sy</VAR>), (<SPAN title=""><VAR title="">sx</VAR>+<VAR title="">sw</VAR></SPAN>, <SPAN title=""><VAR title="">sy</VAR>+<VAR title="">sh</VAR></SPAN>), (<VAR title="">sx</VAR>, <SPAN title=""><VAR title="">sy</VAR>+<VAR title="">sh</VAR></SPAN>), in canvas
@@ -2818,25 +2818,25 @@ v5DVT (also check for '- -' bits in the part above) --><P>The <DFN id="dom-conte
   as transparent black. Pixels must be returned as non-premultiplied
   alpha values.</P>
 
-  <P>If any of the arguments to <CODE title="dom-context-2d-createImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-createimagedata">createImageData()</A></CODE> or
-  <CODE title="dom-context-2d-getImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-getimagedata">getImageData()</A></CODE> are
-  infinite or NaN, or if the <CODE title="dom-context-2d-createImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-createimagedata">createImageData()</A></CODE>
+  <P>If any of the arguments to <CODE title="dom-context-2d-createImageData"><A href="/canvas/#dom-context-2d-createimagedata">createImageData()</A></CODE> or
+  <CODE title="dom-context-2d-getImageData"><A href="/canvas/#dom-context-2d-getimagedata">getImageData()</A></CODE> are
+  infinite or NaN, or if the <CODE title="dom-context-2d-createImageData"><A href="/canvas/#dom-context-2d-createimagedata">createImageData()</A></CODE>
   method is invoked with only one argument but that argument is null,
   the method must instead raise a <CODE>NOT_SUPPORTED_ERR</CODE>
   exception. If either the <VAR title="">sw</VAR> or <VAR title="">sh</VAR> arguments are zero, the method must instead raise
   an <CODE>INDEX_SIZE_ERR</CODE> exception.</P>
 
-  <P><CODE><A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A></CODE> objects must be initialized so that their
+  <P><CODE><A href="/canvas/#imagedata">ImageData</A></CODE> objects must be initialized so that their
   <DFN id="dom-imagedata-width" title="dom-imagedata-width"><CODE>width</CODE></DFN> attribute
   is set to <VAR title="">w</VAR>, the number of physical device
   pixels per row in the image data, their <DFN id="dom-imagedata-height" title="dom-imagedata-height"><CODE>height</CODE></DFN> attribute is
   set to <VAR title="">h</VAR>, the number of rows in the image data,
   and their <DFN id="dom-imagedata-data" title="dom-imagedata-data"><CODE>data</CODE></DFN>
-  attribute is initialized to a <CODE><A href="http://www.w3.org/TR/2dcontext/#canvaspixelarray">CanvasPixelArray</A></CODE> object
+  attribute is initialized to a <CODE><A href="/canvas/#canvaspixelarray">CanvasPixelArray</A></CODE> object
   holding the image data. At least one pixel's worth of image data
   must be returned.</P>
 
-  <P>The <CODE><A href="http://www.w3.org/TR/2dcontext/#canvaspixelarray">CanvasPixelArray</A></CODE> object provides ordered,
+  <P>The <CODE><A href="/canvas/#canvaspixelarray">CanvasPixelArray</A></CODE> object provides ordered,
   indexed access to the color components of each pixel of the image
   data. The data must be represented in left-to-right order, row by
   row top to bottom, starting with the top left, with each pixel's
@@ -2846,20 +2846,20 @@ v5DVT (also check for '- -' bits in the part above) --><P>The <DFN id="dom-conte
   that component. The components must be assigned consecutive indices
   starting with 0 for the top left pixel's red component.</P>
 
-  <P>The <CODE><A href="http://www.w3.org/TR/2dcontext/#canvaspixelarray">CanvasPixelArray</A></CODE> object thus represents <VAR title="">h</VAR>×<VAR title="">w</VAR>×4 integers. The
+  <P>The <CODE><A href="/canvas/#canvaspixelarray">CanvasPixelArray</A></CODE> object thus represents <VAR title="">h</VAR>×<VAR title="">w</VAR>×4 integers. The
   <DFN id="dom-canvaspixelarray-length" title="dom-canvaspixelarray-length"><CODE>length</CODE></DFN>
-  attribute of a <CODE><A href="http://www.w3.org/TR/2dcontext/#canvaspixelarray">CanvasPixelArray</A></CODE> object must return this
+  attribute of a <CODE><A href="/canvas/#canvaspixelarray">CanvasPixelArray</A></CODE> object must return this
   number.</P>
 
   <P>The object's <SPAN>indices of the supported indexed
   properties</SPAN> are the numbers in the range 0 .. <SPAN title=""><VAR title="">h</VAR>×<VAR title="">w</VAR>×4-1</SPAN>.</P>
 
-  <P>When a <CODE><A href="http://www.w3.org/TR/2dcontext/#canvaspixelarray">CanvasPixelArray</A></CODE> object is <DFN id="dom-canvaspixelarray-get" title="dom-CanvasPixelArray-get">indexed to retrieve an indexed
+  <P>When a <CODE><A href="/canvas/#canvaspixelarray">CanvasPixelArray</A></CODE> object is <DFN id="dom-canvaspixelarray-get" title="dom-CanvasPixelArray-get">indexed to retrieve an indexed
   property</DFN> <VAR title="">index</VAR>, the value returned must be
   the value of the <VAR title="">index</VAR>th component in the
   array.</P>
 
-  <P>When a <CODE><A href="http://www.w3.org/TR/2dcontext/#canvaspixelarray">CanvasPixelArray</A></CODE> object is <DFN id="dom-canvaspixelarray-set" title="dom-CanvasPixelArray-set">indexed to modify an indexed
+  <P>When a <CODE><A href="/canvas/#canvaspixelarray">CanvasPixelArray</A></CODE> object is <DFN id="dom-canvaspixelarray-set" title="dom-CanvasPixelArray-set">indexed to modify an indexed
   property</DFN> <VAR title="">index</VAR> with value <VAR title="">value</VAR>, the value of the <VAR title="">index</VAR>th
   component in the array must be set to <VAR title="">value</VAR>.</P>
 
@@ -2869,20 +2869,20 @@ v5DVT (also check for '- -' bits in the part above) --><P>The <DFN id="dom-conte
   negative.</P>
 
   <P>The <DFN id="dom-context-2d-putimagedata" title="dom-context-2d-putImageData"><CODE>putImageData(<VAR title="">imagedata</VAR>, <VAR title="">dx</VAR>, <VAR title="">dy</VAR>, <VAR title="">dirtyX</VAR>, <VAR title="">dirtyY</VAR>, <VAR title="">dirtyWidth</VAR>, <VAR title="">dirtyHeight</VAR>)</CODE></DFN> method writes data from
-  <CODE><A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A></CODE> structures back to the canvas.</P>
+  <CODE><A href="/canvas/#imagedata">ImageData</A></CODE> structures back to the canvas.</P>
 
   <P>If any of the arguments to the method are infinite or NaN, the
   method must raise a <CODE>NOT_SUPPORTED_ERR</CODE> exception.</P>
 
   <P>If the first argument to the method is null or not an
-  <CODE><A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A></CODE> object then the <CODE title="dom-context-2d-putImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-putimagedata">putImageData()</A></CODE> method
+  <CODE><A href="/canvas/#imagedata">ImageData</A></CODE> object then the <CODE title="dom-context-2d-putImageData"><A href="/canvas/#dom-context-2d-putimagedata">putImageData()</A></CODE> method
   must raise a <CODE>TYPE_MISMATCH_ERR</CODE> exception.</P>
 
   <P>When the last four arguments are omitted, they must be assumed to
-  have the values 0, 0, the <CODE title="dom-imagedata-width"><A href="http://www.w3.org/TR/2dcontext/#dom-imagedata-width">width</A></CODE> member of the <VAR title="">imagedata</VAR> structure, and the <CODE title="dom-imagedata-height"><A href="http://www.w3.org/TR/2dcontext/#dom-imagedata-height">height</A></CODE> member of the <VAR title="">imagedata</VAR> structure, respectively.</P>
+  have the values 0, 0, the <CODE title="dom-imagedata-width"><A href="/canvas/#dom-imagedata-width">width</A></CODE> member of the <VAR title="">imagedata</VAR> structure, and the <CODE title="dom-imagedata-height"><A href="/canvas/#dom-imagedata-height">height</A></CODE> member of the <VAR title="">imagedata</VAR> structure, respectively.</P>
 
   <P>When invoked with arguments that do not, per the last few
-  paragraphs, cause an exception to be raised, the <CODE title="dom-context-2d-putImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-putimagedata">putImageData()</A></CODE> method
+  paragraphs, cause an exception to be raised, the <CODE title="dom-context-2d-putImageData"><A href="/canvas/#dom-context-2d-putimagedata">putImageData()</A></CODE> method
   must act as follows:</P>
 
   <OL><LI>
@@ -2921,10 +2921,10 @@ v5DVT (also check for '- -' bits in the part above) --><P>The <DFN id="dom-conte
 
    <LI>
 
-    <P>If <SPAN title=""><VAR title="">dirtyX</VAR>+<VAR title="">dirtyWidth</VAR></SPAN> is greater than the <CODE title="dom-imagedata-width"><A href="http://www.w3.org/TR/2dcontext/#dom-imagedata-width">width</A></CODE> attribute of the <VAR title="">imagedata</VAR> argument, let <VAR title="">dirtyWidth</VAR> be the value of that <CODE title="dom-imagedata-width"><A href="http://www.w3.org/TR/2dcontext/#dom-imagedata-width">width</A></CODE> attribute, minus the
+    <P>If <SPAN title=""><VAR title="">dirtyX</VAR>+<VAR title="">dirtyWidth</VAR></SPAN> is greater than the <CODE title="dom-imagedata-width"><A href="/canvas/#dom-imagedata-width">width</A></CODE> attribute of the <VAR title="">imagedata</VAR> argument, let <VAR title="">dirtyWidth</VAR> be the value of that <CODE title="dom-imagedata-width"><A href="/canvas/#dom-imagedata-width">width</A></CODE> attribute, minus the
     value of <VAR title="">dirtyX</VAR>.</P>
 
-    <P>If <SPAN title=""><VAR title="">dirtyY</VAR>+<VAR title="">dirtyHeight</VAR></SPAN> is greater than the <CODE title="dom-imagedata-height"><A href="http://www.w3.org/TR/2dcontext/#dom-imagedata-height">height</A></CODE> attribute of the <VAR title="">imagedata</VAR> argument, let <VAR title="">dirtyHeight</VAR> be the value of that <CODE title="dom-imagedata-height"><A href="http://www.w3.org/TR/2dcontext/#dom-imagedata-height">height</A></CODE> attribute, minus the
+    <P>If <SPAN title=""><VAR title="">dirtyY</VAR>+<VAR title="">dirtyHeight</VAR></SPAN> is greater than the <CODE title="dom-imagedata-height"><A href="/canvas/#dom-imagedata-height">height</A></CODE> attribute of the <VAR title="">imagedata</VAR> argument, let <VAR title="">dirtyHeight</VAR> be the value of that <CODE title="dom-imagedata-height"><A href="/canvas/#dom-imagedata-height">height</A></CODE> attribute, minus the
     value of <VAR title="">dirtyY</VAR>.</P>
 
    </LI>
@@ -2961,33 +2961,33 @@ v5DVT (also check for '- -' bits in the part above) --><P>The <DFN id="dom-conte
   <PRE>context.createImageData(w, h);
 context.getImageData(0, 0, w, h);</PRE>
 
-  <P>...must return <CODE><A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A></CODE> objects with the same
+  <P>...must return <CODE><A href="/canvas/#imagedata">ImageData</A></CODE> objects with the same
   dimensions, for any value of <VAR title="">w</VAR> and <VAR title="">h</VAR>. In other words, while user agents may round the
   arguments of these methods so that they map to device pixel
   boundaries, any rounding performed must be performed consistently
-  for all of the <CODE title="dom-context-2d-getImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-getimagedata">createImageData()</A></CODE>, <CODE title="dom-context-2d-getImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-getimagedata">getImageData()</A></CODE> and <CODE title="dom-context-2d-putImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-putimagedata">putImageData()</A></CODE>
+  for all of the <CODE title="dom-context-2d-getImageData"><A href="/canvas/#dom-context-2d-getimagedata">createImageData()</A></CODE>, <CODE title="dom-context-2d-getImageData"><A href="/canvas/#dom-context-2d-getimagedata">getImageData()</A></CODE> and <CODE title="dom-context-2d-putImageData"><A href="/canvas/#dom-context-2d-putimagedata">putImageData()</A></CODE>
   operations.</P>
 
   <P class="note">Due to the lossy nature of converting to and from
   premultiplied alpha color values, pixels that have just been set
-  using <CODE title="dom-context-2d-putImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-putimagedata">putImageData()</A></CODE> might be
-  returned to an equivalent <CODE title="dom-context-2d-getImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-getimagedata">getImageData()</A></CODE> as
+  using <CODE title="dom-context-2d-putImageData"><A href="/canvas/#dom-context-2d-putimagedata">putImageData()</A></CODE> might be
+  returned to an equivalent <CODE title="dom-context-2d-getImageData"><A href="/canvas/#dom-context-2d-getimagedata">getImageData()</A></CODE> as
   different values.</P>
 
-  <P>The current path, <A href="http://www.w3.org/TR/2dcontext/#transformations" title="dom-context-2d-transformation">transformation matrix</A>,
-  <A href="http://www.w3.org/TR/2dcontext/#shadows" title="shadows">shadow attributes</A>, <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalalpha" title="dom-context-2d-globalAlpha">global alpha</A>, the <A href="http://www.w3.org/TR/2dcontext/#clipping-region" title="clipping region">clipping region</A>, and <A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalcompositeoperation" title="dom-context-2d-globalCompositeOperation">global composition
-  operator</A> must not affect the <CODE title="dom-context-2d-getImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-getimagedata">getImageData()</A></CODE> and <CODE title="dom-context-2d-putImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-putimagedata">putImageData()</A></CODE>
+  <P>The current path, <A href="/canvas/#transformations" title="dom-context-2d-transformation">transformation matrix</A>,
+  <A href="/canvas/#shadows" title="shadows">shadow attributes</A>, <A href="/canvas/#dom-context-2d-globalalpha" title="dom-context-2d-globalAlpha">global alpha</A>, the <A href="/canvas/#clipping-region" title="clipping region">clipping region</A>, and <A href="/canvas/#dom-context-2d-globalcompositeoperation" title="dom-context-2d-globalCompositeOperation">global composition
+  operator</A> must not affect the <CODE title="dom-context-2d-getImageData"><A href="/canvas/#dom-context-2d-getimagedata">getImageData()</A></CODE> and <CODE title="dom-context-2d-putImageData"><A href="/canvas/#dom-context-2d-putimagedata">putImageData()</A></CODE>
   methods.</P>
 
   </DIV><DIV class="example">
 
-   <P>The data returned by <CODE title="dom-context-2d-getImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-getimagedata">getImageData()</A></CODE> is at the
+   <P>The data returned by <CODE title="dom-context-2d-getImageData"><A href="/canvas/#dom-context-2d-getimagedata">getImageData()</A></CODE> is at the
    resolution of the canvas backing store, which is likely to not be
    one device pixel to each CSS pixel if the display used is a high
    resolution display.</P>
 
    <P>In the following example, the script generates an
-   <CODE><A href="http://www.w3.org/TR/2dcontext/#imagedata">ImageData</A></CODE> object so that it can draw onto it.</P>
+   <CODE><A href="/canvas/#imagedata">ImageData</A></CODE> object so that it can draw onto it.</P>
 
    <PRE>// canvas is a reference to a &lt;canvas&gt; element
 var context = canvas.getContext('2d');
@@ -3010,7 +3010,7 @@ function AddCloud(data, x, y) { ... }</PRE>
 
   </DIV><DIV class="example">
 
-   <P>Here is an example of using <CODE title="dom-context-2d-getImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-getimagedata">getImageData()</A></CODE> and <CODE title="dom-context-2d-putImageData"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-putimagedata">putImageData()</A></CODE> to
+   <P>Here is an example of using <CODE title="dom-context-2d-getImageData"><A href="/canvas/#dom-context-2d-getimagedata">getImageData()</A></CODE> and <CODE title="dom-context-2d-putImageData"><A href="/canvas/#dom-context-2d-putimagedata">putImageData()</A></CODE> to
    implement an edge detection filter.</P>
 
    <PRE>&lt;!DOCTYPE HTML&gt;
@@ -3080,17 +3080,17 @@ function AddCloud(data, x, y) { ... }</PRE>
    styles must be honored, and the stroke must itself also be
    subjected to the current transformation matrix.</P></LI>
 
-   <LI><P><A href="http://www.w3.org/TR/2dcontext/#when-shadows-are-drawn">When shadows are drawn</A>, render the shadow from
+   <LI><P><A href="/canvas/#when-shadows-are-drawn">When shadows are drawn</A>, render the shadow from
    image <VAR title="">A</VAR>, using the current shadow styles,
    creating image <VAR title="">B</VAR>.</P></LI>
 
-   <LI><P><A href="http://www.w3.org/TR/2dcontext/#when-shadows-are-drawn">When shadows are drawn</A>, multiply the alpha
-   component of every pixel in <VAR title="">B</VAR> by <CODE title="dom-context-2d-globalAlpha"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalalpha">globalAlpha</A></CODE>.</P></LI>
+   <LI><P><A href="/canvas/#when-shadows-are-drawn">When shadows are drawn</A>, multiply the alpha
+   component of every pixel in <VAR title="">B</VAR> by <CODE title="dom-context-2d-globalAlpha"><A href="/canvas/#dom-context-2d-globalalpha">globalAlpha</A></CODE>.</P></LI>
 
-   <LI><P><A href="http://www.w3.org/TR/2dcontext/#when-shadows-are-drawn">When shadows are drawn</A>, composite <VAR title="">B</VAR> within the clipping region over the current canvas
+   <LI><P><A href="/canvas/#when-shadows-are-drawn">When shadows are drawn</A>, composite <VAR title="">B</VAR> within the clipping region over the current canvas
    bitmap using the current composition operator.</P></LI>
 
-   <LI><P>Multiply the alpha component of every pixel in <VAR title="">A</VAR> by <CODE title="dom-context-2d-globalAlpha"><A href="http://www.w3.org/TR/2dcontext/#dom-context-2d-globalalpha">globalAlpha</A></CODE>.</P></LI>
+   <LI><P>Multiply the alpha component of every pixel in <VAR title="">A</VAR> by <CODE title="dom-context-2d-globalAlpha"><A href="/canvas/#dom-context-2d-globalalpha">globalAlpha</A></CODE>.</P></LI>
 
    <LI><P>Composite <VAR title="">A</VAR> within the clipping region
    over the current canvas bitmap using the current composition
@@ -3174,5 +3174,5 @@ function AddCloud(data, x, y) { ... }</PRE>
    1984.</DD>
 
   </DL><H2 class="no-num" id="acknowledgements">Acknowledgements</H2><P>For a full list of acknowledgements, please see the HTML5
-  specification. <A href="http://www.w3.org/TR/2dcontext/#refsHTML5">[HTML5]</A>
+  specification. <A href="/canvas/#refsHTML5">[HTML5]</A>
 </P><DIV id="configUI"><P><LABEL><INPUT type="radio" name="styles" id="complete-radio" value="complete" onchange="setStyle(value)"> Normal view</LABEL><LABEL><INPUT type="radio" name="styles" id="author-radio" value="author" onchange="setStyle(value)"> Hide UA text</LABEL><LABEL><INPUT type="radio" name="styles" id="highlight-radio" value="highlight" onchange="setStyle(value)"> Highlight UA text</LABEL></P></DIV><SCRIPT src="./index_files/toc.js"></SCRIPT><SCRIPT src="./index_files/styler.js"></SCRIPT><SCRIPT src="./index_files/dfn.js"></SCRIPT></BODY></HTML>
